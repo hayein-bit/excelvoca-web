@@ -1,9 +1,9 @@
 // Everything here is reused unmodified from the desktop app — only the storage
-// backend (./graphStorage.js, imported for its window.excelvoca side effect)
+// backend (./githubStorage.js, imported for its window.excelvoca side effect)
 // and the UI wiring (no grid/ribbon/Boss Mode, just the quiz + stats panels)
 // differ from src/renderer.js.
-import './graphStorage.js';
-import * as graphStorage from './graphStorage.js';
+import './githubStorage.js';
+import * as githubStorage from './githubStorage.js';
 import { loadWords } from '../src/data/wordRepository.js';
 import { loadProgress, saveProgress, countMastered, countNeedsReview } from '../src/storage/progressStore.js';
 import { loadSession, saveSession, clearSession, hasResumableState } from '../src/storage/sessionStore.js';
@@ -29,16 +29,31 @@ function setConnectStatus(text) {
   if (el) el.textContent = text;
 }
 
-async function boot() {
-  await graphStorage.init();
+function showConnectOverlay() {
+  const overlay = document.getElementById('connect-overlay');
+  overlay.classList.remove('hidden');
+  document.getElementById('connect-btn').addEventListener(
+    'click',
+    () => {
+      const token = document.getElementById('token-input').value;
+      if (!token.trim()) {
+        setConnectStatus('토큰을 입력해주세요.');
+        return;
+      }
+      githubStorage.signIn(token);
+      overlay.classList.add('hidden');
+      main().catch((err) => {
+        setConnectStatus(`오류: ${err.message}`);
+        overlay.classList.remove('hidden');
+      });
+    },
+    { once: true }
+  );
+}
 
-  if (!graphStorage.isSignedIn()) {
-    const overlay = document.getElementById('connect-overlay');
-    overlay.classList.remove('hidden');
-    document.getElementById('connect-btn').addEventListener('click', () => {
-      setConnectStatus('OneDrive로 이동 중...');
-      graphStorage.signIn();
-    });
+async function boot() {
+  if (!githubStorage.isSignedIn()) {
+    showConnectOverlay();
     return;
   }
 
@@ -47,7 +62,7 @@ async function boot() {
     await main();
   } catch (err) {
     setConnectStatus(`오류: ${err.message}`);
-    document.getElementById('connect-overlay').classList.remove('hidden');
+    showConnectOverlay();
   }
 }
 

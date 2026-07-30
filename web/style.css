@@ -195,6 +195,15 @@ body {
   margin: 0 0 16px;
 }
 
+#token-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
 #connect-btn {
   background: var(--color-office-blue);
   color: #ffffff;

@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title>ExcelVoca</title>
 <link rel="stylesheet" href="./style.css" />
-<script src="https://alcdn.msauth.net/browser/3.7.1/js/msal-browser.min.js"></script>
 </head>
 <body>
   <div id="connect-overlay" class="overlay hidden">
     <div class="connect-box">
       <h1>ExcelVoca</h1>
-      <p>OneDrive에 연결하면 데스크톱 앱과 같은 학습 기록으로 이어서 풀 수 있어요.</p>
-      <button id="connect-btn">OneDrive 연결</button>
+      <p>GitHub 개인용 접근 토큰을 입력하면 데스크톱 앱과 같은 학습 기록으로 이어서 풀 수 있어요.</p>
+      <input id="token-input" type="password" placeholder="ghp_..." autocomplete="off" />
+      <button id="connect-btn">연결</button>
       <p id="connect-status" class="connect-status"></p>
     </div>
   </div>
