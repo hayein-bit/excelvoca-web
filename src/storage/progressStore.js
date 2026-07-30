@@ -98,3 +98,17 @@ export function countMastered(progress) {
 export function countNeedsReview(progress) {
   return Object.values(progress.words).filter(isNeedsReview).length;
 }
+
+/** Resets just today's studied/correct counts — per-word stats and the all-time longest combo are untouched. */
+export function resetTodayStats(progress) {
+  progress.stats.todayStudied = 0;
+  progress.stats.todayCorrect = 0;
+  return progress;
+}
+
+/** Wipes every word's progress and all stats — a full, unrecoverable restart. */
+export function resetAllProgress(progress) {
+  progress.words = {};
+  progress.stats = defaultProgress().stats;
+  return progress;
+}

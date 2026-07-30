@@ -19,10 +19,25 @@
 
   <div id="resume-dialog-overlay" class="overlay hidden"></div>
 
+  <div id="manage-overlay" class="overlay hidden">
+    <div class="dialog-box">
+      <div class="dialog-title">기록 관리</div>
+      <div class="dialog-body">
+        <p>오늘 통계만 지우거나, 전체 학습 기록을 초기화할 수 있어요.</p>
+      </div>
+      <div class="dialog-actions manage-actions">
+        <button id="reset-today-btn" class="dialog-btn">오늘 기록 초기화</button>
+        <button id="reset-all-btn" class="dialog-btn danger">전체 기록 초기화</button>
+        <button id="manage-close-btn" class="dialog-btn primary">닫기</button>
+      </div>
+    </div>
+  </div>
+
   <main id="app">
     <div id="word-display" class="word-display"></div>
     <div id="quiz-panel" class="panel"></div>
     <div id="stats-panel" class="panel"></div>
+    <button id="manage-btn" class="manage-trigger">기록 관리</button>
   </main>
 
   <script type="module" src="./webApp.js"></script>

@@ -277,3 +277,24 @@ body {
   color: #ffffff;
   border-color: var(--color-office-green);
 }
+
+.dialog-btn.danger {
+  background: var(--color-wrong-bg);
+  color: var(--color-wrong-text);
+  border-color: var(--color-wrong-text);
+}
+
+.manage-actions {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.manage-trigger {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}

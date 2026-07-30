@@ -5,7 +5,14 @@
 import './githubStorage.js';
 import * as githubStorage from './githubStorage.js';
 import { loadWords } from '../src/data/wordRepository.js';
-import { loadProgress, saveProgress, countMastered, countNeedsReview } from '../src/storage/progressStore.js';
+import {
+  loadProgress,
+  saveProgress,
+  countMastered,
+  countNeedsReview,
+  resetTodayStats,
+  resetAllProgress
+} from '../src/storage/progressStore.js';
 import { loadSession, saveSession, clearSession, hasResumableState } from '../src/storage/sessionStore.js';
 import { loadSettings, saveSettings } from '../src/storage/settingsStore.js';
 import { upsertDailyLog } from '../src/storage/dailyLogStore.js';
@@ -216,6 +223,29 @@ async function main() {
     }
   }
 
+  function setupManageUI() {
+    const overlay = document.getElementById('manage-overlay');
+    document.getElementById('manage-btn').addEventListener('click', () => overlay.classList.remove('hidden'));
+    document.getElementById('manage-close-btn').addEventListener('click', () => overlay.classList.add('hidden'));
+
+    document.getElementById('reset-today-btn').addEventListener('click', () => {
+      if (!confirm('오늘 학습한 단어 수/정답 수를 초기화할까요? (단어별 기록은 그대로 남습니다)')) return;
+      resetTodayStats(progress);
+      updateStatsPanel(engine.getState());
+      persistAll();
+      overlay.classList.add('hidden');
+    });
+
+    document.getElementById('reset-all-btn').addEventListener('click', () => {
+      if (!confirm('정말 전체 학습 기록을 초기화할까요? 모든 단어의 정답/오답/스트릭이 사라지고 되돌릴 수 없습니다.')) return;
+      resetAllProgress(progress);
+      updateStatsPanel(engine.getState());
+      persistAll();
+      overlay.classList.add('hidden');
+    });
+  }
+
+  setupManageUI();
   renderCurrentQuestion(engine.getState());
   persistAll();
   window.addEventListener('keydown', handleKeydown);
