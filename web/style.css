@@ -195,13 +195,21 @@ body {
   margin: 0 0 16px;
 }
 
-#token-input {
+#token-input,
+#pin-setup-input,
+#pin-unlock-input {
   width: 100%;
   padding: 10px 12px;
   font-size: 14px;
   border: 1px solid var(--color-border);
   border-radius: 4px;
   margin-bottom: 10px;
+}
+
+#pin-unlock-input {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 8px;
 }
 
 #connect-btn {

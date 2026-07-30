@@ -4,7 +4,7 @@ const REPO_OWNER = 'hayein-bit';
 const REPO_NAME = 'excelvoca-data';
 const DATA_PATH = 'data'; // folder inside that repo holding progress.json etc.
 
-const TOKEN_KEY = 'excelvoca_gh_token';
+const TOKEN_BLOB_KEY = 'excelvoca_gh_token_enc';
 const SETTINGS_KEY = 'excelvoca_settings';
 
 /**
@@ -13,22 +13,76 @@ const SETTINGS_KEY = 'excelvoca_settings';
  * fs — so every module under src/ (wordRepository, progressStore, sessionStore,
  * settingsStore, dailyLogStore, and everything in src/game/) works unmodified.
  * See CLAUDE.md's "Web version" section for why GitHub instead of OneDrive.
+ *
+ * The real GitHub token is entered once (setupToken) and stored PIN-encrypted
+ * (AES-GCM via Web Crypto) in localStorage — never in plaintext, and never in
+ * the source code, since this repo is public. Every later visit just needs the
+ * short PIN (unlock) instead of retyping the long token. This is a convenience
+ * gate, not real security: a 4-digit PIN is only 10,000 combinations, so it
+ * only protects against a casual glance at the page, not a determined attacker
+ * with access to the encrypted blob.
  */
 
+let cachedToken = '';
+
 function getToken() {
-  return localStorage.getItem(TOKEN_KEY) || '';
+  return cachedToken;
 }
 
 export function isSignedIn() {
-  return Boolean(getToken());
+  return Boolean(cachedToken);
 }
 
-export function signIn(token) {
-  localStorage.setItem(TOKEN_KEY, token.trim());
+export function hasStoredToken() {
+  return Boolean(localStorage.getItem(TOKEN_BLOB_KEY));
+}
+
+async function deriveKey(pin, salt) {
+  const keyMaterial = await crypto.subtle.importKey('raw', new TextEncoder().encode(pin), 'PBKDF2', false, [
+    'deriveKey'
+  ]);
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+    keyMaterial,
+    { name: 'AES-GCM', length: 256 },
+    false,
+    ['encrypt', 'decrypt']
+  );
+}
+
+/** First-time setup: encrypts `token` with `pin` and stores the blob (not the token) in localStorage. */
+export async function setupToken(token, pin) {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const key = await deriveKey(pin, salt);
+  const cipherBuf = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, new TextEncoder().encode(token.trim()));
+  const blob = { salt: Array.from(salt), iv: Array.from(iv), cipher: Array.from(new Uint8Array(cipherBuf)) };
+  localStorage.setItem(TOKEN_BLOB_KEY, JSON.stringify(blob));
+  cachedToken = token.trim();
+}
+
+/** Decrypts the stored blob with `pin`; returns false (without throwing) if the PIN is wrong. */
+export async function unlock(pin) {
+  const raw = localStorage.getItem(TOKEN_BLOB_KEY);
+  if (!raw) return false;
+  try {
+    const blob = JSON.parse(raw);
+    const key = await deriveKey(pin, new Uint8Array(blob.salt));
+    const plainBuf = await crypto.subtle.decrypt(
+      { name: 'AES-GCM', iv: new Uint8Array(blob.iv) },
+      key,
+      new Uint8Array(blob.cipher).buffer
+    );
+    cachedToken = new TextDecoder().decode(plainBuf);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export function signOut() {
-  localStorage.removeItem(TOKEN_KEY);
+  localStorage.removeItem(TOKEN_BLOB_KEY);
+  cachedToken = '';
 }
 
 const API_BASE = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${DATA_PATH}`;

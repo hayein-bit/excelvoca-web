@@ -10,8 +10,15 @@
   <div id="connect-overlay" class="overlay hidden">
     <div class="connect-box">
       <h1>ExcelVoca</h1>
-      <p>GitHub 개인용 접근 토큰을 입력하면 데스크톱 앱과 같은 학습 기록으로 이어서 풀 수 있어요.</p>
-      <input id="token-input" type="password" placeholder="ghp_..." autocomplete="off" />
+      <div id="token-setup-fields">
+        <p>GitHub 개인용 접근 토큰을 한 번만 입력하면, 그다음부턴 PIN으로 간편하게 열 수 있어요.</p>
+        <input id="token-input" type="password" placeholder="ghp_..." autocomplete="off" />
+        <input id="pin-setup-input" type="text" inputmode="numeric" maxlength="4" placeholder="PIN 4자리" value="0000" />
+      </div>
+      <div id="pin-unlock-fields" class="hidden">
+        <p>PIN을 입력하세요.</p>
+        <input id="pin-unlock-input" type="text" inputmode="numeric" maxlength="4" placeholder="0000" autocomplete="off" />
+      </div>
       <button id="connect-btn">연결</button>
       <p id="connect-status" class="connect-status"></p>
     </div>

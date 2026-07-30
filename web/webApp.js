@@ -38,16 +38,30 @@ function setConnectStatus(text) {
 
 function showConnectOverlay() {
   const overlay = document.getElementById('connect-overlay');
+  const isUnlock = githubStorage.hasStoredToken();
+  document.getElementById('token-setup-fields').classList.toggle('hidden', isUnlock);
+  document.getElementById('pin-unlock-fields').classList.toggle('hidden', !isUnlock);
   overlay.classList.remove('hidden');
+
   document.getElementById('connect-btn').addEventListener(
     'click',
-    () => {
-      const token = document.getElementById('token-input').value;
-      if (!token.trim()) {
-        setConnectStatus('토큰을 입력해주세요.');
-        return;
+    async () => {
+      if (isUnlock) {
+        const pin = document.getElementById('pin-unlock-input').value.trim();
+        const ok = await githubStorage.unlock(pin);
+        if (!ok) {
+          setConnectStatus('PIN이 틀렸습니다.');
+          return;
+        }
+      } else {
+        const token = document.getElementById('token-input').value;
+        const pin = document.getElementById('pin-setup-input').value.trim() || '0000';
+        if (!token.trim()) {
+          setConnectStatus('토큰을 입력해주세요.');
+          return;
+        }
+        await githubStorage.setupToken(token, pin);
       }
-      githubStorage.signIn(token);
       overlay.classList.add('hidden');
       main().catch((err) => {
         setConnectStatus(`오류: ${err.message}`);
