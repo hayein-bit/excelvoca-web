@@ -1,0 +1,43 @@
+:root {
+  --color-white: #ffffff;
+  --color-light-gray: #f3f2f1;
+  --color-border: #d4d2d0;
+  --color-office-green: #217346;
+  --color-office-blue: #2b579a;
+  --color-text: #252423;
+  --color-text-muted: #5f5f5f;
+  --color-correct-bg: #c6efce;
+  --color-correct-text: #006100;
+  --color-wrong-bg: #ffc7ce;
+  --color-wrong-text: #9c0006;
+  --font-ui: 'Segoe UI', '맑은 고딕', 'Malgun Gothic', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-ui);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-white);
+}
+
+.hidden {
+  display: none !important;
+}

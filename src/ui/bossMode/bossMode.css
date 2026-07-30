@@ -1,0 +1,10 @@
+.grid-cell.fake-title {
+  font-weight: 600;
+  color: var(--color-office-blue);
+}
+
+.grid-cell.fake-header {
+  font-weight: 600;
+  background: #eef3f9;
+  color: var(--color-text-muted);
+}

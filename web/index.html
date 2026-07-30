@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>ExcelVoca</title>
+<link rel="stylesheet" href="./style.css" />
+<script src="https://alcdn.msauth.net/browser/3.7.1/js/msal-browser.min.js"></script>
+</head>
+<body>
+  <div id="connect-overlay" class="overlay hidden">
+    <div class="connect-box">
+      <h1>ExcelVoca</h1>
+      <p>OneDrive에 연결하면 데스크톱 앱과 같은 학습 기록으로 이어서 풀 수 있어요.</p>
+      <button id="connect-btn">OneDrive 연결</button>
+      <p id="connect-status" class="connect-status"></p>
+    </div>
+  </div>
+
+  <div id="resume-dialog-overlay" class="overlay hidden"></div>
+
+  <main id="app">
+    <div id="word-display" class="word-display"></div>
+    <div id="quiz-panel" class="panel"></div>
+    <div id="stats-panel" class="panel"></div>
+  </main>
+
+  <script type="module" src="./webApp.js"></script>
+</body>
+</html>
