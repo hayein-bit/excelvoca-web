@@ -19,10 +19,14 @@ export function showAnswerFeedback(grid, cellPos, displayText, wasCorrect, answe
   if (answerText) grid.setCellText(cellPos.col, cellPos.answerRow, answerText);
 }
 
-/** Redraws every answered cell from `history` — used after Boss Mode / on resume. */
-export function replayHistory(grid, history) {
+/**
+ * Redraws every answered cell from `history` — used after Boss Mode / on resume.
+ * `wordsPerRow` must match whichever mode's history this is (classic's 5-across
+ * vs example mode's one-per-row), or cells will land in the wrong place.
+ */
+export function replayHistory(grid, history, wordsPerRow) {
   history.forEach(({ cellIndex, display, wasCorrect, answerText }) => {
-    const cellPos = nextWordCellPosition(cellIndex);
+    const cellPos = nextWordCellPosition(cellIndex, wordsPerRow);
     showAnswerFeedback(grid, cellPos, display, wasCorrect, answerText);
   });
 }

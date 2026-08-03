@@ -81,6 +81,11 @@
 .ribbon-btn .ribbon-btn-icon {
   font-size: 16px;
 }
+.ribbon-btn.active {
+  background: #cfe0f5;
+  border: 1px solid var(--color-office-blue);
+  border-radius: 2px;
+}
 .ribbon-group-label {
   font-size: 10px;
   color: var(--color-text-muted);

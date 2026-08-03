@@ -20,6 +20,8 @@ import { createGameEngine } from '../src/game/gameEngine.js';
 import { computeRank } from '../src/game/rankSystem.js';
 import {
   renderQuestion,
+  renderReadingPhase,
+  showTranslationReveal,
   markChoiceResult,
   highlightCorrectChoice,
   switchDontKnowToContinue
@@ -116,6 +118,8 @@ async function main() {
   // Same input-lock pattern as src/renderer.js — see that file's comment for why.
   let awaitingAdvance = false;
   let pendingContinue = false;
+  // Example mode's reading phase: any key/tap reveals the choices for the same question.
+  let pendingReveal = false;
 
   function updateStatsPanel(state) {
     const { todayStudied, todayCorrect } = progress.stats;
@@ -138,8 +142,36 @@ async function main() {
   function renderCurrentQuestion(state) {
     if (!state.question) return;
     document.getElementById('word-display').textContent = state.question.display;
-    renderQuestion(state.question, handleChoiceClick, handleDontKnowClick);
+    if (state.modeName === 'example' && state.phase === 'reading') {
+      pendingReveal = true;
+      renderReadingPhase(state.question, continueToReveal);
+    } else {
+      pendingReveal = false;
+      renderQuestion(state.question, handleChoiceClick, handleDontKnowClick, {
+        showSentence: state.modeName === 'example'
+      });
+    }
     updateStatsPanel(state);
+  }
+
+  /** Ends example mode's reading pause and reveals the choices for the same question. */
+  function continueToReveal() {
+    if (!pendingReveal) return;
+    const state = engine.revealChoices();
+    renderCurrentQuestion(state);
+  }
+
+  /** Toggles classic <-> example, mirroring src/renderer.js's ribbon-button handler. */
+  function handleToggleExampleMode() {
+    pendingContinue = false;
+    pendingReveal = false;
+    awaitingAdvance = false;
+
+    const nextModeName = engine.getState().modeName === 'example' ? 'classic' : 'example';
+    const state = engine.switchMode(nextModeName);
+    document.getElementById('mode-toggle-btn').classList.toggle('active', state.modeName === 'example');
+    renderCurrentQuestion(state);
+    persistAll();
   }
 
   function buildDailySummary() {
@@ -160,16 +192,21 @@ async function main() {
   function persistAll() {
     const state = engine.getState();
     saveProgress(progress);
-    saveSession({
-      question: state.question,
-      combo: state.combo,
-      longestCombo: state.longestCombo,
-      position: state.position,
-      cellIndex: state.cellIndex,
-      sheetIndex: state.sheetIndex,
-      historyBySheet: state.historyBySheet,
-      bossMode: false
-    });
+    // Example mode is ephemeral (see src/renderer.js's persistAll for why) —
+    // only classic mode's question/sheet/history is ever saved as the
+    // resumable session, so a reload always comes back into classic mode.
+    if (state.modeName === 'classic') {
+      saveSession({
+        question: state.question,
+        combo: state.combo,
+        longestCombo: state.longestCombo,
+        position: state.position,
+        cellIndex: state.cellIndex,
+        sheetIndex: state.sheetIndex,
+        historyBySheet: state.historyBySheet,
+        bossMode: false
+      });
+    }
     upsertDailyLog(buildDailySummary());
   }
 
@@ -182,6 +219,7 @@ async function main() {
     const state = engine.getState();
     markChoiceResult(result.chosenIndex, result.wasCorrect);
     if (!result.wasCorrect) highlightCorrectChoice(result.correctIndex);
+    if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     updateStatsPanel(state);
     persistAll();
 
@@ -203,6 +241,7 @@ async function main() {
 
     const state = engine.getState();
     highlightCorrectChoice(result.correctIndex);
+    if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     switchDontKnowToContinue(continueAfterDontKnow);
     updateStatsPanel(state);
     persistAll();
@@ -221,6 +260,11 @@ async function main() {
   function handleKeydown(event) {
     const action = resolveAction(event, settings.shortcuts);
 
+    if (pendingReveal) {
+      event.preventDefault();
+      continueToReveal();
+      return;
+    }
     if (pendingContinue) {
       event.preventDefault();
       continueAfterDontKnow();
@@ -260,6 +304,7 @@ async function main() {
   }
 
   setupManageUI();
+  document.getElementById('mode-toggle-btn').addEventListener('click', handleToggleExampleMode);
   renderCurrentQuestion(engine.getState());
   persistAll();
   window.addEventListener('keydown', handleKeydown);

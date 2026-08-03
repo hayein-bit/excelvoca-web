@@ -1,6 +1,6 @@
 import { pickNext } from '../spacedRepetition.js';
 import { buildQuestion } from '../questionFactory.js';
-import { createComboState, onCorrect, onWrong } from '../comboTracker.js';
+import { onCorrect, onWrong } from '../comboTracker.js';
 import { recordAnswer, getWordStat } from '../../storage/progressStore.js';
 import { CELLS_PER_SHEET } from '../../ui/excelShell/grid.js';
 
@@ -20,9 +20,7 @@ const TOTAL_SHEETS = 3;
 // How often a question flips to "see the meaning, pick the English word" instead of the usual direction.
 const REVERSE_PROBABILITY = 0.3;
 
-export function createClassicMode({ words, progress }) {
-  const comboState = createComboState();
-  let position = 0;
+export function createClassicMode({ words, progress, comboState }) {
   let cellIndex = 0; // 1-based slot of currentQuestion on the active sheet
   let sheetIndex = 0;
   let currentQuestion = null;
@@ -41,7 +39,9 @@ export function createClassicMode({ words, progress }) {
     const stat = getWordStat(progress, word.key);
     const reverse = stat.correct >= 2 || Math.random() < REVERSE_PROBABILITY;
     currentQuestion = buildQuestion(word, { reverse });
-    position += 1;
+    // Lifetime "카운팅" count — shared with example mode via progress.stats
+    // (see gameEngine.js), not a per-mode local variable.
+    progress.stats.position = (progress.stats.position || 0) + 1;
 
     // The sheet is full — move to the next tab and start filling it from its
     // first cell. That tab's own history from last time around (if any) is
@@ -69,7 +69,11 @@ export function createClassicMode({ words, progress }) {
     if (restoreState && restoreState.question) {
       comboState.combo = restoreState.combo || 0;
       comboState.longestCombo = restoreState.longestCombo || 0;
-      position = restoreState.position || 0;
+      // One-time migration: older sessions tracked "카운팅" in session.json;
+      // adopt it into the shared progress.stats.position if that isn't set yet.
+      if (!progress.stats.position && restoreState.position) {
+        progress.stats.position = restoreState.position;
+      }
       // Fall back to `position` for session files saved before cellIndex existed,
       // so an old resumable session doesn't land on the invalid slot 0.
       cellIndex = restoreState.cellIndex || restoreState.position || 1;
@@ -150,7 +154,7 @@ export function createClassicMode({ words, progress }) {
       question: currentQuestion,
       combo: comboState.combo,
       longestCombo: comboState.longestCombo,
-      position,
+      position: progress.stats.position || 0,
       cellIndex,
       sheetIndex,
       historyBySheet

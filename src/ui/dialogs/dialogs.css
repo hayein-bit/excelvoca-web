@@ -1,4 +1,5 @@
-#resume-dialog-overlay {
+#resume-dialog-overlay,
+#manage-dialog-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
@@ -63,4 +64,14 @@
   background: var(--color-office-green);
   color: #ffffff;
   border-color: var(--color-office-green);
+}
+
+.dialog-btn.danger {
+  background: var(--color-wrong-bg);
+  color: var(--color-wrong-text);
+  border-color: var(--color-wrong-text);
+}
+
+.manage-actions {
+  flex-wrap: wrap;
 }

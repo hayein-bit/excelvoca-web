@@ -9,7 +9,11 @@ function defaultProgress() {
       todayDate: todayKey(),
       todayStudied: 0,
       todayCorrect: 0,
-      longestCombo: 0
+      longestCombo: 0,
+      // Lifetime question count ("카운팅") — shared across every game mode and
+      // never reset except by a full resetAllProgress(); see spacedRepetition/
+      // gameEngine notes on why this lives here instead of per-mode state.
+      position: 0
     }
   };
 }

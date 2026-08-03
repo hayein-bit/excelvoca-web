@@ -44,3 +44,30 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
     correctIndex
   };
 }
+
+/**
+ * Builds a question for example mode: the full English example sentence is
+ * shown (instead of the bare word), and the choices are Korean meanings —
+ * same distractor pool as the forward direction of `buildQuestion`. Always
+ * forward (read sentence -> pick meaning); there's no reverse variant.
+ * `exampleKo` (the sentence's own Korean translation) rides along on the
+ * question object purely for the answer-reveal step.
+ */
+export function buildExampleQuestion(wordObj) {
+  const distractors = getRandomOtherMeanings(wordObj.word, 3);
+  const choices = shuffle([wordObj.meaning, ...distractors]);
+  const correctIndex = choices.indexOf(wordObj.meaning);
+
+  return {
+    key: wordObj.key,
+    word: wordObj.word,
+    pos: wordObj.pos,
+    display: wordObj.example,
+    reverse: false,
+    example: wordObj.example,
+    exampleKo: wordObj.exampleKo,
+    level: wordObj.level,
+    choices,
+    correctIndex
+  };
+}

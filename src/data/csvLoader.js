@@ -64,7 +64,7 @@ function parseCsv(text) {
  * stays around purely for display/grouping.
  *
  * @param {string} text
- * @returns {Array<{key:string, word:string, meaning:string, pos:string, example:string, level:number}>}
+ * @returns {Array<{key:string, word:string, meaning:string, pos:string, example:string, exampleKo:string, level:number}>}
  */
 export function loadWordsFromCsv(text) {
   const rows = parseCsv(text);
@@ -77,6 +77,7 @@ export function loadWordsFromCsv(text) {
   const meaningIdx = colIndex('meaning');
   const posIdx = colIndex('pos');
   const exampleIdx = colIndex('example');
+  const exampleKoIdx = colIndex('example_ko');
   const levelIdx = colIndex('level');
 
   const words = [];
@@ -94,6 +95,7 @@ export function loadWordsFromCsv(text) {
       meaning,
       pos,
       example: (exampleIdx >= 0 ? r[exampleIdx] : '').trim(),
+      exampleKo: (exampleKoIdx >= 0 ? r[exampleKoIdx] : '').trim(),
       level: levelIdx >= 0 ? parseInt(r[levelIdx], 10) || 1 : 1
     });
   }

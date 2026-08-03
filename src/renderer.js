@@ -1,16 +1,25 @@
 import { loadWords } from './data/wordRepository.js';
-import { loadProgress, saveProgress, countMastered, countNeedsReview } from './storage/progressStore.js';
+import {
+  loadProgress,
+  saveProgress,
+  countMastered,
+  countNeedsReview,
+  resetTodayStats,
+  resetAllProgress
+} from './storage/progressStore.js';
 import { loadSession, saveSession, clearSession, hasResumableState } from './storage/sessionStore.js';
 import { loadSettings, saveSettings } from './storage/settingsStore.js';
 import { upsertDailyLog } from './storage/dailyLogStore.js';
 import { createGameEngine } from './game/gameEngine.js';
 import { computeRank } from './game/rankSystem.js';
-import { initGrid, nextWordCellPosition } from './ui/excelShell/grid.js';
-import { initRibbon } from './ui/excelShell/ribbon.js';
+import { initGrid, nextWordCellPosition, EXAMPLE_WORDS_PER_ROW } from './ui/excelShell/grid.js';
+import { initRibbon, setExampleModeActive } from './ui/excelShell/ribbon.js';
 import { initSheetTabs, setActiveSheetTab } from './ui/excelShell/sheetTabs.js';
 import { setStatusLeft, setStatusRight } from './ui/excelShell/statusBar.js';
 import {
   renderQuestion,
+  renderReadingPhase,
+  showTranslationReveal,
   markChoiceResult,
   highlightCorrectChoice,
   switchDontKnowToContinue
@@ -19,13 +28,27 @@ import { renderStats } from './ui/game/statsPanel.js';
 import { showWordInCell, showAnswerFeedback, replayHistory } from './ui/game/feedback.js';
 import { enterBossMode, exitBossMode } from './ui/bossMode/bossMode.js';
 import { showResumeDialog } from './ui/dialogs/resumeDialog.js';
+import { showManageDialog } from './ui/dialogs/manageDialog.js';
 import { resolveAction } from './utils/keybindings.js';
 
 const CORRECT_ADVANCE_DELAY_MS = 150;
 const WRONG_ADVANCE_DELAY_MS = 1000;
 
+/** Example mode's sentences get one per row instead of classic's 5-across (see grid.js). */
+function wordsPerRowFor(state) {
+  return state.modeName === 'example' ? EXAMPLE_WORDS_PER_ROW : undefined;
+}
+
+function cellPositionFor(state) {
+  return nextWordCellPosition(state.cellIndex, wordsPerRowFor(state));
+}
+
 async function main() {
-  initRibbon({ onClearSheet: handleClearSheet });
+  initRibbon({
+    onClearSheet: handleClearSheet,
+    onManageWorkbook: handleManageWorkbook,
+    onToggleExampleMode: handleToggleExampleMode
+  });
   initSheetTabs(handleSheetTabClick);
   const grid = initGrid();
   setStatusLeft('준비');
@@ -65,6 +88,9 @@ async function main() {
   // After "모르겠다", the meaning stays up until the user presses something —
   // handleKeydown treats any key as "continue" while this is true.
   let pendingContinue = false;
+  // Example mode's reading phase: the sentence is up with no choices yet, and
+  // handleKeydown treats any key as "reveal the choices" while this is true.
+  let pendingReveal = false;
   // Tracks which sheet tab is currently drawn, so renderCurrentQuestion can tell
   // when classicMode has advanced to a new sheet and needs to clear the grid first.
   let lastRenderedSheetIndex = null;
@@ -92,6 +118,23 @@ async function main() {
     setStatusRight(`${rank.title} · Combo x${state.combo}`);
   }
 
+  /**
+   * Example mode's questions have a reading phase (sentence only, no choices
+   * yet) before the choices phase — classic mode's `state.phase` is always
+   * undefined, so it always takes the normal `renderQuestion` branch.
+   */
+  function renderQuizPanelForState(state) {
+    if (state.modeName === 'example' && state.phase === 'reading') {
+      pendingReveal = true;
+      renderReadingPhase(state.question, continueToReveal);
+    } else {
+      pendingReveal = false;
+      renderQuestion(state.question, handleChoiceClick, handleDontKnowClick, {
+        showSentence: state.modeName === 'example'
+      });
+    }
+  }
+
   function renderCurrentQuestion(state) {
     if (state.bossMode || !state.question) return;
 
@@ -101,15 +144,22 @@ async function main() {
     if (lastRenderedSheetIndex !== null && state.sheetIndex !== lastRenderedSheetIndex) {
       grid.clearAllCells();
       setActiveSheetTab(state.sheetIndex);
-      replayHistory(grid, state.historyBySheet[state.sheetIndex] || []);
+      replayHistory(grid, state.historyBySheet[state.sheetIndex] || [], wordsPerRowFor(state));
     }
     lastRenderedSheetIndex = state.sheetIndex;
     viewingArchivedSheet = false;
 
-    const cellPos = nextWordCellPosition(state.cellIndex);
+    const cellPos = cellPositionFor(state);
     showWordInCell(grid, cellPos, state.question.display);
-    renderQuestion(state.question, handleChoiceClick, handleDontKnowClick);
+    renderQuizPanelForState(state);
     updateStatsPanel(state);
+  }
+
+  /** Ends example mode's reading pause and reveals the choices for the same question. */
+  function continueToReveal() {
+    if (!pendingReveal) return;
+    const state = engine.revealChoices();
+    renderCurrentQuestion(state);
   }
 
   /** Sheet tab click: browse an old sheet's history (read-only) or return to the live one. */
@@ -120,14 +170,14 @@ async function main() {
     const clickedIndex = parseInt(sheetIndexStr, 10);
     grid.clearAllCells();
     setActiveSheetTab(clickedIndex);
-    replayHistory(grid, state.historyBySheet[clickedIndex] || []);
+    replayHistory(grid, state.historyBySheet[clickedIndex] || [], wordsPerRowFor(state));
     lastRenderedSheetIndex = clickedIndex;
 
     if (clickedIndex === state.sheetIndex) {
       viewingArchivedSheet = false;
-      const cellPos = nextWordCellPosition(state.cellIndex);
+      const cellPos = cellPositionFor(state);
       showWordInCell(grid, cellPos, state.question.display);
-      renderQuestion(state.question, handleChoiceClick, handleDontKnowClick);
+      renderQuizPanelForState(state);
       updateStatsPanel(state);
     } else {
       viewingArchivedSheet = true;
@@ -156,16 +206,21 @@ async function main() {
   function persistAll() {
     const state = engine.getState();
     saveProgress(progress);
-    saveSession({
-      question: state.question,
-      combo: state.combo,
-      longestCombo: state.longestCombo,
-      position: state.position,
-      cellIndex: state.cellIndex,
-      sheetIndex: state.sheetIndex,
-      historyBySheet: state.historyBySheet,
-      bossMode: state.bossMode
-    });
+    // Example mode is ephemeral (like Boss Mode) — only classic mode's question/
+    // sheet/history is ever saved as the resumable session, so restart always
+    // comes back into classic mode rather than mid-sentence in example mode.
+    if (state.modeName === 'classic') {
+      saveSession({
+        question: state.question,
+        combo: state.combo,
+        longestCombo: state.longestCombo,
+        position: state.position,
+        cellIndex: state.cellIndex,
+        sheetIndex: state.sheetIndex,
+        historyBySheet: state.historyBySheet,
+        bossMode: state.bossMode
+      });
+    }
     upsertDailyLog(buildDailySummary());
   }
 
@@ -178,10 +233,11 @@ async function main() {
     awaitingAdvance = true;
 
     const state = engine.getState();
-    const cellPos = nextWordCellPosition(state.cellIndex);
+    const cellPos = cellPositionFor(state);
     showAnswerFeedback(grid, cellPos, state.question.display, result.wasCorrect, result.answerText);
     markChoiceResult(result.chosenIndex, result.wasCorrect);
     if (!result.wasCorrect) highlightCorrectChoice(result.correctIndex);
+    if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     updateStatsPanel(state);
     persistAll();
 
@@ -204,9 +260,10 @@ async function main() {
     pendingContinue = true;
 
     const state = engine.getState();
-    const cellPos = nextWordCellPosition(state.cellIndex);
+    const cellPos = cellPositionFor(state);
     showAnswerFeedback(grid, cellPos, state.question.display, false, result.answerText);
     highlightCorrectChoice(result.correctIndex);
+    if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     switchDontKnowToContinue(continueAfterDontKnow);
     updateStatsPanel(state);
     persistAll();
@@ -227,11 +284,50 @@ async function main() {
     const preState = engine.getState();
     if (preState.bossMode) return;
     pendingContinue = false;
+    pendingReveal = false;
     awaitingAdvance = false;
 
     const state = engine.clearSheet();
     renderCurrentQuestion(state);
     persistAll();
+  }
+
+  /** "예문 모드" ribbon button: toggles classic <-> example. Ephemeral, like Boss Mode — no resume state either way. */
+  function handleToggleExampleMode() {
+    const preState = engine.getState();
+    if (preState.bossMode) return;
+    pendingContinue = false;
+    pendingReveal = false;
+    awaitingAdvance = false;
+    viewingArchivedSheet = false;
+
+    const nextModeName = preState.modeName === 'example' ? 'classic' : 'example';
+    const state = engine.switchMode(nextModeName);
+    setExampleModeActive(state.modeName === 'example');
+
+    grid.clearAllCells();
+    lastRenderedSheetIndex = state.sheetIndex;
+    setActiveSheetTab(state.sheetIndex);
+    replayHistory(grid, state.historyBySheet[state.sheetIndex] || [], wordsPerRowFor(state));
+    renderCurrentQuestion(state);
+    persistAll();
+  }
+
+  /** "파일" ribbon tab's "통합 문서 관리" button: the desktop equivalent of the web app's 기록 관리 dialog. */
+  function handleManageWorkbook() {
+    if (engine.getState().bossMode) return;
+    showManageDialog({
+      onResetToday: () => {
+        resetTodayStats(progress);
+        updateStatsPanel(engine.getState());
+        persistAll();
+      },
+      onResetAll: () => {
+        resetAllProgress(progress);
+        updateStatsPanel(engine.getState());
+        persistAll();
+      }
+    });
   }
 
   function toggleBossMode() {
@@ -243,7 +339,7 @@ async function main() {
         const restored = engine.getState();
         viewingArchivedSheet = false;
         setActiveSheetTab(restored.sheetIndex);
-        replayHistory(grid, restored.historyBySheet[restored.sheetIndex] || []);
+        replayHistory(grid, restored.historyBySheet[restored.sheetIndex] || [], wordsPerRowFor(restored));
         renderCurrentQuestion(restored);
       });
     }
@@ -266,6 +362,12 @@ async function main() {
 
     // Browsing an old sheet's history — click back to the live tab to keep playing.
     if (viewingArchivedSheet) return;
+
+    if (pendingReveal) {
+      event.preventDefault();
+      continueToReveal();
+      return;
+    }
 
     if (pendingContinue) {
       event.preventDefault();
@@ -290,7 +392,7 @@ async function main() {
   // "sheet changed" mismatch and clear the cells replayHistory() just drew.
   lastRenderedSheetIndex = initialState.sheetIndex;
   setActiveSheetTab(initialState.sheetIndex);
-  replayHistory(grid, initialState.historyBySheet[initialState.sheetIndex] || []);
+  replayHistory(grid, initialState.historyBySheet[initialState.sheetIndex] || [], wordsPerRowFor(initialState));
   renderCurrentQuestion(initialState);
   persistAll();
 

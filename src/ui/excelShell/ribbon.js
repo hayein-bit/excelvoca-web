@@ -1,3 +1,10 @@
+const FILE_GROUPS = [
+  {
+    label: '정보',
+    buttons: [{ icon: '🗂', text: '통합 문서 관리', action: 'manageWorkbook' }]
+  }
+];
+
 const HOME_GROUPS = [
   { label: '클립보드', buttons: [{ icon: '📋', text: '붙여넣기' }] },
   {
@@ -43,17 +50,25 @@ const HOME_GROUPS = [
       { icon: '🔍', text: '찾기' },
       { icon: '🧹', text: '지우기', action: 'clearSheet' }
     ]
+  },
+  {
+    label: '모드',
+    buttons: [{ icon: '📖', text: '예문 모드', action: 'toggleExampleMode' }]
   }
 ];
 
-export function initRibbon({ onClearSheet } = {}) {
+// Tracked at module scope (not per-render) so the "pressed" look survives the
+// user clicking away to another ribbon tab and back to Home.
+let exampleModeActive = false;
+
+export function initRibbon({ onClearSheet, onManageWorkbook, onToggleExampleMode } = {}) {
   const tabs = document.querySelectorAll('.ribbon-tab');
   const body = document.getElementById('ribbon-body');
-  const actions = { clearSheet: onClearSheet };
+  const actions = { clearSheet: onClearSheet, manageWorkbook: onManageWorkbook, toggleExampleMode: onToggleExampleMode };
 
-  function renderHome() {
+  function renderGroups(groups) {
     body.innerHTML = '';
-    HOME_GROUPS.forEach((group) => {
+    groups.forEach((group) => {
       const groupEl = document.createElement('div');
       groupEl.className = 'ribbon-group';
 
@@ -62,6 +77,8 @@ export function initRibbon({ onClearSheet } = {}) {
       group.buttons.forEach((btn) => {
         const btnEl = document.createElement('div');
         btnEl.className = 'ribbon-btn';
+        btnEl.dataset.action = btn.action || '';
+        if (btn.action === 'toggleExampleMode' && exampleModeActive) btnEl.classList.add('active');
         const iconEl = document.createElement('span');
         iconEl.className = 'ribbon-btn-icon';
         iconEl.textContent = btn.icon;
@@ -85,6 +102,14 @@ export function initRibbon({ onClearSheet } = {}) {
     });
   }
 
+  function renderHome() {
+    renderGroups(HOME_GROUPS);
+  }
+
+  function renderFile() {
+    renderGroups(FILE_GROUPS);
+  }
+
   function renderPlaceholder(tabLabel) {
     body.innerHTML = '';
     const groupEl = document.createElement('div');
@@ -102,9 +127,17 @@ export function initRibbon({ onClearSheet } = {}) {
       tabs.forEach((t) => t.classList.remove('active'));
       tab.classList.add('active');
       if (tab.dataset.tab === 'home') renderHome();
+      else if (tab.dataset.tab === 'file') renderFile();
       else renderPlaceholder(tab.textContent);
     });
   });
 
   renderHome();
+}
+
+/** Reflects example-mode on/off as a pressed look on the ribbon button, if it's currently rendered. */
+export function setExampleModeActive(value) {
+  exampleModeActive = value;
+  const btn = document.querySelector('.ribbon-btn[data-action="toggleExampleMode"]');
+  if (btn) btn.classList.toggle('active', value);
 }

@@ -15,6 +15,12 @@ const ROW_COUNT = 18; // last word row lands on displayed row 36 (2 + (18-1)*2 =
 
 export const CELLS_PER_SHEET = WORDS_PER_ROW * ROW_COUNT;
 
+// Example-mode sentences are much longer than a bare word, so they get one
+// per row-pair instead of 5 crammed across — same ROW_COUNT row-pairs per
+// sheet, just one question filling each instead of five.
+export const EXAMPLE_WORDS_PER_ROW = 1;
+export const EXAMPLE_CELLS_PER_SHEET = EXAMPLE_WORDS_PER_ROW * ROW_COUNT;
+
 function colLabel(index) {
   return String.fromCharCode(65 + index);
 }
@@ -23,11 +29,15 @@ export function cellRef(c, r) {
   return `${colLabel(c)}${r + 1}`;
 }
 
-/** Deterministic "next cell to fill" for a given 1-based question position. */
-export function nextWordCellPosition(position) {
+/**
+ * Deterministic "next cell to fill" for a given 1-based question position.
+ * `wordsPerRow` defaults to the classic-mode layout (5 across); pass
+ * `EXAMPLE_WORDS_PER_ROW` for example mode's one-per-row layout.
+ */
+export function nextWordCellPosition(position, wordsPerRow = WORDS_PER_ROW) {
   const idx = position - 1;
-  const colOffset = idx % WORDS_PER_ROW;
-  const pairOffset = Math.floor(idx / WORDS_PER_ROW) % ROW_COUNT;
+  const colOffset = idx % wordsPerRow;
+  const pairOffset = Math.floor(idx / wordsPerRow) % ROW_COUNT;
   const row = ROW_START + pairOffset * 2;
   return { col: WORD_COL_START + colOffset, row, answerRow: row + 1 };
 }
