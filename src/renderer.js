@@ -237,9 +237,17 @@ async function main() {
     showAnswerFeedback(grid, cellPos, state.question.display, result.wasCorrect, result.answerText);
     markChoiceResult(result.chosenIndex, result.wasCorrect);
     if (!result.wasCorrect) highlightCorrectChoice(result.correctIndex);
-    if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     updateStatsPanel(state);
     persistAll();
+
+    // Example mode's translation is meant to be read, not glimpsed on a timer —
+    // wait for the user's own "continue" (any key/click), same as "모르겠다".
+    if (state.modeName === 'example') {
+      showTranslationReveal(state.question.exampleKo);
+      pendingContinue = true;
+      switchDontKnowToContinue(continueAfterDontKnow);
+      return;
+    }
 
     const delay = result.wasCorrect ? CORRECT_ADVANCE_DELAY_MS : WRONG_ADVANCE_DELAY_MS;
     setTimeout(() => {
