@@ -41,7 +41,12 @@
   </div>
 
   <main id="app">
-    <button id="mode-toggle-btn" class="mode-toggle">📖 예문 모드</button>
+    <div class="mode-switcher">
+      <button class="mode-btn active" data-mode="classic">🔤 클래식</button>
+      <button class="mode-btn" data-mode="example">📖 예문</button>
+      <button class="mode-btn" data-mode="typing">⌨️ 타이핑</button>
+      <button class="mode-btn" data-mode="matching">🔗 매칭</button>
+    </div>
     <div id="word-display" class="word-display"></div>
     <div id="quiz-panel" class="panel"></div>
     <div id="stats-panel" class="panel"></div>

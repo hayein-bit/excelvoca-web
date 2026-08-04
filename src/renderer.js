@@ -13,7 +13,7 @@ import { upsertDailyLog } from './storage/dailyLogStore.js';
 import { createGameEngine } from './game/gameEngine.js';
 import { computeRank } from './game/rankSystem.js';
 import { initGrid, nextWordCellPosition, EXAMPLE_WORDS_PER_ROW } from './ui/excelShell/grid.js';
-import { initRibbon, setExampleModeActive } from './ui/excelShell/ribbon.js';
+import { initRibbon, setActiveMode } from './ui/excelShell/ribbon.js';
 import { initSheetTabs, setActiveSheetTab } from './ui/excelShell/sheetTabs.js';
 import { setStatusLeft, setStatusRight } from './ui/excelShell/statusBar.js';
 import {
@@ -22,7 +22,11 @@ import {
   showTranslationReveal,
   markChoiceResult,
   highlightCorrectChoice,
-  switchDontKnowToContinue
+  switchDontKnowToContinue,
+  renderTypingQuestion,
+  markTypingResult,
+  renderMatchingPanel,
+  flashMatchWrong
 } from './ui/game/quizPanel.js';
 import { renderStats } from './ui/game/statsPanel.js';
 import { showWordInCell, showAnswerFeedback, replayHistory } from './ui/game/feedback.js';
@@ -47,10 +51,10 @@ async function main() {
   initRibbon({
     onClearSheet: handleClearSheet,
     onManageWorkbook: handleManageWorkbook,
-    onToggleExampleMode: handleToggleExampleMode
+    onSwitchMode: handleSwitchMode
   });
   initSheetTabs(handleSheetTabClick);
-  const grid = initGrid();
+  const grid = initGrid({ onCellClick: handleGridCellClick });
   setStatusLeft('준비');
 
   const [words, progress, session, settings] = await Promise.all([
@@ -121,12 +125,16 @@ async function main() {
   /**
    * Example mode's questions have a reading phase (sentence only, no choices
    * yet) before the choices phase — classic mode's `state.phase` is always
-   * undefined, so it always takes the normal `renderQuestion` branch.
+   * undefined, so it always takes the normal `renderQuestion` branch. Typing
+   * mode has no choices at all, so it gets its own render function.
    */
   function renderQuizPanelForState(state) {
     if (state.modeName === 'example' && state.phase === 'reading') {
       pendingReveal = true;
       renderReadingPhase(state.question, continueToReveal);
+    } else if (state.modeName === 'typing') {
+      pendingReveal = false;
+      renderTypingQuestion(state.question, handleTypingSubmit, handleDontKnowClick);
     } else {
       pendingReveal = false;
       renderQuestion(state.question, handleChoiceClick, handleDontKnowClick, {
@@ -135,8 +143,41 @@ async function main() {
     }
   }
 
+  /**
+   * Matching mode has no single "current question" — a whole round of
+   * ROUND_SIZE pairs is the unit, so it's rendered entirely separately from
+   * the single-question modes below (5 grid cells instead of 1, no formula
+   * bar, panel shows the Korean half as clickable rows).
+   */
+  function renderMatchingRoundUI(state) {
+    if (lastRenderedSheetIndex !== null && state.sheetIndex !== lastRenderedSheetIndex) {
+      grid.clearAllCells();
+      setActiveSheetTab(state.sheetIndex);
+      replayHistory(grid, state.historyBySheet[state.sheetIndex] || [], wordsPerRowFor(state));
+    }
+    lastRenderedSheetIndex = state.sheetIndex;
+    viewingArchivedSheet = false;
+
+    state.left.forEach((item, i) => {
+      const pos = nextWordCellPosition(state.roundStartCellIndex + i);
+      grid.setCellText(pos.col, pos.row, item.text, item.matched ? 'correct' : undefined);
+      if (item.matched) {
+        const rightItem = state.right.find((r) => r.key === item.key);
+        if (rightItem) grid.setCellText(pos.col, pos.answerRow, rightItem.text);
+      }
+    });
+
+    renderMatchingPanel(state, (index) => handleMatchingSelect('right', index));
+    updateStatsPanel(state);
+  }
+
   function renderCurrentQuestion(state) {
-    if (state.bossMode || !state.question) return;
+    if (state.bossMode) return;
+    if (state.modeName === 'matching') {
+      renderMatchingRoundUI(state);
+      return;
+    }
+    if (!state.question) return;
 
     // Sheet changed since the last render (filled up, or manually cleared) —
     // wipe the grid, switch tabs, and redraw that (now-live) sheet's own
@@ -153,6 +194,81 @@ async function main() {
     showWordInCell(grid, cellPos, state.question.display);
     renderQuizPanelForState(state);
     updateStatsPanel(state);
+  }
+
+  /** Grid cells are only clickable as matching-mode's "left" column — a no-op in every other mode. */
+  function handleGridCellClick(col, row) {
+    const state = engine.getState();
+    if (state.modeName !== 'matching' || state.bossMode || viewingArchivedSheet) return;
+    for (let i = 0; i < state.left.length; i++) {
+      const pos = nextWordCellPosition(state.roundStartCellIndex + i);
+      if (pos.col === col && pos.row === row) {
+        if (!state.left[i].matched) handleMatchingSelect('left', i);
+        return;
+      }
+    }
+  }
+
+  /** Matching mode: records a left/right selection; evaluates once both sides have one. */
+  function handleMatchingSelect(side, index) {
+    const preState = engine.getState();
+    if (preState.bossMode || viewingArchivedSheet || awaitingAdvance) return;
+
+    const result = engine.submitAnswer({ side, index });
+    if (!result) return;
+
+    if (result.evaluated && !result.wasCorrect) {
+      awaitingAdvance = true;
+      const state = engine.getState();
+      flashMatchWrong(result.rightIndex, 'right');
+      const pos = nextWordCellPosition(state.roundStartCellIndex + result.leftIndex);
+      grid.setCellText(pos.col, pos.row, state.left[result.leftIndex].text, 'wrong');
+      persistAll();
+      setTimeout(() => {
+        renderCurrentQuestion(engine.getState());
+        awaitingAdvance = false;
+      }, 500);
+      return;
+    }
+
+    const state = engine.getState();
+    persistAll();
+    renderCurrentQuestion(state);
+
+    if (result.evaluated && result.roundComplete) {
+      awaitingAdvance = true;
+      setTimeout(() => {
+        const nextState = engine.advance();
+        renderCurrentQuestion(nextState);
+        persistAll();
+        awaitingAdvance = false;
+      }, 700);
+    }
+  }
+
+  /** Typing mode: `typedText` comes straight from the input, compared inside the mode itself. */
+  function handleTypingSubmit(typedText) {
+    const preState = engine.getState();
+    if (preState.bossMode || awaitingAdvance || viewingArchivedSheet) return;
+
+    const result = engine.submitAnswer(typedText);
+    if (!result) return;
+    awaitingAdvance = true;
+
+    const state = engine.getState();
+    const cellPos = cellPositionFor(state);
+    showAnswerFeedback(grid, cellPos, state.question.display, result.wasCorrect, result.answerText);
+    markTypingResult(result.wasCorrect);
+    updateStatsPanel(state);
+    persistAll();
+
+    const delay = result.wasCorrect ? CORRECT_ADVANCE_DELAY_MS : WRONG_ADVANCE_DELAY_MS;
+    setTimeout(() => {
+      const nextState = engine.advance();
+      renderCurrentQuestion(nextState);
+      persistAll();
+      awaitingAdvance = false;
+    }, delay);
   }
 
   /** Ends example mode's reading pause and reveals the choices for the same question. */
@@ -175,10 +291,7 @@ async function main() {
 
     if (clickedIndex === state.sheetIndex) {
       viewingArchivedSheet = false;
-      const cellPos = cellPositionFor(state);
-      showWordInCell(grid, cellPos, state.question.display);
-      renderQuizPanelForState(state);
-      updateStatsPanel(state);
+      renderCurrentQuestion(state);
     } else {
       viewingArchivedSheet = true;
     }
@@ -270,7 +383,9 @@ async function main() {
     const state = engine.getState();
     const cellPos = cellPositionFor(state);
     showAnswerFeedback(grid, cellPos, state.question.display, false, result.answerText);
-    highlightCorrectChoice(result.correctIndex);
+    // Typing mode has no choices to highlight — result.correctIndex is only present for classic/example.
+    if (result.correctIndex !== undefined) highlightCorrectChoice(result.correctIndex);
+    if (state.modeName === 'typing') markTypingResult(false);
     if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     switchDontKnowToContinue(continueAfterDontKnow);
     updateStatsPanel(state);
@@ -300,18 +415,17 @@ async function main() {
     persistAll();
   }
 
-  /** "예문 모드" ribbon button: toggles classic <-> example. Ephemeral, like Boss Mode — no resume state either way. */
-  function handleToggleExampleMode() {
+  /** Ribbon mode buttons: switches directly to `name`. Non-classic modes are ephemeral — no resume state either way. */
+  function handleSwitchMode(name) {
     const preState = engine.getState();
-    if (preState.bossMode) return;
+    if (preState.bossMode || preState.modeName === name) return;
     pendingContinue = false;
     pendingReveal = false;
     awaitingAdvance = false;
     viewingArchivedSheet = false;
 
-    const nextModeName = preState.modeName === 'example' ? 'classic' : 'example';
-    const state = engine.switchMode(nextModeName);
-    setExampleModeActive(state.modeName === 'example');
+    const state = engine.switchMode(name);
+    setActiveMode(state.modeName);
 
     grid.clearAllCells();
     lastRenderedSheetIndex = state.sheetIndex;
@@ -364,6 +478,10 @@ async function main() {
     }
 
     if (engine.getState().bossMode) return;
+
+    // Typing mode's input needs every other keystroke (letters/digits/Enter)
+    // to reach it untouched — only Tab (Boss Mode, handled above) is still intercepted.
+    if (document.activeElement && document.activeElement.classList.contains('quiz-typing-input')) return;
 
     // Let Ctrl/Cmd shortcuts (e.g. copying a cell selection) through untouched.
     if (event.ctrlKey || event.metaKey) return;

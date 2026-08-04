@@ -53,18 +53,23 @@ const HOME_GROUPS = [
   },
   {
     label: '모드',
-    buttons: [{ icon: '📖', text: '예문 모드', action: 'toggleExampleMode' }]
+    buttons: [
+      { icon: '🔤', text: '클래식', mode: 'classic' },
+      { icon: '📖', text: '예문', mode: 'example' },
+      { icon: '⌨️', text: '타이핑', mode: 'typing' },
+      { icon: '🔗', text: '매칭', mode: 'matching' }
+    ]
   }
 ];
 
 // Tracked at module scope (not per-render) so the "pressed" look survives the
 // user clicking away to another ribbon tab and back to Home.
-let exampleModeActive = false;
+let activeMode = 'classic';
 
-export function initRibbon({ onClearSheet, onManageWorkbook, onToggleExampleMode } = {}) {
+export function initRibbon({ onClearSheet, onManageWorkbook, onSwitchMode } = {}) {
   const tabs = document.querySelectorAll('.ribbon-tab');
   const body = document.getElementById('ribbon-body');
-  const actions = { clearSheet: onClearSheet, manageWorkbook: onManageWorkbook, toggleExampleMode: onToggleExampleMode };
+  const actions = { clearSheet: onClearSheet, manageWorkbook: onManageWorkbook };
 
   function renderGroups(groups) {
     body.innerHTML = '';
@@ -77,8 +82,12 @@ export function initRibbon({ onClearSheet, onManageWorkbook, onToggleExampleMode
       group.buttons.forEach((btn) => {
         const btnEl = document.createElement('div');
         btnEl.className = 'ribbon-btn';
-        btnEl.dataset.action = btn.action || '';
-        if (btn.action === 'toggleExampleMode' && exampleModeActive) btnEl.classList.add('active');
+        if (btn.mode) {
+          btnEl.dataset.mode = btn.mode;
+          if (btn.mode === activeMode) btnEl.classList.add('active');
+        } else {
+          btnEl.dataset.action = btn.action || '';
+        }
         const iconEl = document.createElement('span');
         iconEl.className = 'ribbon-btn-icon';
         iconEl.textContent = btn.icon;
@@ -86,7 +95,9 @@ export function initRibbon({ onClearSheet, onManageWorkbook, onToggleExampleMode
         textEl.textContent = btn.text;
         btnEl.appendChild(iconEl);
         btnEl.appendChild(textEl);
-        if (btn.action && actions[btn.action]) {
+        if (btn.mode && onSwitchMode) {
+          btnEl.addEventListener('click', () => onSwitchMode(btn.mode));
+        } else if (btn.action && actions[btn.action]) {
           btnEl.addEventListener('click', actions[btn.action]);
         }
         buttonsEl.appendChild(btnEl);
@@ -135,9 +146,10 @@ export function initRibbon({ onClearSheet, onManageWorkbook, onToggleExampleMode
   renderHome();
 }
 
-/** Reflects example-mode on/off as a pressed look on the ribbon button, if it's currently rendered. */
-export function setExampleModeActive(value) {
-  exampleModeActive = value;
-  const btn = document.querySelector('.ribbon-btn[data-action="toggleExampleMode"]');
-  if (btn) btn.classList.toggle('active', value);
+/** Reflects the active mode as a pressed look on the matching ribbon button, if it's currently rendered. */
+export function setActiveMode(modeName) {
+  activeMode = modeName;
+  document.querySelectorAll('.ribbon-btn[data-mode]').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.mode === modeName);
+  });
 }

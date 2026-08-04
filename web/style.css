@@ -177,18 +177,112 @@ body {
   border-radius: 4px;
 }
 
-.mode-toggle {
-  align-self: center;
+.quiz-typing-form {
+  display: flex;
+  gap: 8px;
+  margin: 10px;
+}
+
+.quiz-typing-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text);
+}
+
+.quiz-typing-input:focus {
+  outline: none;
+  border-color: var(--color-office-blue);
+}
+
+.quiz-typing-input.correct {
+  background: var(--color-correct-bg);
+  color: var(--color-correct-text);
+  border-color: var(--color-correct-text);
+}
+
+.quiz-typing-input.wrong {
+  background: var(--color-wrong-bg);
+  color: var(--color-wrong-text);
+  border-color: var(--color-wrong-text);
+}
+
+.quiz-typing-submit {
+  padding: 12px 18px;
+  font-size: 14px;
+  background: var(--color-office-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quiz-match-columns {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px 10px;
+}
+
+.quiz-match-columns .quiz-match-list {
+  flex: 1;
+  padding: 0;
+}
+
+.quiz-match-list {
+  padding: 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quiz-match-item {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.quiz-match-item.selected {
+  border-color: var(--color-office-blue);
+  box-shadow: inset 0 0 0 2px var(--color-office-blue);
+}
+
+.quiz-match-item.matched {
+  background: var(--color-correct-bg);
+  color: var(--color-correct-text);
+  border-color: var(--color-correct-text);
+  cursor: default;
+}
+
+.quiz-match-item.wrong {
+  background: var(--color-wrong-bg);
+  color: var(--color-wrong-text);
+  border-color: var(--color-wrong-text);
+}
+
+.mode-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.mode-btn {
   background: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   font-size: 13px;
   color: var(--color-text);
   cursor: pointer;
 }
 
-.mode-toggle.active {
+.mode-btn.active {
   background: var(--color-office-blue);
   color: #ffffff;
   border-color: var(--color-office-blue);

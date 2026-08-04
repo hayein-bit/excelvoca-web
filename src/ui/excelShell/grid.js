@@ -9,7 +9,7 @@ const MIN_COL_WIDTH = 50;
 // sheet tab, so ROW_COUNT row-pairs never actually needs to wrap within a sheet
 // in normal play — the modulo below is just a defensive fallback.
 const WORD_COL_START = 2; // C
-const WORDS_PER_ROW = 5; // C, D, E, F, G
+export const WORDS_PER_ROW = 5; // C, D, E, F, G — also matching mode's fixed round size, one row per round
 const ROW_START = 2; // row index 2 == displayed row "3"
 const ROW_COUNT = 18; // last word row lands on displayed row 36 (2 + (18-1)*2 == 36)
 

@@ -1,10 +1,14 @@
 import { registerMode, getMode } from './modes/modeRegistry.js';
 import { createClassicMode } from './modes/classicMode.js';
 import { createExampleMode } from './modes/exampleMode.js';
+import { createTypingMode } from './modes/typingMode.js';
+import { createMatchingMode } from './modes/matchingMode.js';
 import { createComboState } from './comboTracker.js';
 
 registerMode('classic', createClassicMode);
 registerMode('example', createExampleMode);
+registerMode('typing', createTypingMode);
+registerMode('matching', createMatchingMode);
 
 /**
  * Thin coordinator around the active game mode: owns the boss-mode flag

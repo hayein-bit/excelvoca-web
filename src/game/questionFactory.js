@@ -82,3 +82,24 @@ export function buildExampleQuestion(wordObj) {
     correctIndex
   };
 }
+
+/**
+ * Builds a question for typing mode: the Korean meaning is shown (like
+ * `buildQuestion`'s reverse direction) but there are no choices at all — the
+ * user types the English word/phrase themselves. Direction is always this
+ * way around (never "type the Korean meaning"): matching free-typed Korean
+ * against a word's synonym-separated meaning reliably isn't practical, but
+ * matching a typed English word only needs a trimmed, case-insensitive
+ * string comparison against `correctAnswer`.
+ */
+export function buildTypingQuestion(wordObj) {
+  return {
+    key: wordObj.key,
+    word: wordObj.word,
+    pos: wordObj.pos,
+    display: wordObj.meaning,
+    reverse: true,
+    level: wordObj.level,
+    correctAnswer: wordObj.word
+  };
+}

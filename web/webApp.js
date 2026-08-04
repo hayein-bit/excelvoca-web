@@ -24,7 +24,11 @@ import {
   showTranslationReveal,
   markChoiceResult,
   highlightCorrectChoice,
-  switchDontKnowToContinue
+  switchDontKnowToContinue,
+  renderTypingQuestion,
+  markTypingResult,
+  renderMatchingPanel,
+  flashMatchWrong
 } from '../src/ui/game/quizPanel.js';
 import { renderStats } from '../src/ui/game/statsPanel.js';
 import { showResumeDialog } from '../src/ui/dialogs/resumeDialog.js';
@@ -140,11 +144,27 @@ async function main() {
   }
 
   function renderCurrentQuestion(state) {
+    // Matching mode has no single "current question" — the web version has no
+    // grid to put the English half in, so both halves render in the panel.
+    if (state.modeName === 'matching') {
+      document.getElementById('word-display').textContent = '매칭 모드';
+      renderMatchingPanel(
+        state,
+        (index) => handleMatchingSelect('right', index),
+        (index) => handleMatchingSelect('left', index)
+      );
+      updateStatsPanel(state);
+      return;
+    }
+
     if (!state.question) return;
     document.getElementById('word-display').textContent = state.question.display;
     if (state.modeName === 'example' && state.phase === 'reading') {
       pendingReveal = true;
       renderReadingPhase(state.question, continueToReveal);
+    } else if (state.modeName === 'typing') {
+      pendingReveal = false;
+      renderTypingQuestion(state.question, handleTypingSubmit, handleDontKnowClick);
     } else {
       pendingReveal = false;
       renderQuestion(state.question, handleChoiceClick, handleDontKnowClick, {
@@ -161,17 +181,73 @@ async function main() {
     renderCurrentQuestion(state);
   }
 
-  /** Toggles classic <-> example, mirroring src/renderer.js's ribbon-button handler. */
-  function handleToggleExampleMode() {
+  /** Mode-switcher buttons: switches directly to `name`, mirroring src/renderer.js's ribbon buttons. */
+  function handleSwitchMode(name) {
+    if (engine.getState().modeName === name) return;
     pendingContinue = false;
     pendingReveal = false;
     awaitingAdvance = false;
 
-    const nextModeName = engine.getState().modeName === 'example' ? 'classic' : 'example';
-    const state = engine.switchMode(nextModeName);
-    document.getElementById('mode-toggle-btn').classList.toggle('active', state.modeName === 'example');
+    const state = engine.switchMode(name);
+    document.querySelectorAll('.mode-btn').forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.mode === state.modeName);
+    });
     renderCurrentQuestion(state);
     persistAll();
+  }
+
+  /** Matching mode: records a left/right selection; evaluates once both sides have one. */
+  function handleMatchingSelect(side, index) {
+    if (awaitingAdvance) return;
+    const result = engine.submitAnswer({ side, index });
+    if (!result) return;
+
+    if (result.evaluated && !result.wasCorrect) {
+      awaitingAdvance = true;
+      flashMatchWrong(result.rightIndex, 'right');
+      flashMatchWrong(result.leftIndex, 'left');
+      persistAll();
+      setTimeout(() => {
+        renderCurrentQuestion(engine.getState());
+        awaitingAdvance = false;
+      }, 500);
+      return;
+    }
+
+    const state = engine.getState();
+    persistAll();
+    renderCurrentQuestion(state);
+
+    if (result.evaluated && result.roundComplete) {
+      awaitingAdvance = true;
+      setTimeout(() => {
+        const nextState = engine.advance();
+        renderCurrentQuestion(nextState);
+        persistAll();
+        awaitingAdvance = false;
+      }, 700);
+    }
+  }
+
+  /** Typing mode: `typedText` comes straight from the input, compared inside the mode itself. */
+  function handleTypingSubmit(typedText) {
+    if (awaitingAdvance) return;
+    const result = engine.submitAnswer(typedText);
+    if (!result) return;
+    awaitingAdvance = true;
+
+    const state = engine.getState();
+    markTypingResult(result.wasCorrect);
+    updateStatsPanel(state);
+    persistAll();
+
+    const delay = result.wasCorrect ? CORRECT_ADVANCE_DELAY_MS : WRONG_ADVANCE_DELAY_MS;
+    setTimeout(() => {
+      const nextState = engine.advance();
+      renderCurrentQuestion(nextState);
+      persistAll();
+      awaitingAdvance = false;
+    }, delay);
   }
 
   function buildDailySummary() {
@@ -248,7 +324,9 @@ async function main() {
     pendingContinue = true;
 
     const state = engine.getState();
-    highlightCorrectChoice(result.correctIndex);
+    // Typing mode has no choices to highlight — result.correctIndex is only present for classic/example.
+    if (result.correctIndex !== undefined) highlightCorrectChoice(result.correctIndex);
+    if (state.modeName === 'typing') markTypingResult(false);
     if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     switchDontKnowToContinue(continueAfterDontKnow);
     updateStatsPanel(state);
@@ -267,6 +345,9 @@ async function main() {
 
   function handleKeydown(event) {
     const action = resolveAction(event, settings.shortcuts);
+
+    // Typing mode's input needs every other keystroke (letters/digits/Enter) to reach it untouched.
+    if (document.activeElement && document.activeElement.classList.contains('quiz-typing-input')) return;
 
     if (pendingReveal) {
       event.preventDefault();
@@ -312,7 +393,9 @@ async function main() {
   }
 
   setupManageUI();
-  document.getElementById('mode-toggle-btn').addEventListener('click', handleToggleExampleMode);
+  document.querySelectorAll('.mode-btn').forEach((btn) => {
+    btn.addEventListener('click', () => handleSwitchMode(btn.dataset.mode));
+  });
   renderCurrentQuestion(engine.getState());
   persistAll();
   window.addEventListener('keydown', handleKeydown);
