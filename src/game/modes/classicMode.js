@@ -1,7 +1,7 @@
 import { pickNext } from '../spacedRepetition.js';
 import { buildQuestion } from '../questionFactory.js';
 import { onCorrect, onWrong } from '../comboTracker.js';
-import { recordAnswer, getWordStat } from '../../storage/progressStore.js';
+import { recordAnswer } from '../../storage/progressStore.js';
 import { CELLS_PER_SHEET } from '../../ui/excelShell/grid.js';
 
 /**
@@ -34,10 +34,9 @@ export function createClassicMode({ words, progress, comboState }) {
 
   function nextQuestion() {
     const word = pickNext(words, progress, currentQuestion ? currentQuestion.key : null);
-    // Once a word has been answered correctly 2+ times, always quiz it in reverse
-    // (Korean meaning shown, pick the English word) instead of leaving it to chance.
-    const stat = getWordStat(progress, word.key);
-    const reverse = stat.correct >= 2 || Math.random() < REVERSE_PROBABILITY;
+    // Direction is purely random every time, regardless of how many times this
+    // word's been answered correctly before — no forced-reverse escalation.
+    const reverse = Math.random() < REVERSE_PROBABILITY;
     currentQuestion = buildQuestion(word, { reverse });
     // Lifetime "카운팅" count — shared with example mode via progress.stats
     // (see gameEngine.js), not a per-mode local variable.
