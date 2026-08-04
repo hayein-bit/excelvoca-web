@@ -157,6 +157,24 @@ export function showTranslationReveal(exampleKo) {
 }
 
 /**
+ * Appends a memory-hook collocation ("impulse purchase → 충동구매") to the
+ * panel on answer reveal, in classic/example/typing mode alike — only when
+ * that word has one curated (most rows don't, and that's fine; a forced
+ * mediocre collocation doesn't help the way a genuinely famous one does).
+ */
+export function showCollocationHint(collocation, collocationKo) {
+  const panel = document.getElementById('quiz-panel');
+  if (!panel || !collocation || !collocationKo) return;
+  let el = panel.querySelector('.quiz-collocation');
+  if (!el) {
+    el = document.createElement('div');
+    el.className = 'quiz-collocation';
+    panel.appendChild(el);
+  }
+  el.textContent = `💡 연상: ${collocation} (${collocationKo})`;
+}
+
+/**
  * Typing mode: no choices at all — a single text input the user types the
  * English word/phrase into. Auto-focused so play can continue without a
  * mouse click. Enter and the submit row both call `onSubmit(inputValue)`;

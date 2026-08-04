@@ -22,6 +22,7 @@ import {
   renderQuestion,
   renderReadingPhase,
   showTranslationReveal,
+  showCollocationHint,
   markChoiceResult,
   highlightCorrectChoice,
   switchDontKnowToContinue,
@@ -241,6 +242,14 @@ async function main() {
     updateStatsPanel(state);
     persistAll();
 
+    const hasHint = state.question.collocation && state.question.collocationKo;
+    if (hasHint) {
+      showCollocationHint(state.question.collocation, state.question.collocationKo);
+      pendingContinue = true;
+      switchDontKnowToContinue(continueAfterDontKnow);
+      return;
+    }
+
     const delay = result.wasCorrect ? CORRECT_ADVANCE_DELAY_MS : WRONG_ADVANCE_DELAY_MS;
     setTimeout(() => {
       const nextState = engine.advance();
@@ -298,10 +307,13 @@ async function main() {
     updateStatsPanel(state);
     persistAll();
 
-    // Example mode's translation is meant to be read, not glimpsed on a timer —
-    // wait for the user's own "continue" (any key/tap), same as "모르겠다".
-    if (state.modeName === 'example') {
-      showTranslationReveal(state.question.exampleKo);
+    // Example mode's translation (and any collocation hint) is meant to be
+    // read, not glimpsed on a timer — wait for the user's own "continue"
+    // (any key/tap), same as "모르겠다".
+    const hasHint = state.question.collocation && state.question.collocationKo;
+    if (state.modeName === 'example' || hasHint) {
+      if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
+      if (hasHint) showCollocationHint(state.question.collocation, state.question.collocationKo);
       pendingContinue = true;
       switchDontKnowToContinue(continueAfterDontKnow);
       return;
@@ -328,6 +340,7 @@ async function main() {
     if (result.correctIndex !== undefined) highlightCorrectChoice(result.correctIndex);
     if (state.modeName === 'typing') markTypingResult(false);
     if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
+    showCollocationHint(state.question.collocation, state.question.collocationKo);
     switchDontKnowToContinue(continueAfterDontKnow);
     updateStatsPanel(state);
     persistAll();
