@@ -16,8 +16,8 @@ function isSameDay(isoDate) {
 // [level1..level5] weight multipliers per rank index (0=Intern..7=CEO).
 // Lower rank favors easy words heavily; the balance shifts to harder words as rank rises.
 const LEVEL_WEIGHT_BY_RANK = [
-  [3.0, 1.5, 0.6, 0.2, 0.1], // Intern
-  [3.0, 1.5, 0.6, 0.2, 0.1], // Junior Analyst
+  [6.0, 1.0, 0.4, 0.15, 0.08], // Intern
+  [6.0, 1.0, 0.4, 0.15, 0.08], // Junior Analyst
   [1.8, 1.8, 1.0, 0.4, 0.2], // Analyst
   [1.8, 1.8, 1.0, 0.4, 0.2], // Senior Analyst
   [1.0, 1.3, 1.3, 0.9, 0.5], // Manager
