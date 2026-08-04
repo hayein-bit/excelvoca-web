@@ -52,20 +52,31 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
  * forward (read sentence -> pick meaning); there's no reverse variant.
  * `exampleKo` (the sentence's own Korean translation) rides along on the
  * question object purely for the answer-reveal step.
+ *
+ * Words with a second example (`example2`/`example2Ko`) get one of the two
+ * picked at random each time, so repeat exposure to a word doesn't turn into
+ * memorizing one fixed sentence instead of the word itself. Most rows don't
+ * have a second example yet, so this quietly falls back to the only one.
  */
 export function buildExampleQuestion(wordObj) {
   const distractors = getRandomOtherMeanings(wordObj.word, 3);
   const choices = shuffle([wordObj.meaning, ...distractors]);
   const correctIndex = choices.indexOf(wordObj.meaning);
 
+  const variants = [{ en: wordObj.example, ko: wordObj.exampleKo }];
+  if (wordObj.example2 && wordObj.example2Ko) {
+    variants.push({ en: wordObj.example2, ko: wordObj.example2Ko });
+  }
+  const chosen = variants[Math.floor(Math.random() * variants.length)];
+
   return {
     key: wordObj.key,
     word: wordObj.word,
     pos: wordObj.pos,
-    display: wordObj.example,
+    display: chosen.en,
     reverse: false,
-    example: wordObj.example,
-    exampleKo: wordObj.exampleKo,
+    example: chosen.en,
+    exampleKo: chosen.ko,
     level: wordObj.level,
     choices,
     correctIndex

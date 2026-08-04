@@ -64,7 +64,7 @@ function parseCsv(text) {
  * stays around purely for display/grouping.
  *
  * @param {string} text
- * @returns {Array<{key:string, word:string, meaning:string, pos:string, example:string, exampleKo:string, level:number}>}
+ * @returns {Array<{key:string, word:string, meaning:string, pos:string, example:string, exampleKo:string, example2:string, example2Ko:string, level:number}>}
  */
 export function loadWordsFromCsv(text) {
   const rows = parseCsv(text);
@@ -78,6 +78,8 @@ export function loadWordsFromCsv(text) {
   const posIdx = colIndex('pos');
   const exampleIdx = colIndex('example');
   const exampleKoIdx = colIndex('example_ko');
+  const example2Idx = colIndex('example2');
+  const example2KoIdx = colIndex('example2_ko');
   const levelIdx = colIndex('level');
 
   const words = [];
@@ -96,6 +98,10 @@ export function loadWordsFromCsv(text) {
       pos,
       example: (exampleIdx >= 0 ? r[exampleIdx] : '').trim(),
       exampleKo: (exampleKoIdx >= 0 ? r[exampleKoIdx] : '').trim(),
+      // Optional second example (see 예문 모드 in Architecture) — most rows don't
+      // have one yet, so example mode falls back to just the first when empty.
+      example2: (example2Idx >= 0 ? r[example2Idx] : '').trim(),
+      example2Ko: (example2KoIdx >= 0 ? r[example2KoIdx] : '').trim(),
       level: levelIdx >= 0 ? parseInt(r[levelIdx], 10) || 1 : 1
     });
   }
