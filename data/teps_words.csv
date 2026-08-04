@@ -1,12 +1,12 @@
-﻿word,meaning,pos,example,example_ko,example2,example2_ko,collocation,collocation_ko,level
-abandon,포기하다/버리다,v,"He abandoned the plan when funding fell through.","자금 지원이 끊기자 그는 그 계획을 포기했다.","They had to abandon the old warehouse after the fire.","그들은 화재 이후 그 오래된 창고를 버려야 했다.","","",1
+﻿word,meaning,pos,"example","example_ko","example2","example2_ko","collocation","collocation_ko",level
+abandon,포기하다/버리다,v,"He abandoned the plan when funding fell through.","자금 지원이 끊기자 그는 그 계획을 포기했다.","They had to abandon the old warehouse after the fire.","그들은 화재 이후 그 오래된 창고를 버려야 했다.","abandon ship","배를 버리고 도망치다",1
 abate,줄어들다/약화되다,v,"The storm finally began to abate after midnight.","폭풍은 자정이 지나서야 마침내 잦아들기 시작했다.","","","","",4
 abbreviate,줄이다/축약하다,v,"Please abbreviate the title for the header.","제목을 줄여서 머리글에 넣어 주세요.","","","","",3
 abduct,납치하다,v,"Police believe the suspect abducted the child.","경찰은 용의자가 그 아이를 납치했다고 보고 있다.","The gang abducted a wealthy businessman for ransom.","그 갱단은 몸값을 요구하려고 부유한 사업가를 납치했다.","","",2
 aberrant,정상에서 벗어난,adj,"The scientist noted an aberrant reading on the sensor.","과학자는 센서에서 비정상적인 수치를 발견했다.","","","","",5
 abhor,몹시 싫어하다,v,"She abhors any form of dishonesty.","그녀는 어떤 형태의 부정직함도 몹시 싫어한다.","","","","",4
 abide,따르다/준수하다,v,"Employees must abide by the safety rules.","직원들은 안전 수칙을 준수해야 한다.","","","","",3
-abolish,폐지하다,v,"The council voted to abolish the old tax.","의회는 오래된 세금을 폐지하기로 투표했다.","Slavery was formally abolished in the country decades ago.","노예 제도는 수십 년 전 그 나라에서 공식적으로 폐지되었다.","","",2
+abolish,폐지하다,v,"The council voted to abolish the old tax.","의회는 오래된 세금을 폐지하기로 투표했다.","Slavery was formally abolished in the country decades ago.","노예 제도는 수십 년 전 그 나라에서 공식적으로 폐지되었다.","abolish slavery","노예제를 폐지하다",2
 abrupt,갑작스러운,adj,"His abrupt departure surprised everyone.","그의 갑작스러운 퇴사는 모두를 놀라게 했다.","The meeting came to an abrupt end when the fire alarm rang.","화재 경보가 울리자 회의는 갑작스럽게 끝났다.","","",2
 abscond,몰래 도망치다,v,"The treasurer absconded with the club's funds.","회계 담당자가 동호회 자금을 가지고 몰래 도망쳤다.","","","","",5
 absolve,면죄하다/책임을 벗겨주다,v,"The report absolved the driver of any blame.","보고서는 운전자에게 아무런 잘못이 없다고 밝혔다.","","","","",5
@@ -14,14 +14,14 @@ abstain,자제하다/기권하다,v,"Two members chose to abstain from the vote.
 abundant,풍부한,adj,"The region has abundant natural resources.","그 지역은 천연자원이 풍부하다.","Fresh fruit was abundant at the local market this summer.","이번 여름 지역 시장에는 신선한 과일이 풍부했다.","","",2
 accede,동의하다/응하다,v,"The manager finally acceded to their request.","매니저는 결국 그들의 요청에 동의했다.","","","","",5
 accentuate,강조하다/두드러지게 하다,v,"The lighting accentuated the sharp angles of the building.","조명이 그 건물의 날카로운 각을 두드러지게 했다.","","","","",4
-accessible,접근 가능한,adj,"The report should be accessible to all employees.","그 보고서는 모든 직원이 열람할 수 있어야 한다.","The new building was designed to be accessible to wheelchair users.","그 새 건물은 휠체어 사용자들도 이용할 수 있도록 설계되었다.","","",2
+accessible,접근 가능한,adj,"The report should be accessible to all employees.","그 보고서는 모든 직원이 열람할 수 있어야 한다.","The new building was designed to be accessible to wheelchair users.","그 새 건물은 휠체어 사용자들도 이용할 수 있도록 설계되었다.","wheelchair accessible","휠체어로 접근 가능한",2
 acclaim,칭송하다,v,"Critics acclaimed the film for its originality.","평론가들은 그 영화의 독창성을 극찬했다.","","","","",3
 accommodate,수용하다,v,"The hall can accommodate up to five hundred guests.","그 홀은 최대 500명의 손님을 수용할 수 있다.","The hotel added extra rooms to accommodate the growing number of tourists.","그 호텔은 늘어나는 관광객을 수용하기 위해 객실을 추가했다.","","",2
 accord,일치/부여하다,n,"The two reports are in accord on the final numbers.","두 보고서는 최종 수치에서 일치한다.","","","","",3
 accumulate,축적하다,v,"Dust had accumulated on the shelves for months.","몇 달 동안 선반에 먼지가 쌓였다.","Over the years, he accumulated a large collection of rare coins.","수년에 걸쳐 그는 희귀한 동전을 대량으로 모았다.","","",2
 acquiesce,마지못해 동의하다,v,"She acquiesced to the new schedule without complaint.","그녀는 불평 없이 새 일정에 마지못해 따랐다.","","","","",5
 acrimonious,격렬한/신랄한,adj,"The negotiation turned acrimonious by the third hour.","협상은 세 시간째에 접어들며 신랄해졌다.","","","","",5
-acute,급성의/예리한,adj,"He has an acute sense of timing in meetings.","그는 회의에서 타이밍을 잡는 예리한 감각을 지녔다.","The detective has an acute eye for small details.","그 형사는 사소한 세부 사항을 알아채는 예리한 눈을 가지고 있다.","","",2
+acute,급성의/예리한,adj,"He has an acute sense of timing in meetings.","그는 회의에서 타이밍을 잡는 예리한 감각을 지녔다.","The detective has an acute eye for small details.","그 형사는 사소한 세부 사항을 알아채는 예리한 눈을 가지고 있다.","acute pain","급성 통증",2
 adamant,단호한,adj,"She was adamant that the deadline could not move.","그녀는 마감일을 미룰 수 없다고 단호하게 말했다.","","","","",3
 adept,능숙한,adj,"He is adept at resolving conflicts quickly.","그는 갈등을 신속히 해결하는 데 능숙하다.","","","","",4
 adhere,고수하다/부착되다,v,"All staff must adhere to the new dress code.","모든 직원은 새로운 복장 규정을 준수해야 한다.","","","","",3
@@ -30,7 +30,7 @@ adjourn,휴회하다/연기하다,v,"The committee adjourned the meeting until F
 admonish,훈계하다/경고하다,v,"The supervisor admonished the team for the delay.","상사는 지연에 대해 팀을 훈계했다.","","","","",5
 adroit,솜씨 좋은,adj,"She gave an adroit response to the tough question.","그녀는 어려운 질문에 솜씨 좋게 대답했다.","","","","",5
 adulterate,불순물을 섞다,v,"The company was fined for adulterating the product.","그 회사는 제품에 불순물을 섞은 것으로 벌금을 물었다.","","","","",5
-adverse,불리한,adj,"The drug can have adverse effects on some patients.","그 약은 일부 환자에게 부작용을 일으킬 수 있다.","Heavy rain created adverse conditions for the outdoor concert.","폭우로 인해 야외 콘서트에 불리한 상황이 만들어졌다.","","",2
+adverse,불리한,adj,"The drug can have adverse effects on some patients.","그 약은 일부 환자에게 부작용을 일으킬 수 있다.","Heavy rain created adverse conditions for the outdoor concert.","폭우로 인해 야외 콘서트에 불리한 상황이 만들어졌다.","adverse effects","부작용(안 좋은 영향)",2
 advocate,지지하다/옹호자,v,"The lawyer advocated for stronger consumer protection.","그 변호사는 더 강력한 소비자 보호를 옹호했다.","The doctor advocates a balanced diet for heart health.","그 의사는 심장 건강을 위해 균형 잡힌 식단을 지지한다.","","",2
 aesthetic,미적인,adj,"The redesign focused on both aesthetic and function.","재설계는 미적 요소와 기능성 모두에 초점을 맞췄다.","The garden was designed purely for aesthetic pleasure.","그 정원은 순전히 미적인 즐거움을 위해 설계되었다.","","",2
 affable,상냥한,adj,"The new director is affable and easy to talk to.","새 이사는 상냥해서 이야기하기 편하다.","","","","",5
@@ -44,19 +44,19 @@ allocate,할당하다,v,"The budget allocates more funds to research.","예산�
 altruistic,이타적인,adj,"Her altruistic donations surprised the board.","그녀의 이타적인 기부는 이사회를 놀라게 했다.","","","","",4
 ambiguous,모호한,adj,"The instructions were too ambiguous to follow.","지침이 너무 모호해서 따르기 어려웠다.","His answer was ambiguous, so no one knew what he really meant.","그의 대답은 모호해서 아무도 그가 진짜 의미하는 바를 알 수 없었다.","","",2
 ambivalent,양가적인,adj,"He felt ambivalent about accepting the promotion.","그는 승진을 받아들이는 것에 대해 양가적인 감정을 느꼈다.","","","","",4
-amend,수정하다,v,"The board voted to amend the bylaws.","이사회는 정관을 수정하기로 투표했다.","They had to amend the contract after the client requested changes.","고객이 변경을 요청한 후 그들은 계약서를 수정해야 했다.","","",2
+amend,수정하다,v,"The board voted to amend the bylaws.","이사회는 정관을 수정하기로 투표했다.","They had to amend the contract after the client requested changes.","고객이 변경을 요청한 후 그들은 계약서를 수정해야 했다.","amend the constitution","헌법을 개정하다",2
 amiable,다정한,adj,"The amiable host made everyone feel welcome.","다정한 주최자는 모두를 편안하게 맞아 주었다.","","","","",4
 amicable,우호적인,adj,"They reached an amicable settlement out of court.","그들은 법정 밖에서 우호적으로 합의에 이르렀다.","","","","",3
 amplify,증폭시키다/확대하다,v,"Social media can amplify small controversies.","소셜 미디어는 작은 논란을 증폭시킬 수 있다.","The microphone amplified her voice so everyone could hear.","마이크는 그녀의 목소리를 증폭시켜 모두가 들을 수 있게 했다.","","",2
 anarchy,무정부 상태,n,"The sudden power vacuum led to anarchy.","갑작스러운 권력 공백은 무정부 상태로 이어졌다.","","","","",3
-anecdote,일화,n,"He opened the speech with a short anecdote.","그는 짧은 일화로 연설을 시작했다.","My grandfather loves telling anecdotes about his years in the navy.","할아버지는 해군에서 보낸 시절의 일화를 이야기하는 것을 좋아하신다.","","",2
+anecdote,일화,n,"He opened the speech with a short anecdote.","그는 짧은 일화로 연설을 시작했다.","My grandfather loves telling anecdotes about his years in the navy.","할아버지는 해군에서 보낸 시절의 일화를 이야기하는 것을 좋아하신다.","anecdotal evidence","일화적 증거(경험담에 근거한 증거)",2
 animosity,적대감,n,"There is longstanding animosity between the two firms.","두 회사 사이에는 오랜 적대감이 있다.","Years of competition left deep animosity between the two rivals.","수년간의 경쟁은 그 두 라이벌 사이에 깊은 적대감을 남겼다.","","",2
 anomaly,이례적인 것,n,"The audit found an anomaly in last month's report.","감사에서 지난달 보고서에 이례적인 점이 발견되었다.","","","","",3
 antagonize,적대시하다,v,"The comment only antagonized the other team.","그 발언은 상대 팀을 자극해 적대감만 키웠다.","","","","",5
 antecedent,선행 사건/앞서는,n,"The proposal has no clear antecedent in past policy.","그 제안은 과거 정책에 명확한 선례가 없다.","","","","",5
 antipathy,반감,n,"He showed open antipathy toward the new rules.","그는 새 규정에 대해 노골적인 반감을 드러냈다.","","","","",5
 apathy,무관심,n,"Voter apathy was blamed for the low turnout.","낮은 투표율은 유권자의 무관심 탓으로 여겨졌다.","","","","",4
-apex,정점,n,"The company reached the apex of its success in 2019.","그 회사는 2019년에 성공의 정점에 도달했다.","The climbers finally reached the apex of the mountain at dawn.","등반가들은 마침내 새벽에 그 산의 정점에 도달했다.","","",2
+apex,정점,n,"The company reached the apex of its success in 2019.","그 회사는 2019년에 성공의 정점에 도달했다.","The climbers finally reached the apex of the mountain at dawn.","등반가들은 마침내 새벽에 그 산의 정점에 도달했다.","apex predator","최상위 포식자",2
 appease,달래다,v,"The manager tried to appease the angry client.","매니저는 화난 고객을 달래려 했다.","","","","",3
 apprehensive,불안한/염려하는,adj,"She felt apprehensive before the presentation.","그녀는 발표 전에 불안감을 느꼈다.","","","","",3
 arbitrary,임의적인,adj,"The rule seemed arbitrary and poorly explained.","그 규정은 임의적이고 설명이 부실해 보였다.","The judge said the fine amount felt completely arbitrary.","판사는 그 벌금 액수가 완전히 임의적으로 느껴진다고 말했다.","","",2
@@ -69,34 +69,34 @@ articulate,또렷하게 말하다/명료한,adj,"She is articulate even under pr
 ascertain,확인하다/알아내다,v,"We need to ascertain the cause of the delay.","우리는 지연의 원인을 확인해야 한다.","","","","",4
 askew,비뚤어진,adj,"The picture frame was hanging askew.","액자가 비뚤어진 채 걸려 있었다.","","","","",3
 aspire,열망하다,v,"Many interns aspire to become full-time analysts.","많은 인턴들이 정규직 애널리스트가 되기를 열망한다.","As a child, she aspired to be a professional pianist.","어렸을 때 그녀는 전문 피아니스트가 되기를 열망했다.","","",2
-assert,주장하다/단언하다,v,"He asserted that the figures were accurate.","그는 그 수치가 정확하다고 단언했다.","She firmly asserted her right to a refund.","그녀는 환불받을 권리를 단호히 주장했다.","","",2
+assert,주장하다/단언하다,v,"He asserted that the figures were accurate.","그는 그 수치가 정확하다고 단언했다.","She firmly asserted her right to a refund.","그녀는 환불받을 권리를 단호히 주장했다.","assert dominance","지배력을 주장하다(우위를 내세우다)",2
 assiduous,근면한,adj,"Her assiduous note-taking impressed the professor.","그녀의 근면한 필기는 교수에게 깊은 인상을 남겼다.","","","","",5
 assimilate,동화되다/흡수하다,v,"New hires quickly assimilate into the team culture.","신입 직원들은 빠르게 팀 문화에 동화된다.","","","","",4
 astute,기민한/영리한,adj,"The astute investor spotted the trend early.","기민한 투자자는 그 흐름을 일찍 알아챘다.","","","","",4
 audacious,대담한,adj,"The startup made an audacious bid for the market leader.","그 스타트업은 시장 선두 업체를 겨냥한 대담한 시도를 했다.","It was an audacious plan to climb the mountain without oxygen.","산소 없이 그 산을 오르겠다는 것은 대담한 계획이었다.","","",2
-augment,증대시키다,v,"The firm hired consultants to augment its staff.","그 회사는 인력을 보강하기 위해 컨설턴트를 고용했다.","The company augmented its marketing team with three new hires.","그 회사는 세 명의 신규 채용으로 마케팅 팀을 증대시켰다.","","",2
+augment,증대시키다,v,"The firm hired consultants to augment its staff.","그 회사는 인력을 보강하기 위해 컨설턴트를 고용했다.","The company augmented its marketing team with three new hires.","그 회사는 세 명의 신규 채용으로 마케팅 팀을 증대시켰다.","augmented reality","증강현실",2
 austere,엄격한/소박한,adj,"The office has an austere, minimalist design.","그 사무실은 엄격하고 미니멀한 디자인을 갖추고 있다.","","","","",4
 authentic,진정한,adj,"The museum verified the painting as authentic.","박물관은 그 그림이 진품임을 확인했다.","This restaurant serves authentic Italian pasta.","이 식당은 진짜 이탈리아식 파스타를 제공한다.","","",1
-autonomous,자율적인,adj,"Each branch operates as an autonomous unit.","각 지사는 자율적인 단위로 운영된다.","The car can drive in autonomous mode on the highway.","그 자동차는 고속도로에서 자율 주행 모드로 운전할 수 있다.","","",2
+autonomous,자율적인,adj,"Each branch operates as an autonomous unit.","각 지사는 자율적인 단위로 운영된다.","The car can drive in autonomous mode on the highway.","그 자동차는 고속도로에서 자율 주행 모드로 운전할 수 있다.","autonomous vehicle","자율주행 차량",2
 avarice,탐욕,n,"The novel explores the avarice of the ruling class.","그 소설은 지배 계층의 탐욕을 다룬다.","","","","",5
 aversion,혐오/반감,n,"He has a strong aversion to public speaking.","그는 대중 앞에서 말하는 것에 강한 거부감을 느낀다.","","","","",5
-avert,피하다/막다,v,"Quick action helped avert a major outage.","신속한 조치 덕분에 대규모 정전을 막을 수 있었다.","The pilot managed to avert a collision at the last second.","조종사는 마지막 순간에 충돌을 피할 수 있었다.","","",2
+avert,피하다/막다,v,"Quick action helped avert a major outage.","신속한 조치 덕분에 대규모 정전을 막을 수 있었다.","The pilot managed to avert a collision at the last second.","조종사는 마지막 순간에 충돌을 피할 수 있었다.","avert disaster","재앙을 막다",2
 banal,따분한/평범한,adj,"The speech was full of banal corporate phrases.","그 연설은 진부한 기업 상투어로 가득했다.","","","","",5
 belligerent,적대적인/전투적인,adj,"His belligerent attitude escalated the argument.","그의 호전적인 태도가 언쟁을 더 키웠다.","","","","",5
 benevolent,자비로운,adj,"The benevolent donor funded the entire library.","자비로운 기부자가 도서관 전체 비용을 대었다.","","","","",4
-benign,자비로운/온화한,adj,"The tumor turned out to be benign.","그 종양은 양성으로 판명되었다.","Despite his gruff appearance, the old man had a benign nature.","거친 외모에도 불구하고 그 노인은 온화한 성품을 지녔다.","","",2
+benign,자비로운/온화한,adj,"The tumor turned out to be benign.","그 종양은 양성으로 판명되었다.","Despite his gruff appearance, the old man had a benign nature.","거친 외모에도 불구하고 그 노인은 온화한 성품을 지녔다.","benign tumor","양성 종양",2
 bewilder,어리둥절하게 하다,v,"The complex form bewildered most applicants.","복잡한 양식이 대부분의 지원자를 어리둥절하게 만들었다.","","","","",3
-bias,편견,n,"The survey may contain unconscious bias.","그 설문 조사에는 무의식적인 편견이 포함되어 있을 수 있다.","The judge was accused of showing bias toward one side.","그 판사는 한쪽 편을 드는 편견을 보였다는 비난을 받았다.","","",1
-blatant,노골적인,adj,"It was a blatant violation of company policy.","그것은 회사 방침을 노골적으로 위반한 것이었다.","It was a blatant lie, and everyone in the room knew it.","그것은 노골적인 거짓말이었고, 방 안의 모두가 그것을 알았다.","","",2
+bias,편견,n,"The survey may contain unconscious bias.","그 설문 조사에는 무의식적인 편견이 포함되어 있을 수 있다.","The judge was accused of showing bias toward one side.","그 판사는 한쪽 편을 드는 편견을 보였다는 비난을 받았다.","confirmation bias","확증 편향",1
+blatant,노골적인,adj,"It was a blatant violation of company policy.","그것은 회사 방침을 노골적으로 위반한 것이었다.","It was a blatant lie, and everyone in the room knew it.","그것은 노골적인 거짓말이었고, 방 안의 모두가 그것을 알았다.","blatant disregard","노골적인 무시(경시)",2
 bleak,암울한,adj,"The economic outlook remains bleak for now.","지금으로서는 경제 전망이 암울하다.","The weather forecast looked bleak for the weekend hike.","주말 등산을 위한 일기 예보는 암울해 보였다.","","",2
 bolster,강화하다,v,"New evidence bolstered her argument.","새로운 증거가 그녀의 주장을 뒷받침했다.","","","","",3
 boycott,불매 운동을 하다,v,"Consumers threatened to boycott the brand.","소비자들은 그 브랜드를 불매하겠다고 위협했다.","Activists urged shoppers to boycott companies that pollute rivers.","활동가들은 강을 오염시키는 기업들을 불매하라고 소비자들에게 촉구했다.","","",1
 brevity,간결함,n,"The editor praised the brevity of the report.","편집자는 그 보고서의 간결함을 칭찬했다.","","","","",4
-brittle,부서지기 쉬운,adj,"The old plastic casing had become brittle.","오래된 플라스틱 케이스는 부서지기 쉽게 변해 있었다.","Dry autumn leaves turn brittle and crack underfoot.","마른 가을 낙엽은 부서지기 쉽게 변해 밟으면 부스러진다.","","",1
+brittle,부서지기 쉬운,adj,"The old plastic casing had become brittle.","오래된 플라스틱 케이스는 부서지기 쉽게 변해 있었다.","Dry autumn leaves turn brittle and crack underfoot.","마른 가을 낙엽은 부서지기 쉽게 변해 밟으면 부스러진다.","brittle bones","잘 부러지는 뼈(골다공증)",1
 buoyant,쾌활한/부양하는,adj,"Investors remained buoyant despite the news.","투자자들은 그 소식에도 불구하고 낙관적인 태도를 유지했다.","","","","",3
 bureaucracy,관료제,n,"Cutting through the bureaucracy took weeks.","관료제를 뚫고 나가는 데 몇 주가 걸렸다.","","","","",3
 callous,냉담한,adj,"His callous remark upset the whole team.","그의 냉담한 발언이 팀 전체를 언짢게 했다.","","","","",4
-candid,솔직한,adj,"She gave a candid assessment of the project.","그녀는 그 프로젝트에 대해 솔직한 평가를 내렸다.","In a candid interview, the actor admitted his early films were bad.","솔직한 인터뷰에서 그 배우는 자신의 초기 영화들이 형편없었다고 인정했다.","","",2
+candid,솔직한,adj,"She gave a candid assessment of the project.","그녀는 그 프로젝트에 대해 솔직한 평가를 내렸다.","In a candid interview, the actor admitted his early films were bad.","솔직한 인터뷰에서 그 배우는 자신의 초기 영화들이 형편없었다고 인정했다.","candid camera","몰래카메라(연출 없는 자연스러운 모습)",2
 capricious,변덕스러운,adj,"The market has been capricious this quarter.","이번 분기 시장은 변덕스러운 모습을 보였다.","","","","",5
 captivate,매혹시키다,v,"The keynote speaker captivated the audience.","기조연설자는 청중을 매혹시켰다.","","","","",3
 cardinal,가장 중요한/기본적인,adj,"Honesty is a cardinal rule in this office.","정직은 이 사무실의 가장 중요한 원칙이다.","","","","",4
@@ -115,24 +115,24 @@ collaborate,협력하다,v,"The two teams collaborated on the launch.","두 팀�
 collateral,부수적인/담보,adj,"The loan required collateral from the borrower.","그 대출은 차입자에게 담보를 요구했다.","","","","",3
 commence,시작하다,v,"The training session will commence at nine.","교육 세션은 9시에 시작될 것이다.","","","","",3
 commensurate,상응하는,adj,"The bonus was commensurate with performance.","그 보너스는 성과에 상응하는 수준이었다.","","","","",5
-compelling,설득력 있는,adj,"He gave a compelling argument for the budget cut.","그는 예산 삭감에 대해 설득력 있는 주장을 펼쳤다.","The documentary presents a compelling case for renewable energy.","그 다큐멘터리는 재생 에너지에 대한 설득력 있는 근거를 제시한다.","","",2
+compelling,설득력 있는,adj,"He gave a compelling argument for the budget cut.","그는 예산 삭감에 대해 설득력 있는 주장을 펼쳤다.","The documentary presents a compelling case for renewable energy.","그 다큐멘터리는 재생 에너지에 대한 설득력 있는 근거를 제시한다.","compelling evidence","설득력 있는 증거",2
 complacent,자기만족적인,adj,"The firm grew complacent after early success.","그 회사는 초기 성공 이후 안주하게 되었다.","","","","",4
-compliance,준수,n,"The audit checks for regulatory compliance.","그 감사는 규제 준수 여부를 점검한다.","The factory was fined for non-compliance with safety standards.","그 공장은 안전 기준 미준수로 벌금을 물었다.","","",2
+compliance,준수,n,"The audit checks for regulatory compliance.","그 감사는 규제 준수 여부를 점검한다.","The factory was fined for non-compliance with safety standards.","그 공장은 안전 기준 미준수로 벌금을 물었다.","regulatory compliance","규제 준수",2
 comprehensive,종합적인,adj,"The report offers a comprehensive overview.","그 보고서는 종합적인 개요를 제공한다.","The hospital offers a comprehensive health checkup for seniors.","그 병원은 노년층을 위한 종합적인 건강 검진을 제공한다.","","",2
-compromise,타협하다,v,"Both sides agreed to compromise on the price.","양측은 가격에 대해 타협하기로 합의했다.","The couple compromised on where to spend the holidays.","그 부부는 휴가를 어디서 보낼지에 대해 타협했다.","","",1
+compromise,타협하다,v,"Both sides agreed to compromise on the price.","양측은 가격에 대해 타협하기로 합의했다.","The couple compromised on where to spend the holidays.","그 부부는 휴가를 어디서 보낼지에 대해 타협했다.","reach a compromise","타협에 이르다",1
 concede,인정하다/양보하다,v,"She conceded that the plan had flaws.","그녀는 그 계획에 결함이 있음을 인정했다.","","","","",3
 conciliatory,화해적인,adj,"He adopted a conciliatory tone during the talks.","그는 협상 중에 화해적인 어조를 취했다.","","","","",5
 concise,간결한,adj,"Keep the email concise and to the point.","이메일은 간결하고 핵심적으로 작성하세요.","The professor asked for a concise summary, not a full essay.","교수는 전체 에세이가 아니라 간결한 요약을 요청했다.","","",2
 concur,동의하다,v,"The other reviewers concur with the assessment.","다른 심사자들도 그 평가에 동의한다.","","","","",4
 condone,용납하다,v,"Management will not condone such behavior.","경영진은 그런 행동을 용납하지 않을 것이다.","","","","",4
 confer,수여하다/상의하다,v,"They conferred for hours before deciding.","그들은 결정을 내리기 전에 몇 시간 동안 상의했다.","","","","",4
-confidential,기밀의,adj,"The document is strictly confidential.","그 문서는 극비 사항이다.","All employee salary information is kept confidential.","모든 직원 급여 정보는 기밀로 유지된다.","","",2
+confidential,기밀의,adj,"The document is strictly confidential.","그 문서는 극비 사항이다.","All employee salary information is kept confidential.","모든 직원 급여 정보는 기밀로 유지된다.","strictly confidential","극비의(엄격히 기밀)",2
 confiscate,압수하다,v,"Customs confiscated the undeclared goods.","세관은 신고되지 않은 물품을 압수했다.","","","","",3
 congenial,마음에 맞는,adj,"The office has a congenial working atmosphere.","그 사무실은 마음에 맞는 근무 분위기를 갖고 있다.","","","","",5
 congruent,일치하는,adj,"The results are congruent with earlier findings.","그 결과는 이전 연구 결과와 일치한다.","","","","",5
-conscientious,양심적인/성실한,adj,"She is a conscientious and reliable worker.","그녀는 양심적이고 믿을 수 있는 직원이다.","As a conscientious student, he double-checked every answer.","성실한 학생으로서 그는 모든 답을 다시 확인했다.","","",2
+conscientious,양심적인/성실한,adj,"She is a conscientious and reliable worker.","그녀는 양심적이고 믿을 수 있는 직원이다.","As a conscientious student, he double-checked every answer.","성실한 학생으로서 그는 모든 답을 다시 확인했다.","conscientious objector","양심적 병역거부자",2
 consensus,합의,n,"The team reached a consensus on the design.","팀은 디자인에 대해 합의에 도달했다.","","","","",3
-consolidate,통합하다,v,"The two branches will consolidate next year.","두 지점은 내년에 통합될 예정이다.","The company consolidated its debts into a single loan.","그 회사는 부채를 단일 대출로 통합했다.","","",2
+consolidate,통합하다,v,"The two branches will consolidate next year.","두 지점은 내년에 통합될 예정이다.","The company consolidated its debts into a single loan.","그 회사는 부채를 단일 대출로 통합했다.","consolidate power","권력을 강화(통합)하다",2
 conspicuous,눈에 띄는,adj,"The error was conspicuous on the first page.","그 오류는 첫 페이지에서 눈에 띄게 드러났다.","","","","",4
 constrain,제약하다,v,"Budget cuts constrained the project's scope.","예산 삭감이 그 프로젝트의 범위를 제약했다.","Limited storage space constrains how much inventory the shop can hold.","제한된 저장 공간은 그 가게가 보유할 수 있는 재고량을 제약한다.","","",2
 contemplate,고려하다/숙고하다,v,"She is contemplating a career change.","그녀는 이직을 고려하고 있다.","","","","",3
@@ -140,18 +140,18 @@ contentious,논쟁적인,adj,"Pricing remains a contentious issue internally.","
 contingent,조건부의/~에 달려 있는,adj,"The offer is contingent on final approval.","그 제안은 최종 승인 여부에 달려 있다.","","","","",4
 controversy,논란,n,"The decision sparked immediate controversy.","그 결정은 즉각적인 논란을 불러일으켰다.","","","","",3
 convene,모이다/소집하다,v,"The board will convene next Monday.","이사회는 다음 주 월요일에 소집될 것이다.","","","","",4
-conventional,전통적인/관습적인,adj,"They chose a conventional marketing approach.","그들은 전통적인 마케팅 방식을 선택했다.","She rejected conventional wisdom and started her own business at twenty.","그녀는 전통적인 통념을 거부하고 스무 살에 자신의 사업을 시작했다.","","",2
+conventional,전통적인/관습적인,adj,"They chose a conventional marketing approach.","그들은 전통적인 마케팅 방식을 선택했다.","She rejected conventional wisdom and started her own business at twenty.","그녀는 전통적인 통념을 거부하고 스무 살에 자신의 사업을 시작했다.","conventional wisdom","일반 통념",2
 converge,수렴하다,v,"The two projects converged into one product.","두 프로젝트는 하나의 제품으로 수렴되었다.","","","","",4
 corroborate,입증하다,v,"New data corroborates the earlier finding.","새로운 데이터가 이전 발견을 뒷받침한다.","","","","",5
-credible,신뢰할 만한,adj,"The witness gave a credible account of events.","목격자는 사건에 대해 신뢰할 만한 진술을 했다.","The company needs a credible spokesperson to handle the crisis.","그 회사는 위기를 대처할 신뢰할 만한 대변인이 필요하다.","","",2
+credible,신뢰할 만한,adj,"The witness gave a credible account of events.","목격자는 사건에 대해 신뢰할 만한 진술을 했다.","The company needs a credible spokesperson to handle the crisis.","그 회사는 위기를 대처할 신뢰할 만한 대변인이 필요하다.","credible source","신뢰할 만한 출처",2
 cryptic,불가사의한,adj,"His cryptic reply left everyone confused.","그의 알쏭달쏭한 대답은 모두를 혼란스럽게 했다.","","","","",3
 culpable,비난받을 만한,adj,"The audit found the manager culpable for the loss.","감사 결과 그 손실에 대해 관리자에게 책임이 있는 것으로 밝혀졌다.","","","","",5
 cumbersome,다루기 힘든,adj,"The old approval process was cumbersome.","예전 승인 절차는 번거로웠다.","","","","",4
 curtail,축소하다,v,"The company had to curtail its travel budget.","그 회사는 출장 예산을 축소해야 했다.","","","","",4
 cynical,냉소적인,adj,"He grew cynical after years in the industry.","그는 업계에서 오랜 세월을 보내며 냉소적으로 변했다.","She became cynical about politics after the scandal.","그녀는 그 스캔들 이후 정치에 대해 냉소적으로 변했다.","","",2
-daunting,벅찬/힘겨운,adj,"The migration was a daunting technical task.","그 이전 작업은 벅찬 기술적 과제였다.","Learning a new language as an adult can feel daunting.","성인이 되어 새로운 언어를 배우는 것은 벅차게 느껴질 수 있다.","","",2
+daunting,벅찬/힘겨운,adj,"The migration was a daunting technical task.","그 이전 작업은 벅찬 기술적 과제였다.","Learning a new language as an adult can feel daunting.","성인이 되어 새로운 언어를 배우는 것은 벅차게 느껴질 수 있다.","daunting task","벅찬 과제(엄두가 안 나는 일)",2
 deceptive,기만적인,adj,"The ad's claims were deceptive and misleading.","그 광고의 주장은 기만적이고 오도하는 내용이었다.","The packaging was deceptive, making the product look bigger than it was.","그 포장은 기만적이어서 제품이 실제보다 더 커 보이게 만들었다.","","",2
-decisive,결단력 있는,adj,"She made a decisive call under pressure.","그녀는 압박 속에서도 결단력 있는 판단을 내렸다.","A good leader must be decisive in a crisis.","훌륭한 리더는 위기 상황에서 결단력이 있어야 한다.","","",2
+decisive,결단력 있는,adj,"She made a decisive call under pressure.","그녀는 압박 속에서도 결단력 있는 판단을 내렸다.","A good leader must be decisive in a crisis.","훌륭한 리더는 위기 상황에서 결단력이 있어야 한다.","decisive victory","결정적인 승리",2
 decree,명령/법령,n,"The new decree changes the import tax rate.","새 법령은 수입 관세율을 변경한다.","","","","",3
 deduce,추론하다,v,"We can deduce the cause from the log files.","우리는 로그 파일로부터 원인을 추론할 수 있다.","From the muddy footprints, the detective deduced the intruder came from the garden.","진흙 발자국으로부터 형사는 침입자가 정원에서 왔다고 추론했다.","","",2
 defer,연기하다/따르다,v,"They decided to defer the decision until March.","그들은 3월까지 결정을 미루기로 했다.","","","","",4
@@ -178,7 +178,7 @@ deviate,벗어나다,v,"The results deviate slightly from the forecast.","결과
 devious,교묘한/부정직한,adj,"He used devious tactics to win the contract.","그는 계약을 따내기 위해 교묘한 술수를 썼다.","","","","",3
 diffident,자신 없는,adj,"She seemed diffident about presenting the idea.","그녀는 그 아이디어를 발표하는 것에 자신 없어 보였다.","","","","",5
 diligent,근면한,adj,"The diligent intern finished early every time.","그 근면한 인턴은 매번 일찍 끝냈다.","She was diligent about saving a portion of every paycheck.","그녀는 매번 월급의 일부를 저축하는 데 근면했다.","","",2
-diminish,줄어들다,v,"Demand for the product began to diminish.","그 제품에 대한 수요가 줄어들기 시작했다.","His enthusiasm for the project began to diminish after months of delays.","몇 달간의 지연 끝에 그 프로젝트에 대한 그의 열정이 줄어들기 시작했다.","","",2
+diminish,줄어들다,v,"Demand for the product began to diminish.","그 제품에 대한 수요가 줄어들기 시작했다.","His enthusiasm for the project began to diminish after months of delays.","몇 달간의 지연 끝에 그 프로젝트에 대한 그의 열정이 줄어들기 시작했다.","diminishing returns","수확 체감",2
 discern,식별하다,v,"It's hard to discern any real progress this month.","이번 달에는 실질적인 진전을 식별하기 어렵다.","","","","",4
 discord,불화,n,"There was clear discord among the executives.","임원들 사이에 뚜렷한 불화가 있었다.","","","","",4
 discreet,신중한,adj,"Please be discreet about the merger talks.","합병 논의에 대해서는 신중하게 처신해 주세요.","","","","",4
@@ -188,7 +188,7 @@ disparage,폄하하다,v,"She never disparages a colleague's work in public.","�
 disparity,차이/격차,n,"There is a wide disparity in regional sales.","지역별 매출에 큰 격차가 있다.","","","","",4
 dispel,떨쳐버리다,v,"The CEO's memo helped dispel the rumors.","CEO의 메모는 소문을 잠재우는 데 도움이 되었다.","","","","",4
 disperse,흩어지다,v,"The crowd dispersed once the announcement ended.","발표가 끝나자 군중은 흩어졌다.","","","","",4
-disrupt,방해하다/붕괴시키다,v,"The outage disrupted service for two hours.","그 정전은 두 시간 동안 서비스를 방해했다.","A sudden storm disrupted flights across the region.","갑작스러운 폭풍이 그 지역 전역의 항공편을 방해했다.","","",2
+disrupt,방해하다/붕괴시키다,v,"The outage disrupted service for two hours.","그 정전은 두 시간 동안 서비스를 방해했다.","A sudden storm disrupted flights across the region.","갑작스러운 폭풍이 그 지역 전역의 항공편을 방해했다.","disruptive innovation","파괴적 혁신",2
 dissent,반대,n,"There was quiet dissent within the committee.","위원회 내부에 조용한 반대 의견이 있었다.","","","","",4
 dissipate,흩어져 사라지다,v,"The initial excitement soon dissipated.","초기의 흥분은 곧 사그라들었다.","","","","",5
 distinct,뚜렷한,adj,"The two proposals have distinct advantages.","두 제안은 각기 뚜렷한 장점을 지닌다.","The two neighborhoods have distinct characters despite being close together.","그 두 동네는 가까이 있음에도 뚜렷하게 다른 특색을 지닌다.","","",2
@@ -196,7 +196,7 @@ distort,왜곡하다,v,"The chart distorts the actual growth rate.","그 차트�
 diverge,갈라지다,v,"Their opinions diverge on pricing strategy.","가격 전략에 대해 그들의 의견이 갈린다.","","","","",4
 divulge,누설하다,v,"He refused to divulge the client's details.","그는 고객의 정보를 누설하기를 거부했다.","","","","",4
 dogmatic,독단적인,adj,"She was dogmatic about the old process.","그녀는 옛 절차에 대해 독단적인 태도를 보였다.","","","","",5
-dubious,의심스러운,adj,"The claim seemed dubious at best.","그 주장은 아무리 좋게 봐도 의심스러워 보였다.","He gave a dubious excuse for missing the deadline.","그는 마감을 놓친 것에 대해 의심스러운 변명을 했다.","","",2
+dubious,의심스러운,adj,"The claim seemed dubious at best.","그 주장은 아무리 좋게 봐도 의심스러워 보였다.","He gave a dubious excuse for missing the deadline.","그는 마감을 놓친 것에 대해 의심스러운 변명을 했다.","dubious honor","달갑지 않은 영예(불명예스러운 영광)",2
 duplicity,이중성/기만,n,"The scandal exposed years of duplicity.","그 스캔들은 수년간의 기만을 드러냈다.","","","","",5
 eclectic,다양한 출처를 취하는,adj,"The team has an eclectic mix of skills.","그 팀은 다양한 출처의 능력을 두루 갖추고 있다.","","","","",3
 edify,교화하다/계몽하다,v,"The workshop was meant to edify new managers.","그 워크숍은 신임 관리자들을 계몽하기 위한 것이었다.","","","","",5
@@ -212,7 +212,7 @@ empathy,공감,n,"Good managers show empathy toward their staff.","훌륭한 관
 empirical,경험적인/실증적인,adj,"The claim lacks any empirical evidence.","그 주장은 실증적 증거가 전혀 없다.","","","","",4
 emulate,모방하다,v,"Smaller firms try to emulate the market leader.","소규모 기업들은 시장 선두 업체를 모방하려 한다.","","","","",4
 encompass,포함하다,v,"The plan encompasses all regional offices.","그 계획은 모든 지역 사무소를 포함한다.","","","","",4
-endorse,지지하다/승인하다,v,"The board endorsed the new strategy.","이사회는 새 전략을 승인했다.","Several celebrities endorsed the new phone in commercials.","여러 유명인들이 광고에서 그 새 휴대폰을 지지했다.","","",2
+endorse,지지하다/승인하다,v,"The board endorsed the new strategy.","이사회는 새 전략을 승인했다.","Several celebrities endorsed the new phone in commercials.","여러 유명인들이 광고에서 그 새 휴대폰을 지지했다.","endorse a candidate","후보를 지지하다",2
 enervate,기력을 빼다,v,"The long commute enervated the whole team.","긴 통근 시간이 팀 전체의 기력을 빼놓았다.","","","","",5
 enigmatic,수수께끼 같은,adj,"The CEO's reply was oddly enigmatic.","CEO의 답변은 묘하게 수수께끼 같았다.","","","","",5
 enmity,적의,n,"There is old enmity between the two firms.","두 회사 사이에는 오래된 적의가 있다.","","","","",5
@@ -220,22 +220,22 @@ ephemeral,단기적인/일시적인,adj,"Social trends can be strikingly ephemer
 equanimity,평정심,n,"She handled the crisis with remarkable equanimity.","그녀는 놀라운 평정심으로 위기를 처리했다.","","","","",5
 equivocal,모호한,adj,"His equivocal answer satisfied no one.","그의 모호한 답변은 누구도 만족시키지 못했다.","","","","",5
 eradicate,근절하다,v,"The new policy aims to eradicate fraud.","새 정책은 부정 행위를 근절하는 것을 목표로 한다.","","","","",3
-erratic,불규칙적인,adj,"Sales have been erratic since the launch.","출시 이후 매출이 불규칙적이었다.","His driving became erratic after he fell asleep at the wheel briefly.","운전 중 잠깐 졸고 난 후 그의 운전이 불규칙적으로 변했다.","","",2
+erratic,불규칙적인,adj,"Sales have been erratic since the launch.","출시 이후 매출이 불규칙적이었다.","His driving became erratic after he fell asleep at the wheel briefly.","운전 중 잠깐 졸고 난 후 그의 운전이 불규칙적으로 변했다.","erratic behavior","종잡을 수 없는 행동",2
 erroneous,잘못된,adj,"The erroneous data skewed the whole forecast.","잘못된 데이터가 전체 예측을 왜곡시켰다.","","","","",4
 esoteric,난해한/전문적인,adj,"The manual is full of esoteric jargon.","그 설명서는 난해한 전문 용어로 가득하다.","","","","",5
 espouse,지지하다,v,"He espouses a minimalist management style.","그는 미니멀한 경영 방식을 지지한다.","","","","",5
 euphemism,완곡한 표현,n,"'Right-sizing' is a euphemism for layoffs.","'적정화'는 해고를 완곡하게 표현한 말이다.","","","","",4
 evade,회피하다,v,"The firm was accused of trying to evade taxes.","그 회사는 세금을 회피하려 했다는 혐의를 받았다.","","","","",3
-evict,쫓아내다,v,"The landlord moved to evict the tenant.","집주인은 세입자를 쫓아내려고 나섰다.","The city threatened to evict families who hadn't paid rent in months.","시는 몇 달째 임대료를 내지 않은 가정들을 쫓아내겠다고 위협했다.","","",2
+evict,쫓아내다,v,"The landlord moved to evict the tenant.","집주인은 세입자를 쫓아내려고 나섰다.","The city threatened to evict families who hadn't paid rent in months.","시는 몇 달째 임대료를 내지 않은 가정들을 쫓아내겠다고 위협했다.","evict a tenant","세입자를 퇴거시키다",2
 exacerbate,악화시키다,v,"The delay only exacerbated client frustration.","그 지연은 고객의 불만을 더욱 악화시킬 뿐이었다.","","","","",4
 exasperate,격분하게 하다,v,"Constant delays exasperated the whole team.","계속되는 지연이 팀 전체를 격분하게 만들었다.","","","","",3
 exemplary,모범적인,adj,"Her exemplary performance earned a promotion.","그녀의 모범적인 성과는 승진으로 이어졌다.","","","","",4
 exhaustive,철저한,adj,"They conducted an exhaustive review of the code.","그들은 코드에 대해 철저한 검토를 실시했다.","","","","",3
 exhort,촉구하다,v,"The coach exhorted the team to push harder.","코치는 팀에게 더 분발하라고 촉구했다.","","","","",5
 exonerate,무죄를 입증하다,v,"New evidence exonerated the accused employee.","새로운 증거가 그 혐의를 받은 직원의 무죄를 입증했다.","","","","",5
-expedite,신속히 처리하다,v,"Please expedite the shipment if possible.","가능하다면 배송을 신속히 처리해 주세요.","We paid extra to expedite the customs process.","우리는 통관 절차를 신속히 처리하기 위해 추가 비용을 지불했다.","","",2
-explicit,명시적인,adj,"The contract has an explicit cancellation clause.","그 계약서에는 명시적인 해지 조항이 있다.","She gave explicit instructions on how to reach her office.","그녀는 자신의 사무실에 오는 방법에 대해 명시적인 지침을 주었다.","","",1
-exploit,이용하다/착취하다,v,"Competitors exploited the gap in the market.","경쟁사들은 시장의 빈틈을 이용했다.","The film exploits viewers' fear for cheap thrills.","그 영화는 값싼 스릴을 위해 관객들의 두려움을 이용한다.","","",2
+expedite,신속히 처리하다,v,"Please expedite the shipment if possible.","가능하다면 배송을 신속히 처리해 주세요.","We paid extra to expedite the customs process.","우리는 통관 절차를 신속히 처리하기 위해 추가 비용을 지불했다.","expedite the process","절차를 신속히 처리하다",2
+explicit,명시적인,adj,"The contract has an explicit cancellation clause.","그 계약서에는 명시적인 해지 조항이 있다.","She gave explicit instructions on how to reach her office.","그녀는 자신의 사무실에 오는 방법에 대해 명시적인 지침을 주었다.","explicit content","선정적/노골적 콘텐츠(주의 문구)",1
+exploit,이용하다/착취하다,v,"Competitors exploited the gap in the market.","경쟁사들은 시장의 빈틈을 이용했다.","The film exploits viewers' fear for cheap thrills.","그 영화는 값싼 스릴을 위해 관객들의 두려움을 이용한다.","exploit a loophole","허점을 악용하다",2
 extol,크게 칭찬하다,v,"The article extols the benefits of remote work.","그 기사는 원격 근무의 이점을 극찬한다.","","","","",5
 extraneous,관련 없는,adj,"Remove any extraneous details from the report.","보고서에서 관련 없는 세부 사항은 모두 제거하세요.","","","","",5
 extricate,빼내다/구출하다,v,"It took months to extricate the firm from debt.","그 회사를 빚에서 빼내는 데 몇 달이 걸렸다.","","","","",5
@@ -250,13 +250,13 @@ fickle,변덕스러운,adj,"Consumer taste in this market is notoriously fickle.
 flagrant,노골적인,adj,"It was a flagrant breach of contract.","그것은 노골적인 계약 위반이었다.","","","","",3
 flout,무시하다,v,"The vendor openly flouted the safety code.","그 업체는 안전 규정을 공공연히 무시했다.","","","","",5
 forbear,자제하다,v,"Please forbear from interrupting the speaker.","발언자의 말을 끊지 말고 자제해 주세요.","","","","",5
-forfeit,몰수당하다/잃다,v,"Late applicants forfeit their deposit.","늦게 신청한 사람은 보증금을 몰수당한다.","Players who arrive late forfeit their spot in the tournament.","늦게 도착하는 선수들은 토너먼트 참가 자격을 몰수당한다.","","",2
-formidable,강력한/어려운,adj,"They face a formidable competitor this year.","그들은 올해 강력한 경쟁자와 맞서고 있다.","The chess champion proved to be a formidable opponent.","그 체스 챔피언은 강력한 상대임이 드러났다.","","",2
+forfeit,몰수당하다/잃다,v,"Late applicants forfeit their deposit.","늦게 신청한 사람은 보증금을 몰수당한다.","Players who arrive late forfeit their spot in the tournament.","늦게 도착하는 선수들은 토너먼트 참가 자격을 몰수당한다.","forfeit the match","경기를 몰수패하다",2
+formidable,강력한/어려운,adj,"They face a formidable competitor this year.","그들은 올해 강력한 경쟁자와 맞서고 있다.","The chess champion proved to be a formidable opponent.","그 체스 챔피언은 강력한 상대임이 드러났다.","formidable opponent","강력한 상대",2
 fortuitous,우연한/운 좋은,adj,"The timing of the deal was entirely fortuitous.","그 거래의 타이밍은 순전히 우연이었다.","","","","",5
 frivolous,경솔한/하찮은,adj,"The board rejected the request as frivolous.","이사회는 그 요청을 하찮다는 이유로 거부했다.","","","","",3
 frugal,절약하는,adj,"The startup remained frugal even after funding.","그 스타트업은 투자를 받은 후에도 절약하는 태도를 유지했다.","His frugal habits helped him save enough to retire early.","그의 절약하는 습관 덕분에 그는 조기 은퇴할 만큼 저축할 수 있었다.","","",2
 furtive,은밀한,adj,"He gave a furtive glance toward the exit.","그는 출구 쪽으로 은밀한 시선을 보냈다.","","","","",4
-futile,헛된,adj,"Arguing with him seemed futile.","그와 논쟁하는 것은 헛된 일처럼 보였다.","Their attempts to fix the old printer proved futile.","그 오래된 프린터를 고치려는 그들의 시도는 헛된 것으로 드러났다.","","",2
+futile,헛된,adj,"Arguing with him seemed futile.","그와 논쟁하는 것은 헛된 일처럼 보였다.","Their attempts to fix the old printer proved futile.","그 오래된 프린터를 고치려는 그들의 시도는 헛된 것으로 드러났다.","futile attempt","헛된 시도",2
 garrulous,수다스러운,adj,"The garrulous client kept the meeting running long.","수다스러운 고객 때문에 회의가 길어졌다.","","","","",5
 genial,친절한,adj,"The genial host greeted every guest personally.","친절한 주최자는 손님 한 명 한 명을 직접 맞이했다.","","","","",4
 germane,관련이 있는,adj,"That point isn't germane to today's agenda.","그 점은 오늘 안건과 관련이 없다.","","","","",5
@@ -275,9 +275,9 @@ homogeneous,동질적인,adj,"The panel was fairly homogeneous in opinion.","그
 hypocrisy,위선,n,"Employees resented the manager's hypocrisy.","직원들은 그 관리자의 위선에 분개했다.","","","","",3
 idiosyncrasy,특이한 습성,n,"Every long-running system has its idiosyncrasies.","오래 운영된 시스템에는 저마다 특이한 습성이 있다.","","","","",5
 ignominious,불명예스러운,adj,"The quarter ended in ignominious failure.","그 분기는 불명예스러운 실패로 끝났다.","","","","",5
-illicit,불법적인,adj,"The audit uncovered an illicit side deal.","감사에서 불법적인 뒷거래가 드러났다.","Police shut down an illicit gambling operation downtown.","경찰은 시내의 불법 도박 운영을 단속했다.","","",2
+illicit,불법적인,adj,"The audit uncovered an illicit side deal.","감사에서 불법적인 뒷거래가 드러났다.","Police shut down an illicit gambling operation downtown.","경찰은 시내의 불법 도박 운영을 단속했다.","illicit drugs","불법 마약",2
 immaculate,완벽한/티끌 없는,adj,"The showroom was kept immaculate at all times.","그 쇼룸은 항상 티끌 하나 없이 깔끔하게 유지되었다.","","","","",4
-imminent,임박한,adj,"A price hike is imminent, according to insiders.","내부자들에 따르면 가격 인상이 임박했다.","Dark clouds suggested that a storm was imminent.","먹구름은 폭풍이 임박했음을 암시했다.","","",2
+imminent,임박한,adj,"A price hike is imminent, according to insiders.","내부자들에 따르면 가격 인상이 임박했다.","Dark clouds suggested that a storm was imminent.","먹구름은 폭풍이 임박했음을 암시했다.","imminent danger","임박한 위험",2
 impartial,공정한,adj,"An impartial reviewer checked all the entries.","공정한 심사자가 모든 참가작을 검토했다.","","","","",3
 impasse,난국/막다른 상황,n,"Talks reached an impasse after three hours.","협상은 세 시간 만에 교착 상태에 빠졌다.","","","","",4
 impeccable,완벽한,adj,"Her impeccable timing saved the presentation.","그녀의 완벽한 타이밍이 발표를 살렸다.","","","","",4
@@ -288,7 +288,7 @@ impetuous,성급한,adj,"His impetuous decision cost the firm dearly.","그의 �
 implausible,믿기 어려운,adj,"The excuse sounded implausible at best.","그 변명은 아무리 좋게 봐도 믿기 어려웠다.","","","","",4
 implicit,암묵적인,adj,"There was an implicit agreement not to compete.","서로 경쟁하지 않기로 하는 암묵적인 합의가 있었다.","","","","",3
 imply,암시하다,v,"The tone of the email implies some frustration.","그 이메일의 어조는 약간의 불만을 암시한다.","Her silence seemed to imply that she disagreed.","그녀의 침묵은 그녀가 동의하지 않는다는 것을 암시하는 듯했다.","","",2
-impromptu,즉흥적인,adj,"She gave an impromptu update at the meeting.","그녀는 회의에서 즉흥적으로 업데이트를 전했다.","The band performed an impromptu concert in the park.","그 밴드는 공원에서 즉흥적인 콘서트를 열었다.","","",2
+impromptu,즉흥적인,adj,"She gave an impromptu update at the meeting.","그녀는 회의에서 즉흥적으로 업데이트를 전했다.","The band performed an impromptu concert in the park.","그 밴드는 공원에서 즉흥적인 콘서트를 열었다.","impromptu speech","즉흥 연설",2
 inadvertent,의도치 않은,adj,"It was an inadvertent error in the spreadsheet.","그것은 스프레드시트에서 발생한 의도치 않은 오류였다.","","","","",4
 inception,시작,n,"Sales have grown steadily since inception.","매출은 시작 이래 꾸준히 증가해 왔다.","","","","",3
 incessant,끊임없는,adj,"The incessant notifications hurt productivity.","끊임없는 알림이 생산성을 떨어뜨렸다.","","","","",4
@@ -302,7 +302,7 @@ incorrigible,교정할 수 없는,adj,"He's an incorrigible procrastinator.","�
 incumbent,현직의/재임 중인,adj,"The incumbent manager will step down in June.","현직 매니저는 6월에 물러날 예정이다.","","","","",4
 indict,기소하다,v,"Prosecutors moved to indict the former officer.","검찰은 전직 임원을 기소하기로 했다.","","","","",3
 indifferent,무관심한,adj,"Management seemed indifferent to the feedback.","경영진은 그 피드백에 무관심해 보였다.","He remained indifferent to the criticism of his work.","그는 자신의 작업에 대한 비판에 무관심한 태도를 유지했다.","","",2
-indigenous,토착의,adj,"The report cites indigenous farming methods.","그 보고서는 토착 농법을 인용한다.","The plant is indigenous to the rainforests of South America.","그 식물은 남미 열대 우림의 토착종이다.","","",2
+indigenous,토착의,adj,"The report cites indigenous farming methods.","그 보고서는 토착 농법을 인용한다.","The plant is indigenous to the rainforests of South America.","그 식물은 남미 열대 우림의 토착종이다.","indigenous peoples","원주민(토착민)",2
 indignant,분개한,adj,"Customers were indignant about the price hike.","고객들은 가격 인상에 분개했다.","","","","",4
 indolent,나태한,adj,"The team grew indolent once sales plateaued.","매출이 정체되자 팀은 나태해졌다.","","","","",5
 indomitable,불굴의,adj,"Her indomitable spirit kept the project alive.","그녀의 불굴의 정신이 그 프로젝트를 살아있게 했다.","","","","",5
@@ -323,7 +323,7 @@ instigate,부추기다/유발하다,v,"The leaked memo instigated a wave of comp
 insurmountable,극복할 수 없는,adj,"The debt seemed insurmountable at first.","그 부채는 처음에는 극복할 수 없어 보였다.","","","","",4
 integral,필수적인,adj,"Testing is integral to the release process.","테스트는 출시 과정에서 필수적이다.","","","","",3
 integrity,진실성/온전함,n,"She is known for her professional integrity.","그녀는 직업적 진실성으로 유명하다.","","","","",3
-intermittent,간헐적인,adj,"The server had intermittent connection issues.","그 서버는 간헐적인 연결 문제를 겪었다.","The patient reported intermittent chest pain over the past week.","환자는 지난 한 주 동안 간헐적인 흉통을 호소했다.","","",2
+intermittent,간헐적인,adj,"The server had intermittent connection issues.","그 서버는 간헐적인 연결 문제를 겪었다.","The patient reported intermittent chest pain over the past week.","환자는 지난 한 주 동안 간헐적인 흉통을 호소했다.","intermittent fasting","간헐적 단식",2
 intractable,다루기 어려운,adj,"The bug turned out to be strangely intractable.","그 버그는 이상하리만치 다루기 어려운 것으로 드러났다.","","","","",5
 intransigent,비타협적인,adj,"The union stayed intransigent on the pay demand.","노조는 임금 요구에 대해 비타협적인 태도를 유지했다.","","","","",5
 intrepid,대담한,adj,"The intrepid team launched despite the risk.","그 대담한 팀은 위험을 무릅쓰고 출시를 강행했다.","","","","",3
@@ -338,15 +338,15 @@ jeopardize,위태롭게 하다,v,"Missing this deadline could jeopardize the dea
 jubilant,매우 기뻐하는,adj,"The team was jubilant after the successful demo.","팀은 성공적인 시연 후 매우 기뻐했다.","","","","",3
 judicious,신중한/사려 깊은,adj,"A judicious use of resources saved the budget.","자원의 신중한 활용이 예산을 지켜냈다.","","","","",4
 juxtapose,나란히 놓다,v,"The report juxtaposes last year's numbers.","그 보고서는 작년 수치를 나란히 놓고 비교한다.","","","","",5
-keen,열망하는/예리한,adj,"She is keen to take on more responsibility.","그녀는 더 많은 책임을 맡고 싶어 한다.","He has a keen interest in ancient history.","그는 고대 역사에 대해 열망하는 관심을 가지고 있다.","","",2
+keen,열망하는/예리한,adj,"She is keen to take on more responsibility.","그녀는 더 많은 책임을 맡고 싶어 한다.","He has a keen interest in ancient history.","그는 고대 역사에 대해 열망하는 관심을 가지고 있다.","keen interest","깊은 관심(예리한 흥미)",2
 labyrinthine,복잡한/미로 같은,adj,"Approval requires a labyrinthine set of forms.","승인을 받으려면 미로처럼 복잡한 서류 절차를 거쳐야 한다.","","","","",5
 laconic,말이 없는,adj,"His laconic reply left the room silent.","그의 짧고 무뚝뚝한 대답에 실내가 조용해졌다.","","","","",5
 lament,애도하다/한탄하다,v,"Analysts lamented the missed opportunity.","분석가들은 놓친 기회를 아쉬워했다.","","","","",3
 languid,나른한,adj,"The office had a languid mood on Friday.","금요일 사무실에는 나른한 분위기가 감돌았다.","","","","",5
 latent,잠재적인,adj,"There is latent demand in the overseas market.","해외 시장에는 잠재적인 수요가 있다.","","","","",4
 laud,칭찬하다,v,"Reviewers lauded the app's clean design.","평론가들은 그 앱의 깔끔한 디자인을 칭찬했다.","","","","",5
-lavish,풍성한/후한,adj,"They threw a lavish launch party downtown.","그들은 시내에서 호화로운 출시 파티를 열었다.","The couple received lavish gifts at their wedding.","그 부부는 결혼식에서 풍성한 선물을 받았다.","","",2
-lenient,관대한,adj,"The new policy is more lenient on late fees.","새 정책은 연체료에 대해 더 관대하다.","The judge was surprisingly lenient with first-time offenders.","그 판사는 초범들에게 놀랍도록 관대했다.","","",2
+lavish,풍성한/후한,adj,"They threw a lavish launch party downtown.","그들은 시내에서 호화로운 출시 파티를 열었다.","The couple received lavish gifts at their wedding.","그 부부는 결혼식에서 풍성한 선물을 받았다.","lavish praise","아낌없는 칭찬",2
+lenient,관대한,adj,"The new policy is more lenient on late fees.","새 정책은 연체료에 대해 더 관대하다.","The judge was surprisingly lenient with first-time offenders.","그 판사는 초범들에게 놀랍도록 관대했다.","lenient sentence","관대한 형량(가벼운 처벌)",2
 lethargic,무기력한,adj,"The team felt lethargic after the long sprint.","팀은 긴 스프린트 이후 무기력함을 느꼈다.","","","","",3
 levy,부과하다/징수하다,v,"The city plans to levy a new parking tax.","시는 새로운 주차세를 부과할 계획이다.","","","","",3
 litigious,소송을 좋아하는,adj,"The market has become increasingly litigious.","그 시장은 점점 더 소송을 좋아하는 분위기로 변하고 있다.","","","","",5
@@ -359,12 +359,12 @@ malign,비방하다/악의적인,v,"He was accused of trying to malign a rival f
 mandate,권한을 부여하다/명령,v,"The new law mandates annual safety reviews.","새 법은 연례 안전 점검을 의무화한다.","","","","",3
 mar,손상시키다,v,"A single error marred an otherwise perfect launch.","사소한 실수 하나가 그렇지 않았다면 완벽했을 출시를 망쳤다.","","","","",3
 meager,빈약한,adj,"The team had a meager budget for the project.","그 팀은 프로젝트를 위한 빈약한 예산밖에 없었다.","The refugees survived on meager rations for weeks.","난민들은 몇 주 동안 빈약한 배급으로 버텼다.","","",2
-mediate,중재하다,v,"HR was asked to mediate the dispute.","인사팀이 그 분쟁을 중재해 달라는 요청을 받았다.","A neutral third party was brought in to mediate the peace talks.","중립적인 제3자가 평화 회담을 중재하기 위해 초청되었다.","","",2
+mediate,중재하다,v,"HR was asked to mediate the dispute.","인사팀이 그 분쟁을 중재해 달라는 요청을 받았다.","A neutral third party was brought in to mediate the peace talks.","중립적인 제3자가 평화 회담을 중재하기 위해 초청되었다.","mediate a dispute","분쟁을 중재하다",2
 mendacious,거짓된,adj,"The report contained several mendacious claims.","그 보고서에는 여러 거짓 주장이 담겨 있었다.","","","","",5
 mercurial,변덕스러운,adj,"His mercurial temper made planning difficult.","그의 변덕스러운 성격 때문에 계획을 세우기 어려웠다.","","","","",5
 meticulous,꼼꼼한,adj,"She is meticulous about details in every report.","그녀는 모든 보고서의 세부 사항에 매우 꼼꼼하다.","","","","",3
 mitigate,완화하다,v,"New safeguards will mitigate the risk.","새로운 안전장치가 위험을 완화할 것이다.","","","","",3
-mock,조롱하다/모의의,v,"Please don't mock a colleague's first attempt.","동료의 첫 시도를 조롱하지 마세요.","The kids used to mock him for his accent.","아이들은 그의 억양 때문에 그를 조롱하곤 했다.","","",1
+mock,조롱하다/모의의,v,"Please don't mock a colleague's first attempt.","동료의 첫 시도를 조롱하지 마세요.","The kids used to mock him for his accent.","아이들은 그의 억양 때문에 그를 조롱하곤 했다.","mock exam","모의고사",1
 modest,겸손한/적당한,adj,"He gave a modest account of his achievements.","그는 자신의 성과를 겸손하게 이야기했다.","They live in a modest house near the edge of town.","그들은 마을 외곽 근처의 적당한 크기의 집에서 산다.","","",1
 mollify,달래다,v,"A discount helped mollify the angry customer.","할인이 화난 고객을 달래는 데 도움이 되었다.","","","","",5
 monotonous,단조로운,adj,"The task became monotonous after a few hours.","몇 시간이 지나자 그 작업은 단조로워졌다.","Reading the same report every day felt monotonous.","매일 같은 보고서를 읽는 것은 단조롭게 느껴졌다.","","",2
@@ -387,7 +387,7 @@ obstinate,고집 센,adj,"He was obstinate about keeping the old process.","그�
 obviate,불필요하게 하다,v,"Automation obviates the need for manual checks.","자동화는 수동 점검의 필요성을 없애준다.","","","","",5
 odious,혐오스러운,adj,"Employees found the new policy simply odious.","직원들은 새 정책을 그야말로 혐오스럽게 여겼다.","","","","",5
 officious,거들먹거리는/간섭하는,adj,"The officious assistant kept overruling decisions.","그 거들먹거리는 비서는 계속해서 결정을 뒤엎었다.","","","","",5
-ominous,불길한,adj,"The falling numbers were an ominous sign.","하락하는 수치는 불길한 징조였다.","An ominous silence fell over the room before the announcement.","발표가 있기 전 방 안에는 불길한 침묵이 감돌았다.","","",2
+ominous,불길한,adj,"The falling numbers were an ominous sign.","하락하는 수치는 불길한 징조였다.","An ominous silence fell over the room before the announcement.","발표가 있기 전 방 안에는 불길한 침묵이 감돌았다.","ominous sign","불길한 징조",2
 opaque,불투명한,adj,"The pricing structure felt deliberately opaque.","그 가격 구조는 일부러 불투명하게 만든 것처럼 느껴졌다.","","","","",3
 opportune,적절한/시기적절한,adj,"It was an opportune moment to raise prices.","가격을 인상하기에 적절한 시점이었다.","","","","",4
 opulent,호화로운,adj,"The new headquarters looked almost opulent.","새 본사는 거의 호화롭다고 할 만큼 보였다.","","","","",3
@@ -419,7 +419,7 @@ placate,달래다,v,"A refund helped placate the frustrated buyer.","환불이 �
 plausible,타당한/그럴듯한,adj,"That's a plausible explanation for the drop.","그것은 그 하락에 대한 타당한 설명이다.","","","","",3
 plight,어려운 처지,n,"The report highlighted the plight of small vendors.","그 보고서는 영세 판매자들의 어려운 처지를 조명했다.","","","","",3
 poignant,감동적인/절실한,adj,"The retiring manager gave a poignant speech.","퇴임하는 매니저는 감동적인 연설을 했다.","","","","",4
-polarize,양극화시키다,v,"The proposal polarized the whole department.","그 제안은 부서 전체를 양극화시켰다.","The election polarized the small town like never before.","그 선거는 그 작은 마을을 전례 없이 양극화시켰다.","","",2
+polarize,양극화시키다,v,"The proposal polarized the whole department.","그 제안은 부서 전체를 양극화시켰다.","The election polarized the small town like never before.","그 선거는 그 작은 마을을 전례 없이 양극화시켰다.","polarizing figure","찬반이 극명하게 갈리는 인물",2
 ponder,깊이 생각하다,v,"She pondered the offer for a full week.","그녀는 그 제안을 일주일 내내 깊이 고민했다.","He sat by the window, pondering his next move.","그는 창가에 앉아 다음 행동을 깊이 생각했다.","","",2
 pragmatic,실용적인,adj,"They took a pragmatic approach to the budget.","그들은 예산에 실용적으로 접근했다.","","","","",3
 precarious,불안정한,adj,"The startup's finances remained precarious.","그 스타트업의 재정 상태는 계속 불안정했다.","","","","",3
@@ -443,9 +443,9 @@ pungent,강한 냄새의/날카로운,adj,"His pungent criticism stung during th
 qualm,걱정/불안,n,"She had no qualms about rejecting the proposal.","그녀는 그 제안을 거절하는 데 아무런 거리낌이 없었다.","","","","",3
 quandary,곤경/난처한 상황,n,"He was in a quandary over which vendor to pick.","그는 어느 업체를 선택할지 곤경에 빠져 있었다.","","","","",5
 querulous,불평이 많은,adj,"The querulous tone of the email annoyed HR.","그 이메일의 불평 섞인 어조가 인사팀을 짜증나게 했다.","","","","",5
-rampant,만연한,adj,"Rumors were rampant after the announcement.","발표 이후 소문이 만연했다.","Corruption was rampant in the old regime.","그 옛 정권에서는 부패가 만연했다.","","",2
+rampant,만연한,adj,"Rumors were rampant after the announcement.","발표 이후 소문이 만연했다.","Corruption was rampant in the old regime.","그 옛 정권에서는 부패가 만연했다.","rampant corruption","만연한 부패",2
 rancor,원한,n,"There was still rancor between the two founders.","두 창업자 사이에는 여전히 원한이 남아 있었다.","","","","",5
-rash,성급한,adj,"It was a rash decision made without enough data.","그것은 충분한 데이터 없이 내려진 성급한 결정이었다.","Quitting your job without a backup plan sounds rash.","대비책 없이 직장을 그만두는 것은 성급한 것처럼 들린다.","","",2
+rash,성급한,adj,"It was a rash decision made without enough data.","그것은 충분한 데이터 없이 내려진 성급한 결정이었다.","Quitting your job without a backup plan sounds rash.","대비책 없이 직장을 그만두는 것은 성급한 것처럼 들린다.","rash decision","성급한 결정",2
 rebuke,질책하다,v,"The board rebuked him for the leaked figures.","이사회는 수치 유출에 대해 그를 질책했다.","","","","",4
 recalcitrant,반항적인,adj,"A few recalcitrant clients refused the new terms.","몇몇 반항적인 고객들은 새 조건을 거부했다.","","","","",5
 reciprocate,보답하다/상호 교환하다,v,"The vendor reciprocated with a discount.","그 업체는 할인으로 보답했다.","","","","",4
@@ -474,14 +474,14 @@ scrupulous,꼼꼼한/양심적인,adj,"He is scrupulous about following the chec
 scrutinize,자세히 조사하다,v,"Auditors scrutinized every line of the report.","감사관들은 보고서의 모든 항목을 자세히 조사했다.","The editor scrutinized each sentence before publishing the article.","편집자는 기사를 게재하기 전에 문장 하나하나를 자세히 조사했다.","","",2
 sedentary,앉아서 지내는,adj,"Office work tends to be quite sedentary.","사무직 업무는 대체로 앉아서 지내는 경향이 있다.","","","","",3
 serene,평온한,adj,"The office felt oddly serene during the holidays.","연휴 기간 사무실은 묘하게 평온했다.","","","","",3
-severe,심각한/엄격한,adj,"The bug caused a severe drop in performance.","그 버그는 성능의 심각한 저하를 일으켰다.","The region suffered severe damage from the earthquake.","그 지역은 지진으로 심각한 피해를 입었다.","","",1
+severe,심각한/엄격한,adj,"The bug caused a severe drop in performance.","그 버그는 성능의 심각한 저하를 일으켰다.","The region suffered severe damage from the earthquake.","그 지역은 지진으로 심각한 피해를 입었다.","severe weather","악천후(심각한 기상 상황)",1
 skeptical,의심하는,adj,"Investors remained skeptical of the forecast.","투자자들은 그 전망에 대해 계속 의심을 품었다.","","","","",3
 solace,위안,n,"She found solace in the team's support.","그녀는 팀의 지지에서 위안을 얻었다.","","","","",3
 solicit,요청하다,v,"The firm solicited feedback from every client.","그 회사는 모든 고객에게 피드백을 요청했다.","","","","",4
 solitary,혼자 하는/고독한,adj,"He prefers solitary work over group meetings.","그는 단체 회의보다 혼자 하는 작업을 선호한다.","","","","",3
 sparse,희박한/드문,adj,"Data for the region was still quite sparse.","그 지역에 대한 데이터는 여전히 상당히 부족했다.","","","","",3
 spurious,거짓된/근거 없는,adj,"The claim turned out to be entirely spurious.","그 주장은 완전히 근거 없는 것으로 드러났다.","","","","",5
-stagnant,침체된,adj,"Sales have been stagnant for two quarters.","매출이 두 분기 연속 정체되어 있다.","Wages have remained stagnant for nearly a decade.","임금은 거의 10년째 정체된 상태를 유지하고 있다.","","",2
+stagnant,침체된,adj,"Sales have been stagnant for two quarters.","매출이 두 분기 연속 정체되어 있다.","Wages have remained stagnant for nearly a decade.","임금은 거의 10년째 정체된 상태를 유지하고 있다.","stagnant water","고인 물",2
 staunch,확고한,adj,"He remained a staunch supporter of the merger.","그는 그 합병의 확고한 지지자로 남았다.","","","","",3
 stringent,엄격한,adj,"The new rules impose stringent safety checks.","새 규정은 엄격한 안전 점검을 요구한다.","","","","",4
 subdue,진압하다/억제하다,v,"Management tried to subdue the growing unrest.","경영진은 커지는 불만을 진정시키려 했다.","","","","",4
@@ -489,17 +489,17 @@ subside,진정되다/가라앉다,v,"The controversy eventually subsided.","그 
 substantiate,입증하다,v,"He could not substantiate the claim with data.","그는 데이터로 그 주장을 입증하지 못했다.","","","","",4
 subtle,미묘한,adj,"There's a subtle difference between the two plans.","두 계획 사이에는 미묘한 차이가 있다.","He gave a subtle hint that he wanted to leave early.","그는 일찍 떠나고 싶다는 미묘한 암시를 주었다.","","",2
 succinct,간결한,adj,"Keep your summary succinct and clear.","요약은 간결하고 명확하게 작성하세요.","","","","",4
-superficial,겉만의/얕은,adj,"The review felt superficial and rushed.","그 검토는 겉핥기식이고 서둘러 진행된 것처럼 느껴졌다.","Their friendship always felt somewhat superficial.","그들의 우정은 항상 다소 겉만의 관계처럼 느껴졌다.","","",2
+superficial,겉만의/얕은,adj,"The review felt superficial and rushed.","그 검토는 겉핥기식이고 서둘러 진행된 것처럼 느껴졌다.","Their friendship always felt somewhat superficial.","그들의 우정은 항상 다소 겉만의 관계처럼 느껴졌다.","superficial wound","표면적인 상처(경상)",2
 superfluous,불필요한,adj,"Remove any superfluous steps from the process.","절차에서 불필요한 단계는 모두 제거하세요.","","","","",4
 suppress,억누르다,v,"They tried to suppress news of the recall.","그들은 리콜 소식을 억누르려 했다.","","","","",3
 surreptitious,은밀한,adj,"He made a surreptitious copy of the file.","그는 그 파일을 은밀히 복사했다.","","","","",5
-susceptible,취약한/영향받기 쉬운,adj,"Older systems are more susceptible to attacks.","오래된 시스템은 공격에 더 취약하다.","Young children are especially susceptible to colds.","어린아이들은 감기에 특히 취약하다.","","",2
+susceptible,취약한/영향받기 쉬운,adj,"Older systems are more susceptible to attacks.","오래된 시스템은 공격에 더 취약하다.","Young children are especially susceptible to colds.","어린아이들은 감기에 특히 취약하다.","susceptible to infection","감염에 취약한",2
 tacit,암묵적인,adj,"There was a tacit understanding not to compete.","서로 경쟁하지 않는다는 암묵적인 양해가 있었다.","","","","",4
 taciturn,과묵한,adj,"The new hire was taciturn during his first week.","그 신입 사원은 첫 주 동안 과묵했다.","","","","",5
-tangible,실체가 있는,adj,"We need tangible proof before investing more.","더 투자하기 전에 실체가 있는 증거가 필요하다.","The new policy has brought tangible improvements to safety.","새 정책은 안전에 실체가 있는 개선을 가져왔다.","","",2
+tangible,실체가 있는,adj,"We need tangible proof before investing more.","더 투자하기 전에 실체가 있는 증거가 필요하다.","The new policy has brought tangible improvements to safety.","새 정책은 안전에 실체가 있는 개선을 가져왔다.","tangible assets","유형 자산",2
 tedious,지루한,adj,"Filing expenses is a tedious weekly chore.","경비 처리는 매주 반복되는 지루한 잡무다.","Sorting through old paperwork can be tedious.","오래된 서류를 정리하는 일은 지루할 수 있다.","","",1
 tenacious,집요한,adj,"She was tenacious in pursuing the refund.","그녀는 환불을 받아내기 위해 집요하게 매달렸다.","","","","",4
-tentative,잠정적인,adj,"They reached a tentative agreement on price.","그들은 가격에 대해 잠정적인 합의에 이르렀다.","We made a tentative plan to meet next Friday.","우리는 다음 주 금요일에 만나기로 잠정적인 계획을 세웠다.","","",2
+tentative,잠정적인,adj,"They reached a tentative agreement on price.","그들은 가격에 대해 잠정적인 합의에 이르렀다.","We made a tentative plan to meet next Friday.","우리는 다음 주 금요일에 만나기로 잠정적인 계획을 세웠다.","tentative agreement","잠정 합의",2
 terse,간결한/무뚝뚝한,adj,"His terse reply left no room for discussion.","그의 무뚝뚝한 대답은 더 논의할 여지를 남기지 않았다.","","","","",4
 thwart,좌절시키다,v,"A last-minute bug thwarted the planned launch.","막판에 발생한 버그가 예정된 출시를 좌절시켰다.","","","","",4
 timid,소심한,adj,"She was too timid to raise the issue at first.","그녀는 처음에는 너무 소심해서 그 문제를 제기하지 못했다.","He was a timid child who rarely spoke in class.","그는 수업 시간에 좀처럼 말하지 않는 소심한 아이였다.","","",1
@@ -507,11 +507,11 @@ torpid,무기력한,adj,"The office felt torpid after the long holiday.","긴 �
 tumultuous,격동의,adj,"It was a tumultuous year for the industry.","업계에게 격동의 한 해였다.","","","","",3
 turbulent,격동의/난기류의,adj,"Markets remained turbulent through the summer.","여름 내내 시장은 계속 불안정했다.","","","","",3
 ubiquitous,어디에나 있는,adj,"Smartphones are now ubiquitous in the workplace.","스마트폰은 이제 직장 어디에나 있다.","","","","",4
-unanimous,만장일치의,adj,"The vote to approve the plan was unanimous.","그 계획을 승인하는 투표는 만장일치였다.","The jury reached a unanimous verdict after two hours.","배심원단은 두 시간 만에 만장일치의 평결에 도달했다.","","",2
+unanimous,만장일치의,adj,"The vote to approve the plan was unanimous.","그 계획을 승인하는 투표는 만장일치였다.","The jury reached a unanimous verdict after two hours.","배심원단은 두 시간 만에 만장일치의 평결에 도달했다.","unanimous decision","만장일치 결정",2
 unassuming,겸손한,adj,"He's an unassuming leader who rarely takes credit.","그는 공을 내세우는 일이 거의 없는 겸손한 리더다.","","","","",3
 uncanny,이상한/묘한,adj,"She has an uncanny ability to predict trends.","그녀는 유행을 예측하는 묘한 재능이 있다.","","","","",3
 unequivocal,분명한,adj,"The board gave an unequivocal yes to the deal.","이사회는 그 거래에 분명한 승낙을 보냈다.","","","","",4
-unprecedented,전례 없는,adj,"The company saw unprecedented growth this year.","그 회사는 올해 전례 없는 성장을 이루었다.","The flooding caused unprecedented damage to the coastal town.","그 홍수는 해안 마을에 전례 없는 피해를 입혔다.","","",2
+unprecedented,전례 없는,adj,"The company saw unprecedented growth this year.","그 회사는 올해 전례 없는 성장을 이루었다.","The flooding caused unprecedented damage to the coastal town.","그 홍수는 해안 마을에 전례 없는 피해를 입혔다.","unprecedented times","전례 없는 시기(초유의 사태)",2
 unscrupulous,비양심적인,adj,"An unscrupulous vendor overcharged the client.","비양심적인 업체가 고객에게 과다 청구를 했다.","","","","",4
 unwarranted,부당한,adj,"The criticism seemed unwarranted given the results.","그 결과를 고려하면 그 비판은 부당해 보였다.","","","","",4
 usurp,빼앗다/침해하다,v,"He was accused of trying to usurp her role.","그는 그녀의 역할을 빼앗으려 했다는 비난을 받았다.","","","","",5
@@ -524,49 +524,49 @@ verbose,말이 많은,adj,"The report was too verbose for a quick read.","그 �
 veritable,진정한/틀림없는,adj,"The launch was a veritable success by every metric.","그 출시는 어떤 기준으로 봐도 진정한 성공이었다.","","","","",5
 vex,성가시게 하다,v,"The recurring bug continued to vex the team.","반복되는 그 버그는 계속해서 팀을 성가시게 했다.","","","","",3
 viable,실행 가능한,adj,"The plan is financially viable for now.","그 계획은 현재로서는 재정적으로 실행 가능하다.","Solar power is becoming a viable option for many homes.","태양광 발전은 많은 가정에 실행 가능한 선택지가 되어가고 있다.","","",2
-vigilant,경계하는,adj,"Stay vigilant for phishing emails this week.","이번 주에는 피싱 이메일에 계속 경계하세요.","Lifeguards must stay vigilant while watching the pool.","안전요원은 수영장을 지켜보는 동안 계속 경계해야 한다.","","",2
+vigilant,경계하는,adj,"Stay vigilant for phishing emails this week.","이번 주에는 피싱 이메일에 계속 경계하세요.","Lifeguards must stay vigilant while watching the pool.","안전요원은 수영장을 지켜보는 동안 계속 경계해야 한다.","remain vigilant","경계를 늦추지 않다",2
 vindicate,정당성을 입증하다,v,"The strong results vindicated her strategy.","좋은 성과가 그녀의 전략이 옳았음을 입증했다.","","","","",4
 virulent,악성의/맹독성의,adj,"A virulent rumor spread through the office.","악의적인 소문이 사무실에 퍼졌다.","","","","",5
-volatile,불안정한,adj,"The currency has been extremely volatile lately.","최근 그 통화는 극도로 불안정한 움직임을 보였다.","His temper was so volatile that colleagues avoided him.","그의 성격이 너무 불안정해서 동료들은 그를 피했다.","","",2
+volatile,불안정한,adj,"The currency has been extremely volatile lately.","최근 그 통화는 극도로 불안정한 움직임을 보였다.","His temper was so volatile that colleagues avoided him.","그의 성격이 너무 불안정해서 동료들은 그를 피했다.","volatile market","변동성이 큰 시장",2
 voracious,탐욕스러운,adj,"He is a voracious reader of industry news.","그는 업계 뉴스를 탐욕스럽게 읽어치우는 사람이다.","","","","",3
 wane,줄어들다,v,"Public interest in the app began to wane.","그 앱에 대한 대중의 관심이 줄어들기 시작했다.","","","","",3
 wary,조심스러운,adj,"Investors are wary of the new market.","투자자들은 그 신규 시장에 대해 조심스러워한다.","She grew wary of strangers after the incident.","그 사건 이후 그녀는 낯선 사람들을 조심스러워하게 되었다.","","",2
 whimsical,기발한/즉흥적인,adj,"The branding has a whimsical, playful tone.","그 브랜딩은 기발하고 장난스러운 느낌을 준다.","","","","",3
 zealous,열성적인,adj,"The new hire is zealous about process improvement.","그 신입 사원은 프로세스 개선에 열성적이다.","He was a zealous supporter of the local sports team.","그는 지역 스포츠 팀의 열성적인 지지자였다.","","",2
-address,주소,n,"Please update your address with the billing department.","청구 부서에 주소를 업데이트해 주세요.","He wrote his new address on the form.","그는 양식에 새 주소를 적었다.","","",1
+address,주소,n,"Please update your address with the billing department.","청구 부서에 주소를 업데이트해 주세요.","He wrote his new address on the form.","그는 양식에 새 주소를 적었다.","email address","이메일 주소",1
 address,다루다/처리하다,v,"The report failed to address the budget shortfall.","그 보고서는 예산 부족 문제를 다루지 못했다.","","","","",3
-novel,소설,n,"She spent the entire flight reading a novel.","그녀는 비행 내내 소설을 읽으며 보냈다.","He spent five years writing his first novel.","그는 첫 소설을 쓰는 데 5년을 보냈다.","","",1
+novel,소설,n,"She spent the entire flight reading a novel.","그녀는 비행 내내 소설을 읽으며 보냈다.","He spent five years writing his first novel.","그는 첫 소설을 쓰는 데 5년을 보냈다.","graphic novel","그래픽 노블(만화 형식의 소설)",1
 novel,새로운/기발한,adj,"They proposed a novel approach to the pricing problem.","그들은 가격 문제에 대해 새로운 접근법을 제안했다.","The scientist came up with a novel solution to the energy problem.","그 과학자는 에너지 문제에 대한 새로운 해결책을 내놓았다.","","",1
-grave,무덤,n,"The old cemetery has graves dating back a century.","그 오래된 묘지에는 100년 전으로 거슬러 올라가는 무덤들이 있다.","Visitors laid flowers on the soldier's grave every year.","방문객들은 매년 그 군인의 무덤에 꽃을 놓았다.","","",1
+grave,무덤,n,"The old cemetery has graves dating back a century.","그 오래된 묘지에는 100년 전으로 거슬러 올라가는 무덤들이 있다.","Visitors laid flowers on the soldier's grave every year.","방문객들은 매년 그 군인의 무덤에 꽃을 놓았다.","mass grave","집단 무덤(암매장지)",1
 grave,심각한/중대한,adj,"The company faces a grave risk if the merger falls through.","합병이 무산되면 그 회사는 심각한 위험에 처하게 된다.","","","","",3
-sound,소리,n,"A strange sound came from the server room.","서버실에서 이상한 소리가 났다.","The sound of laughter echoed through the hallway.","웃음소리가 복도에 울려 퍼졌다.","","",1
+sound,소리,n,"A strange sound came from the server room.","서버실에서 이상한 소리가 났다.","The sound of laughter echoed through the hallway.","웃음소리가 복도에 울려 퍼졌다.","sound effects","음향 효과",1
 sound,건전한/타당한,adj,"The auditors called the accounting practices sound.","감사관들은 그 회계 관행이 건전하다고 판단했다.","","","","",3
-figure,수치/인물,n,"The latest figure shows a 10% increase in revenue.","최신 수치는 매출이 10% 증가했음을 보여준다.","The company's growth figure exceeded analysts' predictions.","그 회사의 성장 수치는 분석가들의 예측을 뛰어넘었다.","","",1
+figure,수치/인물,n,"The latest figure shows a 10% increase in revenue.","최신 수치는 매출이 10% 증가했음을 보여준다.","The company's growth figure exceeded analysts' predictions.","그 회사의 성장 수치는 분석가들의 예측을 뛰어넘었다.","public figure","공인(유명 인사)",1
 figure,생각하다/판단하다,v,"She figured the delay was due to a shipping error.","그녀는 그 지연이 배송 오류 때문이라고 판단했다.","","","","",3
-plant,공장/식물,n,"The new plant will double our production capacity.","새 공장은 우리의 생산 능력을 두 배로 늘릴 것이다.","The factory converted the old plant into a modern facility.","그 회사는 오래된 공장을 현대적인 시설로 전환했다.","","",1
+plant,공장/식물,n,"The new plant will double our production capacity.","새 공장은 우리의 생산 능력을 두 배로 늘릴 것이다.","The factory converted the old plant into a modern facility.","그 회사는 오래된 공장을 현대적인 시설로 전환했다.","power plant","발전소",1
 plant,몰래 심다/설치하다,v,"Investigators suspect someone planted false evidence.","수사관들은 누군가 거짓 증거를 몰래 심었다고 의심하고 있다.","","","","",3
 object,물체/목적,n,"The object of the meeting was to finalize the budget.","그 회의의 목적은 예산을 확정하는 것이었다.","The main object of the reform was to reduce costs.","그 개혁의 주된 목적은 비용을 줄이는 것이었다.","","",1
 object,반대하다,v,"Two board members objected to the proposal.","두 명의 이사가 그 제안에 반대했다.","Several residents objected to the construction of the new mall.","몇몇 주민들이 새 쇼핑몰 건설에 반대했다.","","",1
 content,만족한,adj,"He seemed content with the compromise.","그는 그 타협에 만족한 듯 보였다.","She felt content just spending a quiet evening at home.","그녀는 그저 집에서 조용한 저녁을 보내는 것만으로 만족을 느꼈다.","","",1
-content,내용,n,"The email's content was leaked to a competitor.","그 이메일의 내용이 경쟁사에 유출되었다.","The content of the speech focused mainly on economic reform.","그 연설의 내용은 주로 경제 개혁에 초점을 맞췄다.","","",1
+content,내용,n,"The email's content was leaked to a competitor.","그 이메일의 내용이 경쟁사에 유출되었다.","The content of the speech focused mainly on economic reform.","그 연설의 내용은 주로 경제 개혁에 초점을 맞췄다.","table of contents","목차",1
 present,제시하다,v,"She will present the findings at Friday's meeting.","그녀는 금요일 회의에서 조사 결과를 발표할 것이다.","The lawyer presented new evidence to the court.","그 변호사는 법정에 새로운 증거를 제시했다.","","",1
-present,현재의,adj,"The present policy does not allow remote work.","현재 정책은 원격 근무를 허용하지 않는다.","The present situation calls for immediate action.","현재 상황은 즉각적인 조치를 필요로 한다.","","",1
+present,현재의,adj,"The present policy does not allow remote work.","현재 정책은 원격 근무를 허용하지 않는다.","The present situation calls for immediate action.","현재 상황은 즉각적인 조치를 필요로 한다.","present tense","현재 시제",1
 compound,화합물/복합체,n,"The lab identified a new chemical compound.","그 연구실은 새로운 화학 화합물을 발견했다.","","","","",3
 compound,악화시키다/복잡하게 만들다,v,"Poor communication only compounded the delay.","원활하지 못한 소통이 지연을 더욱 악화시켰다.","","","","",5
-discount,할인,n,"Loyal customers receive a 10% discount.","단골 고객은 10% 할인을 받는다.","The store offered a discount on all winter clothing.","그 매장은 모든 겨울 의류에 할인을 제공했다.","","",1
+discount,할인,n,"Loyal customers receive a 10% discount.","단골 고객은 10% 할인을 받는다.","The store offered a discount on all winter clothing.","그 매장은 모든 겨울 의류에 할인을 제공했다.","discount store","할인점",1
 discount,무시하다/경시하다,v,"Analysts discounted the rumor as baseless.","분석가들은 그 소문을 근거 없다며 무시했다.","","","","",3
 irresponsible,무책임한,adj,"It was irresponsible of him to skip the safety review.","그가 안전 점검을 건너뛴 것은 무책임한 행동이었다.","","","","",3
 forgo,포기하다/그만두다,v,"The team decided to forgo the annual bonus this year.","팀은 올해 연간 보너스를 포기하기로 했다.","","","","",3
-moderate,적당한/온건한,adj,"Analysts expect moderate growth next quarter.","분석가들은 다음 분기에 적당한 성장을 예상한다.","He holds fairly moderate political views.","그는 상당히 온건한 정치적 견해를 가지고 있다.","","",1
+moderate,적당한/온건한,adj,"Analysts expect moderate growth next quarter.","분석가들은 다음 분기에 적당한 성장을 예상한다.","He holds fairly moderate political views.","그는 상당히 온건한 정치적 견해를 가지고 있다.","moderate exercise","적당한 운동",1
 impulse,충동,n,"She bought the bag on a sudden impulse.","그녀는 갑작스러운 충동으로 그 가방을 샀다.","He resisted the impulse to check his phone during the meeting.","그는 회의 중에 휴대폰을 확인하고 싶은 충동을 참았다.","impulse purchase","충동구매",1
 pleasant,기분 좋은/쾌적한,adj,"The office has a pleasant atmosphere on Fridays.","사무실은 금요일마다 기분 좋은 분위기가 된다.","It was a pleasant surprise to see an old friend at the airport.","공항에서 옛 친구를 본 것은 기분 좋은 놀라움이었다.","","",1
 gratifying,만족스러운/보람있는,adj,"It was gratifying to see the project finally launch.","프로젝트가 마침내 출시되는 것을 보니 뿌듯했다.","","","","",3
 massive,거대한/대규모의,adj,"The company suffered a massive loss last quarter.","그 회사는 지난 분기에 막대한 손실을 입었다.","A massive crowd gathered outside the stadium before the game.","경기 전 경기장 밖에 거대한 인파가 모여들었다.","","",1
 strict,엄격한,adj,"The company has a strict policy on expense reports.","그 회사는 경비 보고서에 대해 엄격한 방침을 가지고 있다.","Her parents were strict about her curfew.","그녀의 부모님은 통금 시간에 대해 엄격했다.","","",1
-politics,정치,n,"Office politics made the promotion process frustrating.","사내 정치 때문에 승진 과정이 답답하게 느껴졌다.","He has never been interested in politics.","그는 정치에 관심을 가진 적이 없다.","","",1
+politics,정치,n,"Office politics made the promotion process frustrating.","사내 정치 때문에 승진 과정이 답답하게 느껴졌다.","He has never been interested in politics.","그는 정치에 관심을 가진 적이 없다.","office politics","사내 정치",1
 democracy,민주주의,n,"The report examines democracy in emerging markets.","그 보고서는 신흥 시장의 민주주의를 다룬다.","The country transitioned to democracy after decades of military rule.","그 나라는 수십 년간의 군사 통치 이후 민주주의로 전환했다.","","",1
 dispense,나누어 주다/지급하다,v,"The machine dispenses tickets automatically at the gate.","그 기계는 입구에서 자동으로 표를 나눠 준다.","","","","",3
-authority,권한/권위,n,"She has the authority to approve the budget alone.","그녀는 혼자서 예산을 승인할 권한을 가지고 있다.","The teacher spoke with great authority on the subject.","그 선생님은 그 주제에 대해 대단한 권위를 가지고 말했다.","","",1
+authority,권한/권위,n,"She has the authority to approve the budget alone.","그녀는 혼자서 예산을 승인할 권한을 가지고 있다.","The teacher spoke with great authority on the subject.","그 선생님은 그 주제에 대해 대단한 권위를 가지고 말했다.","figure of authority","권위 있는 인물",1
 refer to,언급하다/참조하다,phr,"The manual refers to the safety guidelines in chapter two.","그 설명서는 2장에서 안전 지침을 언급한다.","","","","",3
 comply with,준수하다,phr,"All vendors must comply with the new safety standards.","모든 업체는 새로운 안전 기준을 준수해야 한다.","","","","",3
 consist of,~으로 구성되다,phr,"The committee consists of five senior managers.","그 위원회는 다섯 명의 고위 관리자로 구성되어 있다.","","","","",3
@@ -603,43 +603,43 @@ neither ~ nor,~도 ~도 아닌,phr,"Neither the manager nor the staff were infor
 no sooner ~ than,~하자마자,phr,"No sooner had the meeting started than the fire alarm went off.","회의가 시작되자마자 화재경보가 울렸다.","","","","",5
 rather than,~보다는,phr,"They chose to negotiate rather than file a lawsuit.","그들은 소송을 제기하기보다는 협상을 택했다.","","","","",3
 toilsome,힘든/고생스러운,adj,"The manual data entry was a toilsome process before the update.","업데이트 전에는 수작업 데이터 입력이 힘든 작업이었다.","","","","",5
-revolution,혁명,n,"The internet caused a revolution in how companies communicate.","인터넷은 기업들의 소통 방식에 혁명을 일으켰다.","The French Revolution changed the course of European history.","프랑스 혁명은 유럽 역사의 흐름을 바꾸어 놓았다.","","",1
+revolution,혁명,n,"The internet caused a revolution in how companies communicate.","인터넷은 기업들의 소통 방식에 혁명을 일으켰다.","The French Revolution changed the course of European history.","프랑스 혁명은 유럽 역사의 흐름을 바꾸어 놓았다.","industrial revolution","산업혁명",1
 refuse,거절하다,v,"The vendor refused to lower the price any further.","그 업체는 가격을 더 이상 낮추기를 거절했다.","She refused to apologize even after being asked twice.","그녀는 두 번이나 요청받았음에도 사과하기를 거절했다.","","",1
-committee,위원회,n,"The committee will review the proposal next week.","위원회는 다음 주에 그 제안을 검토할 것이다.","She was elected chair of the fundraising committee.","그녀는 모금 위원회의 의장으로 선출되었다.","","",1
+committee,위원회,n,"The committee will review the proposal next week.","위원회는 다음 주에 그 제안을 검토할 것이다.","She was elected chair of the fundraising committee.","그녀는 모금 위원회의 의장으로 선출되었다.","steering committee","운영위원회",1
 drench,흠뻑 적시다,v,"The sudden storm drenched everyone walking to the office.","갑작스러운 폭풍우가 출근하던 사람들을 흠뻑 적셨다.","","","","",3
 be drenched in,~에 흠뻑 젖다,phr,"He was drenched in sweat after the emergency drill.","그는 비상 훈련 후 땀에 흠뻑 젖었다.","","","","",3
 asteroid,소행성,n,"The mission aims to study an asteroid near Earth's orbit.","그 임무는 지구 궤도 근처의 소행성을 연구하는 것을 목표로 한다.","","","","",3
 fossilize,화석화되다/경직되다,v,"Some of the old procedures had fossilized into pointless rituals.","몇몇 오래된 절차는 의미 없는 형식적 관행으로 굳어져 있었다.","","","","",5
 painstakingly,애써서/정성껏,adv,"She painstakingly reviewed every line of the contract.","그녀는 계약서의 모든 줄을 공들여 검토했다.","","","","",5
-sentiment,감정/정서/여론,n,"Investor sentiment turned negative after the announcement.","발표 이후 투자 심리가 부정적으로 돌아섰다.","Public sentiment shifted in favor of the new law.","여론은 그 새 법에 우호적인 쪽으로 바뀌었다.","","",2
-tighten,강화하다/조이다,v,"The bank tightened its lending standards this quarter.","그 은행은 이번 분기 대출 기준을 강화했다.","He tightened the screws on the shelf before adding books.","그는 책을 놓기 전에 선반의 나사를 조였다.","","",1
+sentiment,감정/정서/여론,n,"Investor sentiment turned negative after the announcement.","발표 이후 투자 심리가 부정적으로 돌아섰다.","Public sentiment shifted in favor of the new law.","여론은 그 새 법에 우호적인 쪽으로 바뀌었다.","public sentiment","여론(대중 정서)",2
+tighten,강화하다/조이다,v,"The bank tightened its lending standards this quarter.","그 은행은 이번 분기 대출 기준을 강화했다.","He tightened the screws on the shelf before adding books.","그는 책을 놓기 전에 선반의 나사를 조였다.","tighten one's belt","허리띠를 졸라매다(긴축하다)",1
 tighten up on,~에 대해 단속을 강화하다,phr,"Regulators plan to tighten up on insider trading.","규제 당국은 내부자 거래에 대한 단속을 강화할 계획이다.","","","","",5
 dismiss,해고하다/일축하다,v,"The board dismissed the rumor as baseless speculation.","이사회는 그 소문을 근거 없는 추측이라며 일축했다.","","","","",3
 compensate,보상하다/보완하다,v,"The airline offered to compensate passengers with travel vouchers.","그 항공사는 승객들에게 여행 상품권으로 보상하겠다고 제안했다.","","","","",3
 obsessed,집착하는/사로잡힌,adj,"The founder became obsessed with product perfection.","창업자는 제품의 완벽함에 집착하게 되었다.","Ever since childhood, she has been obsessed with dinosaurs.","어릴 때부터 그녀는 공룡에 집착해 왔다.","","",1
 be obsessed with,~에 집착하다,phr,"He is obsessed with hitting the quarterly target.","그는 분기 목표를 달성하는 데 집착한다.","","","","",3
-flawless,완벽한/결함없는,adj,"The audit found the report to be flawless.","감사 결과 그 보고서는 결함이 없는 것으로 나타났다.","Her performance on stage was absolutely flawless.","무대 위 그녀의 공연은 완전히 완벽했다.","","",1
+flawless,완벽한/결함없는,adj,"The audit found the report to be flawless.","감사 결과 그 보고서는 결함이 없는 것으로 나타났다.","Her performance on stage was absolutely flawless.","무대 위 그녀의 공연은 완전히 완벽했다.","flawless skin","티 없이 매끈한 피부",1
 convinced,확신하는,adj,"She was convinced that the merger would succeed.","그녀는 그 합병이 성공할 것이라고 확신했다.","He remained convinced that he had made the right choice.","그는 자신이 옳은 선택을 했다고 계속 확신했다.","","",1
 be convinced of,~을 확신하다,phr,"The board was convinced of the plan's long-term value.","이사회는 그 계획의 장기적 가치를 확신했다.","","","","",3
-permit,허용하다,v,"The new policy permits remote work twice a week.","새 정책은 주 2회 재택근무를 허용한다.","The library doesn't permit food or drinks inside.","그 도서관은 내부에서 음식이나 음료를 허용하지 않는다.","","",1
-estimate,추정하다/추산하다,v,"Analysts estimate a 5% increase in revenue next year.","분석가들은 내년 매출이 5% 증가할 것으로 추정한다.","The contractor estimated the repairs would cost about two thousand dollars.","그 시공업자는 수리 비용이 약 2천 달러가 들 것으로 추정했다.","","",1
+permit,허용하다,v,"The new policy permits remote work twice a week.","새 정책은 주 2회 재택근무를 허용한다.","The library doesn't permit food or drinks inside.","그 도서관은 내부에서 음식이나 음료를 허용하지 않는다.","weather permitting","날씨가 허락하면",1
+estimate,추정하다/추산하다,v,"Analysts estimate a 5% increase in revenue next year.","분석가들은 내년 매출이 5% 증가할 것으로 추정한다.","The contractor estimated the repairs would cost about two thousand dollars.","그 시공업자는 수리 비용이 약 2천 달러가 들 것으로 추정했다.","ballpark estimate","대략적인 추정치",1
 council,의회/평의회,n,"The city council approved the new budget.","시의회는 새 예산안을 승인했다.","","","","",3
 enact,제정하다/시행하다,v,"Lawmakers enacted the bill after months of debate.","입법자들은 몇 달간의 논의 끝에 그 법안을 제정했다.","","","","",3
 unanimously,만장일치로,adv,"The board voted unanimously to approve the merger.","이사회는 만장일치로 그 합병을 승인했다.","","","","",3
-immediate,즉각적인,adj,"The CEO demanded an immediate response to the complaint.","CEO는 그 항의에 즉각적인 대응을 요구했다.","The doctor said the patient needed immediate surgery.","의사는 환자에게 즉각적인 수술이 필요하다고 말했다.","","",1
+immediate,즉각적인,adj,"The CEO demanded an immediate response to the complaint.","CEO는 그 항의에 즉각적인 대응을 요구했다.","The doctor said the patient needed immediate surgery.","의사는 환자에게 즉각적인 수술이 필요하다고 말했다.","immediate family","직계 가족",1
 legislator,입법자/국회의원,n,"Legislators debated the new tax bill for weeks.","국회의원들은 몇 주 동안 새 세법안을 논의했다.","","","","",3
 reword,다시 표현하다/고쳐 쓰다,v,"Please reword the clause to avoid any ambiguity.","모호함을 피하기 위해 그 조항을 다시 표현해 주세요.","","","","",3
-corporate,기업의/법인의,adj,"The corporate office announced a new remote work policy.","본사는 새로운 재택근무 정책을 발표했다.","She works in the corporate sector after leaving academia.","그녀는 학계를 떠난 후 기업 분야에서 일한다.","","",2
+corporate,기업의/법인의,adj,"The corporate office announced a new remote work policy.","본사는 새로운 재택근무 정책을 발표했다.","She works in the corporate sector after leaving academia.","그녀는 학계를 떠난 후 기업 분야에서 일한다.","corporate ladder","회사 내 승진 사다리(출세 가도)",2
 trickle-down,낙수 효과의,adj,"Critics doubted the trickle-down effect of the tax cuts.","비평가들은 그 감세의 낙수 효과에 의문을 제기했다.","","","","",5
-genuine,진정한/진짜의,adj,"Her genuine concern for the team boosted morale.","팀에 대한 그녀의 진심 어린 관심이 사기를 북돋웠다.","He offered a genuine apology, not just empty words.","그는 공허한 말이 아니라 진정한 사과를 건넸다.","","",1
-absorb,흡수하다,v,"The parent company absorbed the smaller startup last year.","모기업은 작년에 그 소규모 스타트업을 흡수했다.","The sponge quickly absorbed all the spilled water.","스펀지는 쏟아진 물을 빠르게 흡수했다.","","",1
-audience,청중/관객/독자층,n,"The keynote speaker connected well with the audience.","기조연설자는 청중과 잘 소통했다.","The film was aimed at a younger audience.","그 영화는 더 젊은 관객층을 겨냥했다.","","",2
+genuine,진정한/진짜의,adj,"Her genuine concern for the team boosted morale.","팀에 대한 그녀의 진심 어린 관심이 사기를 북돋웠다.","He offered a genuine apology, not just empty words.","그는 공허한 말이 아니라 진정한 사과를 건넸다.","genuine leather","천연 가죽(진짜 가죽)",1
+absorb,흡수하다,v,"The parent company absorbed the smaller startup last year.","모기업은 작년에 그 소규모 스타트업을 흡수했다.","The sponge quickly absorbed all the spilled water.","스펀지는 쏟아진 물을 빠르게 흡수했다.","absorb shock","충격을 흡수하다",1
+audience,청중/관객/독자층,n,"The keynote speaker connected well with the audience.","기조연설자는 청중과 잘 소통했다.","The film was aimed at a younger audience.","그 영화는 더 젊은 관객층을 겨냥했다.","target audience","목표 고객층(타겟 청중)",2
 enduring,지속적인/오래가는,adj,"The merger created an enduring partnership between the two firms.","그 합병은 두 회사 사이에 지속적인 협력 관계를 만들어냈다.","","","","",3
-cone,원뿔/솔방울,n,"The warehouse floor was marked with orange safety cones.","창고 바닥에는 주황색 안전 콘이 표시되어 있었다.","The children built a tower using pine cones from the yard.","아이들은 마당에서 주운 솔방울로 탑을 쌓았다.","","",1
+cone,원뿔/솔방울,n,"The warehouse floor was marked with orange safety cones.","창고 바닥에는 주황색 안전 콘이 표시되어 있었다.","The children built a tower using pine cones from the yard.","아이들은 마당에서 주운 솔방울로 탑을 쌓았다.","ice cream cone","아이스크림 콘",1
 awe,경외감,n,"The new headquarters left visitors in awe of its design.","새 본사는 방문객들이 그 디자인에 경외감을 느끼게 했다.","","","","",3
 frailty,허약함/약점,n,"The report exposed the frailty of the company's supply chain.","그 보고서는 회사 공급망의 취약함을 드러냈다.","","","","",5
-reimburse,환급하다/변제하다,v,"The company will reimburse employees for travel expenses.","회사는 직원들에게 출장 경비를 환급해 줄 것이다.","The airline reimbursed passengers for the canceled flight.","항공사는 결항된 항공편에 대해 승객들에게 환급해 주었다.","","",2
-streamline,간소화하다,v,"The new software helped streamline the approval process.","새 소프트웨어는 승인 절차를 간소화하는 데 도움이 되었다.","The manager streamlined the hiring process to save time.","그 관리자는 시간을 절약하기 위해 채용 절차를 간소화했다.","","",2
+reimburse,환급하다/변제하다,v,"The company will reimburse employees for travel expenses.","회사는 직원들에게 출장 경비를 환급해 줄 것이다.","The airline reimbursed passengers for the canceled flight.","항공사는 결항된 항공편에 대해 승객들에게 환급해 주었다.","reimburse expenses","경비를 환급하다",2
+streamline,간소화하다,v,"The new software helped streamline the approval process.","새 소프트웨어는 승인 절차를 간소화하는 데 도움이 되었다.","The manager streamlined the hiring process to save time.","그 관리자는 시간을 절약하기 위해 채용 절차를 간소화했다.","streamline the process","절차를 간소화하다",2
 outsource,외부에 위탁하다,v,"The firm decided to outsource its customer support.","그 회사는 고객 지원 업무를 외주로 돌리기로 했다.","Many companies outsource their IT services to save costs.","많은 기업들이 비용을 절감하기 위해 IT 서비스를 외부에 위탁한다.","","",2
 leverage,활용하다/지렛대로 삼다,v,"The startup leveraged social media to reach new customers.","그 스타트업은 소셜 미디어를 활용해 신규 고객에게 다가갔다.","She leveraged her connections to land the internship.","그녀는 인맥을 활용해서 그 인턴 자리를 얻었다.","","",2
 overhaul,전면 개편하다,v,"Management plans to overhaul the entire billing system.","경영진은 청구 시스템 전체를 전면 개편할 계획이다.","The city plans to overhaul its outdated subway system.","그 시는 노후한 지하철 시스템을 전면 개편할 계획이다.","","",2
@@ -649,43 +649,43 @@ downsize,규모를 줄이다,v,"The company had to downsize after losing its big
 restructure,구조를 조정하다,v,"The board voted to restructure the sales department.","이사회는 영업 부서를 구조 조정하기로 표결했다.","The bank had to restructure its loan repayment terms.","그 은행은 대출 상환 조건을 구조 조정해야 했다.","","",2
 relocate,이전하다,v,"The office will relocate to a new building next spring.","사무실은 내년 봄 새 건물로 이전할 예정이다.","Her family relocated to another country for her father's job.","그녀의 가족은 아버지의 직장 때문에 다른 나라로 이전했다.","","",2
 subsidize,보조금을 지급하다,v,"The government agreed to subsidize the training program.","정부는 그 교육 프로그램에 보조금을 지급하기로 합의했다.","The city subsidizes public transportation for students.","그 시는 학생들을 위한 대중교통에 보조금을 지급한다.","","",2
-diversify,다각화하다,v,"The company plans to diversify its product line this year.","그 회사는 올해 제품군을 다각화할 계획이다.","Investors are advised to diversify their portfolios.","투자자들은 자신의 포트폴리오를 다각화하라는 조언을 받는다.","","",2
+diversify,다각화하다,v,"The company plans to diversify its product line this year.","그 회사는 올해 제품군을 다각화할 계획이다.","Investors are advised to diversify their portfolios.","투자자들은 자신의 포트폴리오를 다각화하라는 조언을 받는다.","diversify a portfolio","포트폴리오를 다각화하다",2
 negotiate,협상하다,v,"Both sides agreed to negotiate a lower price.","양측은 더 낮은 가격을 협상하기로 합의했다.","He managed to negotiate a raise with his manager.","그는 관리자와 임금 인상을 협상하는 데 성공했다.","","",2
 procurement,조달/구매,n,"The procurement team reviewed three vendor proposals.","조달팀은 세 업체의 제안서를 검토했다.","The government tightened rules on public procurement.","정부는 공공 조달에 관한 규정을 강화했다.","","",2
 logistics,물류,n,"Logistics delays pushed the shipment back by a week.","물류 지연으로 배송이 일주일 늦춰졌다.","The event required careful logistics to run smoothly.","그 행사가 순조롭게 진행되려면 세심한 물류 계획이 필요했다.","","",2
-forecast,예측하다/예측,v,"Analysts forecast steady growth for the next quarter.","분석가들은 다음 분기에 꾸준한 성장을 예측한다.","The weather service forecasts heavy rain this weekend.","기상청은 이번 주말에 폭우를 예측한다.","","",2
-turnover,매출/이직률,n,"Employee turnover dropped after the new benefits were introduced.","새로운 복지 혜택이 도입된 후 직원 이직률이 낮아졌다.","High staff turnover has become a serious problem for the restaurant.","높은 직원 이직률은 그 식당의 심각한 문제가 되었다.","","",2
+forecast,예측하다/예측,v,"Analysts forecast steady growth for the next quarter.","분석가들은 다음 분기에 꾸준한 성장을 예측한다.","The weather service forecasts heavy rain this weekend.","기상청은 이번 주말에 폭우를 예측한다.","weather forecast","일기예보",2
+turnover,매출/이직률,n,"Employee turnover dropped after the new benefits were introduced.","새로운 복지 혜택이 도입된 후 직원 이직률이 낮아졌다.","High staff turnover has become a serious problem for the restaurant.","높은 직원 이직률은 그 식당의 심각한 문제가 되었다.","staff turnover","직원 이직률",2
 layoff,해고/정리해고,n,"The company announced a round of layoffs last month.","그 회사는 지난달 정리해고를 발표했다.","Rumors of an upcoming layoff spread through the office.","곧 있을 정리해고에 대한 소문이 사무실에 퍼졌다.","","",2
-severance,퇴직금/해고 수당,n,"Laid-off staff received two months of severance pay.","해고된 직원들은 두 달치 퇴직금을 받았다.","The severance package included three months of pay.","그 퇴직금 패키지에는 3개월치 급여가 포함되어 있었다.","","",2
+severance,퇴직금/해고 수당,n,"Laid-off staff received two months of severance pay.","해고된 직원들은 두 달치 퇴직금을 받았다.","The severance package included three months of pay.","그 퇴직금 패키지에는 3개월치 급여가 포함되어 있었다.","severance pay","퇴직금(해고 수당)",2
 freelance,자유 계약으로 일하다/프리랜서의,adj,"She works freelance for several design agencies.","그녀는 여러 디자인 회사를 위해 프리랜서로 일한다.","After leaving the agency, he began working freelance.","그 대행사를 떠난 후 그는 프리랜서로 일하기 시작했다.","","",2
-entrepreneur,사업가/기업가,n,"The entrepreneur launched her second startup this year.","그 사업가는 올해 두 번째 스타트업을 창업했다.","Many young entrepreneurs struggle to secure early funding.","많은 젊은 사업가들이 초기 자금을 확보하는 데 어려움을 겪는다.","","",2
+entrepreneur,사업가/기업가,n,"The entrepreneur launched her second startup this year.","그 사업가는 올해 두 번째 스타트업을 창업했다.","Many young entrepreneurs struggle to secure early funding.","많은 젊은 사업가들이 초기 자금을 확보하는 데 어려움을 겪는다.","serial entrepreneur","연쇄 창업가",2
 franchise,가맹점/독점 판매권,n,"The company sold its first overseas franchise last year.","그 회사는 작년에 첫 해외 가맹점을 판매했다.","He bought a coffee shop franchise in his hometown.","그는 고향에 커피숍 가맹점을 차렸다.","","",2
-subsidiary,자회사,n,"The subsidiary reports directly to the parent company.","그 자회사는 모기업에 직접 보고한다.","The tech giant acquired a small subsidiary last month.","그 대형 기술 기업은 지난달 작은 자회사를 인수했다.","","",2
+subsidiary,자회사,n,"The subsidiary reports directly to the parent company.","그 자회사는 모기업에 직접 보고한다.","The tech giant acquired a small subsidiary last month.","그 대형 기술 기업은 지난달 작은 자회사를 인수했다.","wholly-owned subsidiary","완전 자회사(지분 100% 자회사)",2
 headquarters,본사,n,"The headquarters relocated downtown last spring.","본사는 작년 봄 시내로 이전했다.","Employees from every branch gathered at headquarters for the conference.","모든 지점의 직원들이 컨퍼런스를 위해 본사에 모였다.","","",2
-affiliate,계열사/제휴하다,n,"Each regional affiliate manages its own marketing budget.","각 지역 계열사는 자체 마케팅 예산을 관리한다.","The university has an affiliate campus overseas.","그 대학교는 해외에 계열 캠퍼스를 두고 있다.","","",2
+affiliate,계열사/제휴하다,n,"Each regional affiliate manages its own marketing budget.","각 지역 계열사는 자체 마케팅 예산을 관리한다.","The university has an affiliate campus overseas.","그 대학교는 해외에 계열 캠퍼스를 두고 있다.","affiliate marketing","제휴 마케팅",2
 stakeholder,이해관계자,n,"The plan needs approval from all key stakeholders.","그 계획은 모든 핵심 이해관계자의 승인이 필요하다.","The manager met with stakeholders to discuss the new policy.","그 관리자는 새 정책을 논의하기 위해 이해관계자들과 만났다.","","",2
-shareholder,주주,n,"Shareholders voted against the proposed merger.","주주들은 제안된 합병에 반대표를 던졌다.","A major shareholder pushed for changes in leadership.","한 대주주가 경영진 교체를 강력히 요구했다.","","",2
-dividend,배당금,n,"The company paid its first dividend in three years.","그 회사는 3년 만에 처음으로 배당금을 지급했다.","Shareholders were pleased with the increased dividend.","주주들은 늘어난 배당금에 만족했다.","","",2
-surplus,흑자/잉여,n,"The division reported a budget surplus this quarter.","그 부서는 이번 분기 예산 흑자를 보고했다.","The country reported a trade surplus for the third year in a row.","그 나라는 3년 연속 무역 흑자를 기록했다.","","",2
-deficit,적자/부족,n,"The department is operating at a significant deficit.","그 부서는 상당한 적자 상태로 운영되고 있다.","The government is trying to reduce the national deficit.","정부는 국가 재정 적자를 줄이려고 노력하고 있다.","","",2
-inflation,물가 상승/인플레이션,n,"Rising inflation cut into the company's profit margin.","물가 상승이 회사의 이윤을 갉아먹었다.","The central bank raised interest rates to control inflation.","중앙은행은 물가 상승을 억제하기 위해 금리를 인상했다.","","",2
+shareholder,주주,n,"Shareholders voted against the proposed merger.","주주들은 제안된 합병에 반대표를 던졌다.","A major shareholder pushed for changes in leadership.","한 대주주가 경영진 교체를 강력히 요구했다.","shareholder meeting","주주총회",2
+dividend,배당금,n,"The company paid its first dividend in three years.","그 회사는 3년 만에 처음으로 배당금을 지급했다.","Shareholders were pleased with the increased dividend.","주주들은 늘어난 배당금에 만족했다.","pay dividends","배당금을 지급하다(성과를 내다)",2
+surplus,흑자/잉여,n,"The division reported a budget surplus this quarter.","그 부서는 이번 분기 예산 흑자를 보고했다.","The country reported a trade surplus for the third year in a row.","그 나라는 3년 연속 무역 흑자를 기록했다.","trade surplus","무역 흑자",2
+deficit,적자/부족,n,"The department is operating at a significant deficit.","그 부서는 상당한 적자 상태로 운영되고 있다.","The government is trying to reduce the national deficit.","정부는 국가 재정 적자를 줄이려고 노력하고 있다.","budget deficit","재정 적자",2
+inflation,물가 상승/인플레이션,n,"Rising inflation cut into the company's profit margin.","물가 상승이 회사의 이윤을 갉아먹었다.","The central bank raised interest rates to control inflation.","중앙은행은 물가 상승을 억제하기 위해 금리를 인상했다.","inflation rate","물가상승률",2
 recession,불황/경기 침체,n,"The firm cut spending during the last recession.","그 회사는 지난 경기 침체기에 지출을 줄였다.","Many small businesses closed during the recession.","많은 소규모 사업체들이 경기 침체 동안 문을 닫았다.","","",2
-fiscal,회계의/재정의,adj,"The new fiscal year begins in January.","새 회계연도는 1월에 시작된다.","The government presented its fiscal plan for next year.","정부는 내년도 재정 계획을 발표했다.","","",2
-asset,자산,n,"The company's biggest asset is its skilled workforce.","그 회사의 가장 큰 자산은 숙련된 인력이다.","Good communication skills are a valuable asset in any job.","뛰어난 의사소통 능력은 어떤 직업에서든 소중한 자산이다.","","",2
-liability,부채/책임,n,"Unpaid invoices are listed as a liability on the balance sheet.","미지급 청구서는 대차대조표에 부채로 기재된다.","The company faces legal liability for the faulty product.","그 회사는 결함이 있는 제품에 대해 법적 책임을 지게 되었다.","","",2
-equity,지분/자기자본,n,"Investors received equity in exchange for funding.","투자자들은 자금 지원의 대가로 지분을 받았다.","The founders kept most of the company's equity for themselves.","창업자들은 회사 지분 대부분을 자신들이 보유했다.","","",2
+fiscal,회계의/재정의,adj,"The new fiscal year begins in January.","새 회계연도는 1월에 시작된다.","The government presented its fiscal plan for next year.","정부는 내년도 재정 계획을 발표했다.","fiscal year","회계연도",2
+asset,자산,n,"The company's biggest asset is its skilled workforce.","그 회사의 가장 큰 자산은 숙련된 인력이다.","Good communication skills are a valuable asset in any job.","뛰어난 의사소통 능력은 어떤 직업에서든 소중한 자산이다.","fixed assets","고정 자산",2
+liability,부채/책임,n,"Unpaid invoices are listed as a liability on the balance sheet.","미지급 청구서는 대차대조표에 부채로 기재된다.","The company faces legal liability for the faulty product.","그 회사는 결함이 있는 제품에 대해 법적 책임을 지게 되었다.","limited liability","유한 책임",2
+equity,지분/자기자본,n,"Investors received equity in exchange for funding.","투자자들은 자금 지원의 대가로 지분을 받았다.","The founders kept most of the company's equity for themselves.","창업자들은 회사 지분 대부분을 자신들이 보유했다.","home equity","주택 순자산(주택 담보 가치)",2
 litigation,소송,n,"The dispute ended in litigation after talks failed.","협상이 결렬된 후 그 분쟁은 소송으로 이어졌다.","The two firms settled the matter before it reached litigation.","그 두 회사는 소송에 이르기 전에 그 문제를 합의로 해결했다.","","",2
 workload,업무량,n,"Her workload doubled after two colleagues resigned.","동료 두 명이 퇴사한 후 그녀의 업무량이 두 배로 늘었다.","The new software was supposed to reduce the team's workload.","그 새 소프트웨어는 팀의 업무량을 줄여줄 것으로 기대되었다.","","",2
-initiative,주도권/새로운 계획,n,"The team launched a new initiative to cut waste.","팀은 낭비를 줄이기 위한 새로운 계획을 시작했다.","The city launched an initiative to plant more trees.","그 시는 나무를 더 많이 심기 위한 계획을 시작했다.","","",2
-incentive,장려책/인센티브,n,"The company offers incentives for meeting sales targets.","그 회사는 매출 목표 달성에 대해 장려금을 제공한다.","Free shipping is a strong incentive for online shoppers.","무료 배송은 온라인 쇼핑객들에게 강력한 장려책이다.","","",2
+initiative,주도권/새로운 계획,n,"The team launched a new initiative to cut waste.","팀은 낭비를 줄이기 위한 새로운 계획을 시작했다.","The city launched an initiative to plant more trees.","그 시는 나무를 더 많이 심기 위한 계획을 시작했다.","take the initiative","주도권을 잡다(솔선하다)",2
+incentive,장려책/인센티브,n,"The company offers incentives for meeting sales targets.","그 회사는 매출 목표 달성에 대해 장려금을 제공한다.","Free shipping is a strong incentive for online shoppers.","무료 배송은 온라인 쇼핑객들에게 강력한 장려책이다.","tax incentive","세제 혜택",2
 benchmark,기준/벤치마크,n,"They used a competitor's pricing as a benchmark.","그들은 경쟁사의 가격을 기준으로 삼았다.","The test scores set a new benchmark for the school.","그 시험 점수는 그 학교의 새로운 기준을 세웠다.","","",2
-milestone,중요한 단계/이정표,n,"Launching the app was a major milestone for the team.","앱 출시는 팀에게 중요한 이정표였다.","Turning fifty felt like a significant milestone in her life.","쉰 살이 되는 것은 그녀의 인생에서 중요한 이정표처럼 느껴졌다.","","",2
+milestone,중요한 단계/이정표,n,"Launching the app was a major milestone for the team.","앱 출시는 팀에게 중요한 이정표였다.","Turning fifty felt like a significant milestone in her life.","쉰 살이 되는 것은 그녀의 인생에서 중요한 이정표처럼 느껴졌다.","reach a milestone","중요한 단계에 도달하다",2
 mentorship,멘토링/지도,n,"The program pairs new hires with a mentorship partner.","그 프로그램은 신입 직원과 멘토를 짝지어 준다.","The senior engineer offered mentorship to junior staff.","그 선임 엔지니어는 후배 직원들에게 멘토링을 제공했다.","","",2
 internship,인턴십,n,"She completed a six-month internship before joining full-time.","그녀는 정규직으로 입사하기 전 6개월간 인턴십을 마쳤다.","The internship gave her valuable hands-on experience.","그 인턴십은 그녀에게 소중한 실무 경험을 주었다.","","",2
 headcount,인원수,n,"The department's headcount grew by ten this year.","그 부서의 인원수는 올해 10명 늘었다.","Management froze headcount to save money this quarter.","경영진은 이번 분기 비용 절감을 위해 인원수를 동결했다.","","",2
-payroll,급여 지급/명부,n,"The company processes payroll on the last Friday of the month.","그 회사는 매달 마지막 금요일에 급여를 지급한다.","The startup added five people to its payroll last month.","그 스타트업은 지난달 급여 명부에 다섯 명을 추가했다.","","",2
-voucher,상품권/할인권,n,"Customers received a voucher for their next purchase.","고객들은 다음 구매를 위한 상품권을 받았다.","He redeemed a voucher for a free coffee.","그는 무료 커피 상품권을 사용했다.","","",1
-warranty,보증/품질 보증,n,"The laptop comes with a two-year warranty.","그 노트북은 2년 보증이 딸려 있다.","The warranty doesn't cover damage from accidents.","그 보증은 사고로 인한 손상은 보장하지 않는다.","","",1
+payroll,급여 지급/명부,n,"The company processes payroll on the last Friday of the month.","그 회사는 매달 마지막 금요일에 급여를 지급한다.","The startup added five people to its payroll last month.","그 스타트업은 지난달 급여 명부에 다섯 명을 추가했다.","payroll tax","급여세",2
+voucher,상품권/할인권,n,"Customers received a voucher for their next purchase.","고객들은 다음 구매를 위한 상품권을 받았다.","He redeemed a voucher for a free coffee.","그는 무료 커피 상품권을 사용했다.","gift voucher","상품권",1
+warranty,보증/품질 보증,n,"The laptop comes with a two-year warranty.","그 노트북은 2년 보증이 딸려 있다.","The warranty doesn't cover damage from accidents.","그 보증은 사고로 인한 손상은 보장하지 않는다.","lifetime warranty","평생 보증",1
 prototype,시제품/원형,n,"The team built a working prototype in three weeks.","팀은 3주 만에 작동하는 시제품을 만들어냈다.","Engineers tested the prototype under extreme conditions.","엔지니어들은 극한 조건에서 그 시제품을 테스트했다.","","",2
 scalability,확장성,n,"Investors were impressed by the platform's scalability.","투자자들은 그 플랫폼의 확장성에 깊은 인상을 받았다.","The app was redesigned to improve scalability.","그 앱은 확장성을 개선하기 위해 재설계되었다.","","",2
 sustainability,지속 가능성,n,"The report focused on the company's sustainability goals.","그 보고서는 회사의 지속 가능성 목표에 초점을 맞췄다.","","","","",3
@@ -695,53 +695,53 @@ adaptable,적응력 있는,adj,"The software is adaptable to almost any workflow
 resourceful,수완이 좋은,adj,"She's resourceful enough to solve problems without help.","그녀는 도움 없이도 문제를 해결할 만큼 수완이 좋다.","Stranded without a phone, she found a resourceful way to call for help.","휴대폰 없이 고립된 그녀는 도움을 요청할 수완이 좋은 방법을 찾아냈다.","","",2
 assertive,자기주장이 강한,adj,"He learned to be more assertive during salary negotiations.","그는 연봉 협상에서 더 단호하게 자기 주장을 하는 법을 배웠다.","She had to be assertive to get her point across in the meeting.","그녀는 회의에서 자신의 의견을 전달하기 위해 자기주장을 강하게 해야 했다.","","",2
 tactful,신중하고 요령있는,adj,"The manager gave tactful feedback after the mistake.","그 관리자는 실수 이후 신중하게 요령 있는 피드백을 주었다.","He found a tactful way to decline the invitation.","그는 초대를 거절할 신중하고 요령 있는 방법을 찾았다.","","",2
-diplomatic,외교적인/신중한,adj,"She handled the client complaint in a diplomatic way.","그녀는 고객 불만을 외교적으로 능숙하게 처리했다.","The ambassador gave a diplomatic response to the reporter's question.","그 대사는 기자의 질문에 외교적으로 신중한 답변을 했다.","","",2
+diplomatic,외교적인/신중한,adj,"She handled the client complaint in a diplomatic way.","그녀는 고객 불만을 외교적으로 능숙하게 처리했다.","The ambassador gave a diplomatic response to the reporter's question.","그 대사는 기자의 질문에 외교적으로 신중한 답변을 했다.","diplomatic immunity","외교적 면책특권",2
 punctual,시간을 잘 지키는,adj,"He's always punctual for morning meetings.","그는 아침 회의에 항상 시간을 잘 지킨다.","Being punctual is one of the first things employers notice.","시간을 잘 지키는 것은 고용주들이 가장 먼저 알아채는 것 중 하나다.","","",1
-thorough,철저한,adj,"The audit was thorough and took two full days.","그 감사는 철저했고 꼬박 이틀이 걸렸다.","She did a thorough review before submitting the proposal.","그녀는 제안서를 제출하기 전에 철저한 검토를 했다.","","",1
+thorough,철저한,adj,"The audit was thorough and took two full days.","그 감사는 철저했고 꼬박 이틀이 걸렸다.","She did a thorough review before submitting the proposal.","그녀는 제안서를 제출하기 전에 철저한 검토를 했다.","thorough investigation","철저한 조사",1
 consistent,일관된,adj,"Her performance has been consistent all year.","그녀의 성과는 일 년 내내 일관되게 유지되었다.","He remained consistent in his opinions throughout the debate.","그는 토론 내내 자신의 의견에서 일관된 태도를 유지했다.","","",1
-reputable,평판이 좋은,adj,"They hired a reputable contractor for the renovation.","그들은 리모델링을 위해 평판이 좋은 업체를 고용했다.","Always buy medicine from a reputable pharmacy.","항상 평판이 좋은 약국에서 약을 사도록 하라.","","",2
+reputable,평판이 좋은,adj,"They hired a reputable contractor for the renovation.","그들은 리모델링을 위해 평판이 좋은 업체를 고용했다.","Always buy medicine from a reputable pharmacy.","항상 평판이 좋은 약국에서 약을 사도록 하라.","reputable source","평판이 좋은 출처",2
 trustworthy,신뢰할 수 있는,adj,"He built a reputation as a trustworthy advisor.","그는 신뢰할 수 있는 조언자로 명성을 쌓았다.","You need a trustworthy babysitter you can rely on.","당신이 믿을 수 있는 신뢰할 수 있는 베이비시터가 필요하다.","","",1
 transparent,투명한,adj,"The company promised to be more transparent about pricing.","그 회사는 가격에 대해 더 투명하게 하겠다고 약속했다.","The judge insisted on a transparent selection process.","그 판사는 투명한 선발 절차를 고집했다.","","",1
-accountable,책임이 있는,adj,"Managers are held accountable for their team's results.","관리자는 자기 팀의 성과에 대해 책임을 진다.","Everyone on the team is accountable for meeting the deadline.","팀의 모든 사람은 마감을 지키는 것에 대해 책임이 있다.","","",2
+accountable,책임이 있는,adj,"Managers are held accountable for their team's results.","관리자는 자기 팀의 성과에 대해 책임을 진다.","Everyone on the team is accountable for meeting the deadline.","팀의 모든 사람은 마감을 지키는 것에 대해 책임이 있다.","hold accountable","책임을 묻다",2
 alliance,동맹/연합,n,"The two companies formed a strategic alliance last year.","두 회사는 작년에 전략적 동맹을 맺었다.","","","","",3
 spectator,관중/구경꾼,n,"Thousands of spectators watched the product launch livestream.","수천 명의 관중이 제품 출시 생중계를 지켜보았다.","","","","",3
 sheer,순전한/완전한,adj,"It was sheer luck that the shipment arrived on time.","배송이 제때 도착한 것은 순전히 운이었다.","","","","",3
-repetition,반복,n,"The training relies heavily on repetition to build habits.","그 훈련은 습관을 만들기 위해 반복에 크게 의존한다.","Constant repetition of the drill helped the soldiers react instinctively.","그 훈련의 끊임없는 반복은 병사들이 본능적으로 반응하도록 도왔다.","","",1
+repetition,반복,n,"The training relies heavily on repetition to build habits.","그 훈련은 습관을 만들기 위해 반복에 크게 의존한다.","Constant repetition of the drill helped the soldiers react instinctively.","그 훈련의 끊임없는 반복은 병사들이 본능적으로 반응하도록 도왔다.","spaced repetition","간격 반복 학습",1
 accomplish,성취하다/완수하다,v,"The team accomplished the goal ahead of schedule.","팀은 예정보다 앞서 목표를 달성했다.","With enough practice, you can accomplish almost anything.","충분한 연습이 있으면 거의 무엇이든 성취할 수 있다.","","",1
-invention,발명,n,"The invention changed how the factory processed orders.","그 발명은 공장이 주문을 처리하는 방식을 바꾸어 놓았다.","The printing press was one of the most important inventions in history.","인쇄기는 역사상 가장 중요한 발명품 중 하나였다.","","",1
+invention,발명,n,"The invention changed how the factory processed orders.","그 발명은 공장이 주문을 처리하는 방식을 바꾸어 놓았다.","The printing press was one of the most important inventions in history.","인쇄기는 역사상 가장 중요한 발명품 중 하나였다.","necessity is the mother of invention","필요는 발명의 어머니",1
 worthwhile,가치 있는,adj,"The extra training turned out to be worthwhile.","그 추가 교육은 가치 있는 것으로 드러났다.","Volunteering at the shelter felt genuinely worthwhile.","그 보호소에서 자원봉사를 한 것은 진정으로 가치 있게 느껴졌다.","","",1
 invest,투자하다,v,"The company plans to invest heavily in new equipment.","그 회사는 새 장비에 대대적으로 투자할 계획이다.","","","","",3
 anglicize,영어식으로 바꾸다,v,"The brand name was anglicized for the US market.","그 브랜드명은 미국 시장을 위해 영어식으로 바뀌었다.","","","","",5
 discrimination,차별,n,"The policy aims to prevent discrimination in hiring.","그 정책은 채용 과정에서의 차별을 방지하는 것을 목표로 한다.","","","","",3
 merchant,상인/무역업자,n,"The merchant negotiated a better rate with the supplier.","그 상인은 공급업체와 더 나은 가격을 협상했다.","A traveling merchant sold spices from door to door.","떠돌이 상인이 집집마다 다니며 향신료를 팔았다.","","",2
 urge,촉구하다/충동,v,"Analysts urged investors to remain cautious.","분석가들은 투자자들에게 신중할 것을 촉구했다.","I had a sudden urge to call my old friend.","나는 갑자기 옛 친구에게 전화하고 싶은 충동이 들었다.","","",1
-priority,우선순위,n,"Customer safety is the company's top priority.","고객 안전은 그 회사의 최우선 순위다.","Getting enough sleep should be a priority for students.","충분한 수면을 취하는 것은 학생들에게 우선순위가 되어야 한다.","","",1
+priority,우선순위,n,"Customer safety is the company's top priority.","고객 안전은 그 회사의 최우선 순위다.","Getting enough sleep should be a priority for students.","충분한 수면을 취하는 것은 학생들에게 우선순위가 되어야 한다.","top priority","최우선 순위",1
 emphasize,강조하다,v,"The report emphasizes the need for faster delivery.","그 보고서는 더 빠른 배송의 필요성을 강조한다.","","","","",3
 genome,유전체/게놈,n,"Researchers mapped the genome of the new virus strain.","연구진은 새로운 바이러스 변종의 유전체를 분석했다.","","","","",5
-fossil,화석,n,"The museum displayed a rare dinosaur fossil.","박물관은 희귀한 공룡 화석을 전시했다.","Scientists found a fossil of an ancient sea creature in the cliff.","과학자들은 그 절벽에서 고대 바다 생물의 화석을 발견했다.","","",1
+fossil,화석,n,"The museum displayed a rare dinosaur fossil.","박물관은 희귀한 공룡 화석을 전시했다.","Scientists found a fossil of an ancient sea creature in the cliff.","과학자들은 그 절벽에서 고대 바다 생물의 화석을 발견했다.","fossil fuel","화석 연료",1
 clone,복제하다/복제품,v,"Scientists managed to clone the original cell line.","과학자들은 원래의 세포주를 복제하는 데 성공했다.","The company plans to clone the app's design for a new market.","그 회사는 새로운 시장을 위해 앱 디자인을 복제할 계획이다.","","",1
 hence,그러므로/따라서,adv,"Demand fell sharply, hence the price cut.","수요가 급격히 줄었고, 그래서 가격을 인하했다.","","","","",3
 sodium,나트륨,n,"The product now contains less sodium than before.","그 제품은 이제 이전보다 나트륨 함량이 적다.","","","","",3
-medication,약물/약,n,"Employees on medication should inform HR before travel.","약을 복용 중인 직원은 출장 전 인사팀에 알려야 한다.","She forgot to take her medication this morning.","그녀는 오늘 아침 약을 복용하는 것을 잊었다.","","",1
+medication,약물/약,n,"Employees on medication should inform HR before travel.","약을 복용 중인 직원은 출장 전 인사팀에 알려야 한다.","She forgot to take her medication this morning.","그녀는 오늘 아침 약을 복용하는 것을 잊었다.","prescription medication","처방약",1
 perspiration,땀/노력,n,"The report credited the launch's success to years of perspiration.","그 보고서는 출시의 성공을 수년간의 노력 덕분으로 돌렸다.","","","","",5
 vigorous,활발한/격렬한,adj,"The team launched a vigorous marketing campaign.","팀은 활발한 마케팅 캠페인을 시작했다.","","","","",3
 downturn,하락/침체,n,"The company cut costs during the economic downturn.","그 회사는 경기 침체기에 비용을 줄였다.","Housing prices fell sharply during the economic downturn.","경기 침체 동안 주택 가격이 급격히 하락했다.","","",2
 layperson,비전문가/일반인,n,"The manual was written for a layperson, not an engineer.","그 설명서는 엔지니어가 아닌 일반인을 위해 작성되었다.","","","","",3
-establishment,기관/시설/설립,n,"The new establishment opened downtown last month.","새 시설은 지난달 시내에 문을 열었다.","He runs a small dining establishment near the harbor.","그는 항구 근처에서 작은 식당 시설을 운영한다.","","",2
+establishment,기관/시설/설립,n,"The new establishment opened downtown last month.","새 시설은 지난달 시내에 문을 열었다.","He runs a small dining establishment near the harbor.","그는 항구 근처에서 작은 식당 시설을 운영한다.","the establishment","기득권층(체제)",2
 violation,위반,n,"The audit found several violations of company policy.","감사에서 회사 방침 위반 사례가 여러 건 발견되었다.","","","","",3
 constitution,헌법/구성,n,"The company's constitution outlines shareholder rights.","그 회사의 정관은 주주의 권리를 명시한다.","","","","",3
-election,선거,n,"The union held an election for a new representative.","노조는 새 대표를 뽑기 위한 선거를 실시했다.","Voter turnout for the local election was surprisingly low.","그 지방 선거의 투표율은 놀라울 정도로 낮았다.","","",1
+election,선거,n,"The union held an election for a new representative.","노조는 새 대표를 뽑기 위한 선거를 실시했다.","Voter turnout for the local election was surprisingly low.","그 지방 선거의 투표율은 놀라울 정도로 낮았다.","general election","총선거",1
 embody,구현하다/상징하다,v,"The new logo embodies the company's core values.","새 로고는 회사의 핵심 가치를 구현한다.","","","","",5
 shall,~할 것이다(격식체 조동사),v,"The tenant shall pay rent by the fifth of each month.","세입자는 매달 5일까지 임대료를 납부해야 한다.","","","","",3
-diagnosis,진단,n,"The consultant's diagnosis pointed to a staffing problem.","컨설턴트의 진단은 인력 문제를 가리켰다.","The doctor's diagnosis confirmed it was just a mild infection.","의사의 진단은 그것이 단지 가벼운 감염임을 확인해 주었다.","","",2
+diagnosis,진단,n,"The consultant's diagnosis pointed to a staffing problem.","컨설턴트의 진단은 인력 문제를 가리켰다.","The doctor's diagnosis confirmed it was just a mild infection.","의사의 진단은 그것이 단지 가벼운 감염임을 확인해 주었다.","early diagnosis","조기 진단",2
 suffer,겪다/고통받다,v,"The division suffered a sharp drop in sales.","그 사업부는 매출이 급격히 떨어지는 어려움을 겪었다.","Many farmers suffered heavy losses after the drought.","많은 농부들이 가뭄 이후 큰 손실을 겪었다.","","",1
-placement,배치/취업,n,"The agency handles job placement for new graduates.","그 기관은 신규 졸업생들의 취업 배치를 담당한다.","The university helps arrange job placement for graduates.","그 대학은 졸업생들의 취업 배치를 주선하는 데 도움을 준다.","","",2
+placement,배치/취업,n,"The agency handles job placement for new graduates.","그 기관은 신규 졸업생들의 취업 배치를 담당한다.","The university helps arrange job placement for graduates.","그 대학은 졸업생들의 취업 배치를 주선하는 데 도움을 준다.","job placement","취업 알선(직무 배치)",2
 roam,돌아다니다,v,"Employees are free to roam between departments during the open house.","직원들은 오픈하우스 동안 부서 간을 자유롭게 돌아다닐 수 있다.","","","","",3
-peer,동료/또래,n,"She felt pressure to fit in with her peers.","그녀는 또래들과 어울려야 한다는 압박감을 느꼈다.","Teachers often ask students to review each other's work as peers.","교사들은 종종 학생들에게 또래끼리 서로의 과제를 검토하게 한다.","","",1
+peer,동료/또래,n,"She felt pressure to fit in with her peers.","그녀는 또래들과 어울려야 한다는 압박감을 느꼈다.","Teachers often ask students to review each other's work as peers.","교사들은 종종 학생들에게 또래끼리 서로의 과제를 검토하게 한다.","peer pressure","또래 압력(동조 압박)",1
 waist,허리,n,"He wrapped a belt around his waist.","그는 허리에 벨트를 둘렀다.","She measured her waist before buying the dress.","그녀는 드레스를 사기 전에 허리 치수를 쟀다.","","",1
 extensive,광범위한/폭넓은,adj,"The company conducted extensive research before launching the product.","그 회사는 제품을 출시하기 전에 광범위한 조사를 실시했다.","The city carried out an extensive renovation of the old library.","그 도시는 오래된 도서관에 대해 광범위한 보수 공사를 진행했다.","","",2
 circadian,일주기의/24시간 주기의,adj,"Jet lag disrupts your circadian rhythm.","시차 적응은 생체 리듬(일주기 리듬)을 흐트러뜨린다.","","","","",4
-fraud,사기,n,"He was arrested for credit card fraud.","그는 신용카드 사기 혐의로 체포되었다.","The company was investigated for tax fraud.","그 회사는 세금 사기 혐의로 조사를 받았다.","","",2
+fraud,사기,n,"He was arrested for credit card fraud.","그는 신용카드 사기 혐의로 체포되었다.","The company was investigated for tax fraud.","그 회사는 세금 사기 혐의로 조사를 받았다.","credit card fraud","신용카드 사기",2
 reader,독자,n,"The novel appeals to readers of all ages.","그 소설은 모든 연령대의 독자에게 인기가 있다.","The magazine relies on subscriptions from loyal readers.","그 잡지는 충성스러운 독자들의 구독에 의존한다.","","",1
 for instance,예를 들어,phr,"Many fruits, for instance apples and oranges, are rich in vitamin C.","사과와 오렌지 같은 많은 과일들은 비타민 C가 풍부하다.","Some hobbies, for instance painting or gardening, help reduce stress.","그림 그리기나 정원 가꾸기 같은 몇몇 취미는 스트레스를 줄이는 데 도움이 된다.","","",2
 pesticide,살충제/농약,n,"Farmers sprayed pesticide on the crops.","농부들은 작물에 살충제를 뿌렸다.","","","","",3
@@ -753,76 +753,76 @@ supersede,대체하다/대신하다,v,"The new policy supersedes the previous on
 accurately,정확하게,adv,"The sensor measures temperature accurately.","그 센서는 온도를 정확하게 측정한다.","The translator rendered the poem's meaning accurately.","그 번역가는 시의 의미를 정확하게 옮겼다.","","",2
 manageable,관리 가능한/감당할 수 있는,adj,"She broke the project into manageable tasks.","그녀는 그 프로젝트를 감당할 수 있는 작업들로 나눴다.","With her new schedule, the workload finally felt manageable.","새 일정 덕분에 업무량이 마침내 감당할 수 있게 느껴졌다.","","",2
 homosexual,동성애자,n,"The law protects homosexual couples from discrimination.","그 법은 동성애자 커플을 차별로부터 보호한다.","Public opinion about homosexual marriage has shifted over the past decade.","동성 결혼에 대한 여론은 지난 10년간 변화해 왔다.","","",2
-funeral,장례식,n,"Hundreds of people attended the funeral.","수백 명의 사람들이 장례식에 참석했다.","He flew home immediately to attend his grandmother's funeral.","그는 할머니의 장례식에 참석하기 위해 즉시 귀국했다.","","",1
+funeral,장례식,n,"Hundreds of people attended the funeral.","수백 명의 사람들이 장례식에 참석했다.","He flew home immediately to attend his grandmother's funeral.","그는 할머니의 장례식에 참석하기 위해 즉시 귀국했다.","funeral home","장례식장",1
 policy,정책,n,"The company changed its return policy.","그 회사는 반품 정책을 변경했다.","","","","",3
 marginalized,소외된,adj,"The program supports marginalized communities.","그 프로그램은 소외된 지역사회를 지원한다.","","","","",3
 intentional,의도적인,adj,"I don't think that mistake was intentional.","나는 그 실수가 의도적이었다고 생각하지 않는다.","The delay in the shipment was not intentional.","그 배송 지연은 의도적인 것이 아니었다.","","",1
 sculptor,조각가,n,"The sculptor carved the statue from a single block of marble.","그 조각가는 하나의 대리석 덩어리로 조각상을 깎아 만들었다.","The city hired a famous sculptor to design the new fountain.","그 시는 새 분수를 설계하기 위해 유명한 조각가를 고용했다.","","",1
-household,가정/가구,n,"Every household received a survey in the mail.","모든 가정이 우편으로 설문지를 받았다.","Rising prices have put a strain on many households.","물가 상승은 많은 가정에 부담을 주었다.","","",1
-burden,부담/짐,n,"Taking care of him became a heavy burden on the family.","그를 돌보는 일은 가족에게 큰 부담이 되었다.","The new tax became a heavy burden for small business owners.","그 새 세금은 소규모 사업주들에게 큰 부담이 되었다.","","",1
+household,가정/가구,n,"Every household received a survey in the mail.","모든 가정이 우편으로 설문지를 받았다.","Rising prices have put a strain on many households.","물가 상승은 많은 가정에 부담을 주었다.","household name","누구나 아는 이름(유명한 이름/브랜드)",1
+burden,부담/짐,n,"Taking care of him became a heavy burden on the family.","그를 돌보는 일은 가족에게 큰 부담이 되었다.","The new tax became a heavy burden for small business owners.","그 새 세금은 소규모 사업주들에게 큰 부담이 되었다.","burden of proof","입증 책임",1
 infrastructure,사회기반시설/기반시설,n,"The government invested in roads and infrastructure.","정부는 도로와 사회기반시설에 투자했다.","","","","",3
-assembly,조립,n,"Workers on the assembly line put the parts together.","조립 라인의 작업자들이 부품을 조립했다.","The furniture requires simple assembly at home.","그 가구는 집에서 간단한 조립이 필요하다.","","",2
+assembly,조립,n,"Workers on the assembly line put the parts together.","조립 라인의 작업자들이 부품을 조립했다.","The furniture requires simple assembly at home.","그 가구는 집에서 간단한 조립이 필요하다.","assembly line","조립 라인",2
 manufacturing,제조/제조업,n,"The factory specializes in manufacturing car parts.","그 공장은 자동차 부품 제조를 전문으로 한다.","The region has a long history of textile manufacturing.","그 지역은 섬유 제조의 오랜 역사를 가지고 있다.","","",2
-curb,억제하다/제한하다,v,"The government introduced measures to curb inflation.","정부는 물가 상승을 억제하기 위한 조치를 도입했다.","New regulations aim to curb pollution from factories.","새 규제는 공장에서 나오는 오염을 억제하는 것을 목표로 한다.","","",2
-emerge,나타나다/생겨나다,v,"A new problem emerged during the meeting.","회의 중에 새로운 문제가 생겨났다.","Bright stars slowly emerged in the sky as the clouds cleared.","구름이 걷히자 하늘에 밝은 별들이 서서히 나타났다.","","",1
+curb,억제하다/제한하다,v,"The government introduced measures to curb inflation.","정부는 물가 상승을 억제하기 위한 조치를 도입했다.","New regulations aim to curb pollution from factories.","새 규제는 공장에서 나오는 오염을 억제하는 것을 목표로 한다.","curb your enthusiasm","흥분을 가라앉히다(열의를 억제하다)",2
+emerge,나타나다/생겨나다,v,"A new problem emerged during the meeting.","회의 중에 새로운 문제가 생겨났다.","Bright stars slowly emerged in the sky as the clouds cleared.","구름이 걷히자 하늘에 밝은 별들이 서서히 나타났다.","emerge victorious","승리자로 떠오르다(승리하다)",1
 imagine,상상하다,v,"Try to imagine life without a phone for a week.","일주일 동안 휴대폰 없이 사는 삶을 상상해 보라.","I can't imagine living without my phone for a day.","나는 하루라도 휴대폰 없이 사는 것을 상상할 수 없다.","","",1
-routine,일상,n,"Coffee is part of his morning routine.","커피는 그의 아침 일상의 일부다.","Exercising every morning became part of her daily routine.","매일 아침 운동하는 것은 그녀의 일상의 일부가 되었다.","","",1
+routine,일상,n,"Coffee is part of his morning routine.","커피는 그의 아침 일상의 일부다.","Exercising every morning became part of her daily routine.","매일 아침 운동하는 것은 그녀의 일상의 일부가 되었다.","daily routine","일상(매일의 일과)",1
 ordinary,평범한,adj,"She led a fairly ordinary life before the fame.","그녀는 유명해지기 전에는 상당히 평범한 삶을 살았다.","There was nothing ordinary about the way he solved the puzzle.","그가 그 퍼즐을 푼 방식에는 평범한 구석이 전혀 없었다.","","",1
-shame,수치심,n,"He felt a deep shame after breaking the vase.","그는 꽃병을 깬 후 깊은 수치심을 느꼈다.","She hid her face in shame after the mistake.","그녀는 그 실수 후 수치심에 얼굴을 가렸다.","","",1
+shame,수치심,n,"He felt a deep shame after breaking the vase.","그는 꽃병을 깬 후 깊은 수치심을 느꼈다.","She hid her face in shame after the mistake.","그녀는 그 실수 후 수치심에 얼굴을 가렸다.","shame on you","부끄러운 줄 알아라(창피한 줄 알아)",1
 automobile,자동차,n,"The automobile industry is based mostly in that city.","자동차 산업은 대부분 그 도시에 기반을 두고 있다.","The museum displays automobiles from the early twentieth century.","그 박물관은 20세기 초의 자동차들을 전시하고 있다.","","",1
-satellite,위성,n,"The satellite sends weather data back to Earth.","그 위성은 기상 데이터를 지구로 전송한다.","Astronomers discovered a small moon orbiting as a satellite of the planet.","천문학자들은 그 행성의 위성으로 도는 작은 위성을 발견했다.","","",1
-guarantee,보장하다,v,"The store guarantees a full refund within 30 days.","그 매장은 30일 이내 전액 환불을 보장한다.","The seller guarantees the watch will last a lifetime.","그 판매자는 그 시계가 평생 갈 것을 보장한다.","","",1
+satellite,위성,n,"The satellite sends weather data back to Earth.","그 위성은 기상 데이터를 지구로 전송한다.","Astronomers discovered a small moon orbiting as a satellite of the planet.","천문학자들은 그 행성의 위성으로 도는 작은 위성을 발견했다.","satellite dish","위성 안테나",1
+guarantee,보장하다,v,"The store guarantees a full refund within 30 days.","그 매장은 30일 이내 전액 환불을 보장한다.","The seller guarantees the watch will last a lifetime.","그 판매자는 그 시계가 평생 갈 것을 보장한다.","money-back guarantee","환불 보장",1
 passionate,열정적인,adj,"She is passionate about protecting wildlife.","그녀는 야생동물 보호에 열정적이다.","He has always been passionate about cooking.","그는 항상 요리에 열정적이었다.","","",1
 outstanding,뛰어난,adj,"His outstanding performance earned him a promotion.","그의 뛰어난 성과는 승진으로 이어졌다.","She received an award for her outstanding contribution to the team.","그녀는 팀에 대한 뛰어난 공헌으로 상을 받았다.","","",1
-remote,외진/먼,adj,"They live in a remote village far from the city.","그들은 도시에서 멀리 떨어진 외진 마을에 산다.","The research station is located in a remote part of Antarctica.","그 연구 기지는 남극의 외진 지역에 위치해 있다.","","",1
-instant,즉각적인,adj,"The medicine brought instant relief from the pain.","그 약은 즉각적인 통증 완화 효과를 가져다주었다.","He felt an instant connection with the new coworker.","그는 새 동료와 즉각적인 유대감을 느꼈다.","","",1
-overcome,극복하다,v,"It took years to overcome her fear of water.","그녀가 물에 대한 두려움을 극복하는 데 수년이 걸렸다.","The team overcame a huge point deficit to win the game.","그 팀은 큰 점수 차를 극복하고 경기에서 이겼다.","","",1
-shift,옮기다/바뀌다,v,"Public opinion began to shift after the scandal.","그 스캔들 이후 여론이 바뀌기 시작했다.","The company had to shift its strategy after losing its biggest client.","그 회사는 최대 고객을 잃은 후 전략을 바꿔야 했다.","","",1
+remote,외진/먼,adj,"They live in a remote village far from the city.","그들은 도시에서 멀리 떨어진 외진 마을에 산다.","The research station is located in a remote part of Antarctica.","그 연구 기지는 남극의 외진 지역에 위치해 있다.","remote control","리모컨",1
+instant,즉각적인,adj,"The medicine brought instant relief from the pain.","그 약은 즉각적인 통증 완화 효과를 가져다주었다.","He felt an instant connection with the new coworker.","그는 새 동료와 즉각적인 유대감을 느꼈다.","instant coffee","인스턴트 커피",1
+overcome,극복하다,v,"It took years to overcome her fear of water.","그녀가 물에 대한 두려움을 극복하는 데 수년이 걸렸다.","The team overcame a huge point deficit to win the game.","그 팀은 큰 점수 차를 극복하고 경기에서 이겼다.","overcome obstacles","역경을 극복하다",1
+shift,옮기다/바뀌다,v,"Public opinion began to shift after the scandal.","그 스캔들 이후 여론이 바뀌기 시작했다.","The company had to shift its strategy after losing its biggest client.","그 회사는 최대 고객을 잃은 후 전략을 바꿔야 했다.","shift gears","기어를 바꾸다(방향을 전환하다)",1
 suspect,의심하다,v,"Police suspect the fire was started on purpose.","경찰은 그 화재가 고의로 발생했다고 의심하고 있다.","I suspect he already knows about the surprise party.","나는 그가 그 깜짝 파티에 대해 이미 알고 있다고 의심한다.","","",1
 novice,초보자,n,"As a novice, he made several beginner mistakes.","초보자로서 그는 여러 가지 초보적인 실수를 저질렀다.","The course is designed for novices with no prior experience.","그 강좌는 사전 경험이 없는 초보자를 위해 설계되었다.","","",1
-combat,전투,n,"The soldiers were trained for combat.","병사들은 전투를 위해 훈련받았다.","The film depicts intense combat scenes from the war.","그 영화는 그 전쟁의 격렬한 전투 장면을 묘사한다.","","",1
+combat,전투,n,"The soldiers were trained for combat.","병사들은 전투를 위해 훈련받았다.","The film depicts intense combat scenes from the war.","그 영화는 그 전쟁의 격렬한 전투 장면을 묘사한다.","combat zone","전투 지역",1
 wander,돌아다니다,v,"The children wandered around the market for hours.","아이들은 몇 시간 동안 시장을 돌아다녔다.","His mind tends to wander during long lectures.","그의 정신은 긴 강의 중에 딴 데로 돌아다니는 경향이 있다.","","",1
-reasonable,합리적인,adj,"The price seemed reasonable for such a large house.","그렇게 큰 집치고는 가격이 합리적으로 보였다.","He made a reasonable request to extend the deadline by two days.","그는 마감을 이틀 연장해 달라는 합리적인 요청을 했다.","","",1
+reasonable,합리적인,adj,"The price seemed reasonable for such a large house.","그렇게 큰 집치고는 가격이 합리적으로 보였다.","He made a reasonable request to extend the deadline by two days.","그는 마감을 이틀 연장해 달라는 합리적인 요청을 했다.","reasonable doubt","합리적 의심",1
 cope,대처하다,v,"She struggled to cope with the sudden loss.","그녀는 갑작스러운 상실에 대처하느라 힘들어했다.","Meditation helps many people cope with anxiety.","명상은 많은 사람들이 불안에 대처하는 데 도움을 준다.","","",1
-abuse,남용/학대,n,"The report exposed years of animal abuse at the farm.","그 보고서는 그 농장에서 수년간 자행된 동물 학대를 폭로했다.","The senator criticized the abuse of power within the agency.","그 상원의원은 그 기관 내의 권력 남용을 비판했다.","","",1
+abuse,남용/학대,n,"The report exposed years of animal abuse at the farm.","그 보고서는 그 농장에서 수년간 자행된 동물 학대를 폭로했다.","The senator criticized the abuse of power within the agency.","그 상원의원은 그 기관 내의 권력 남용을 비판했다.","substance abuse","약물 남용",1
 withstand,견뎌내다,v,"The bridge was built to withstand strong earthquakes.","그 다리는 강한 지진을 견뎌내도록 지어졌다.","The material is designed to withstand extreme temperatures.","그 소재는 극한의 온도를 견뎌내도록 설계되었다.","","",1
-vital,필수적인,adj,"Sleep is vital for good health.","수면은 건강에 필수적이다.","Clean water is vital for public health.","깨끗한 물은 공중 보건에 필수적이다.","","",1
-eligible,자격이 있는,adj,"Only students over eighteen are eligible to vote.","18세 이상의 학생만 투표할 자격이 있다.","Employees are eligible for benefits after six months.","직원들은 6개월 후 복지 혜택을 받을 자격이 있다.","","",1
-restore,회복시키다,v,"Workers spent months restoring the old castle.","인부들은 그 오래된 성을 복원하는 데 몇 달을 보냈다.","The technician restored the files from a backup.","그 기술자는 백업본에서 파일을 복구했다.","","",1
-absence,결석/부재,n,"His absence from the meeting was noticed by everyone.","그가 회의에 불참한 것을 모두가 알아챘다.","The team struggled in the absence of their star player.","그 팀은 주전 선수의 부재 속에서 고전했다.","","",1
-leisure,여가,n,"She spends her leisure time painting.","그녀는 여가 시간을 그림 그리는 데 쓴다.","He finally had some leisure to read for pleasure.","그는 마침내 즐거움을 위해 책을 읽을 여가가 생겼다.","","",1
+vital,필수적인,adj,"Sleep is vital for good health.","수면은 건강에 필수적이다.","Clean water is vital for public health.","깨끗한 물은 공중 보건에 필수적이다.","vital signs","활력 징후(생체 신호)",1
+eligible,자격이 있는,adj,"Only students over eighteen are eligible to vote.","18세 이상의 학생만 투표할 자격이 있다.","Employees are eligible for benefits after six months.","직원들은 6개월 후 복지 혜택을 받을 자격이 있다.","eligible voter","투표 자격이 있는 유권자",1
+restore,회복시키다,v,"Workers spent months restoring the old castle.","인부들은 그 오래된 성을 복원하는 데 몇 달을 보냈다.","The technician restored the files from a backup.","그 기술자는 백업본에서 파일을 복구했다.","restore order","질서를 회복하다",1
+absence,결석/부재,n,"His absence from the meeting was noticed by everyone.","그가 회의에 불참한 것을 모두가 알아챘다.","The team struggled in the absence of their star player.","그 팀은 주전 선수의 부재 속에서 고전했다.","absence makes the heart grow fonder","없으면 더 그리워진다",1
+leisure,여가,n,"She spends her leisure time painting.","그녀는 여가 시간을 그림 그리는 데 쓴다.","He finally had some leisure to read for pleasure.","그는 마침내 즐거움을 위해 책을 읽을 여가가 생겼다.","leisure time","여가 시간",1
 tragedy,비극,n,"The play ends in tragedy when the hero dies.","그 연극은 주인공이 죽으면서 비극으로 끝난다.","The earthquake was the worst tragedy the town had ever seen.","그 지진은 그 마을이 겪은 최악의 비극이었다.","","",1
-mutual,상호간의,adj,"They reached a decision by mutual agreement.","그들은 상호 합의를 통해 결정을 내렸다.","Their business partnership was built on mutual trust.","그들의 사업 동반자 관계는 상호 신뢰를 바탕으로 세워졌다.","","",1
-heritage,유산,n,"The old temple is part of the town's cultural heritage.","그 오래된 사원은 그 마을의 문화유산의 일부다.","The festival celebrates the region's musical heritage.","그 축제는 그 지역의 음악적 유산을 기념한다.","","",1
+mutual,상호간의,adj,"They reached a decision by mutual agreement.","그들은 상호 합의를 통해 결정을 내렸다.","Their business partnership was built on mutual trust.","그들의 사업 동반자 관계는 상호 신뢰를 바탕으로 세워졌다.","mutual fund","뮤추얼 펀드(상호 투자 신탁)",1
+heritage,유산,n,"The old temple is part of the town's cultural heritage.","그 오래된 사원은 그 마을의 문화유산의 일부다.","The festival celebrates the region's musical heritage.","그 축제는 그 지역의 음악적 유산을 기념한다.","cultural heritage","문화유산",1
 enhance,높이다/향상시키다,v,"The new feature will enhance the user experience.","그 새 기능은 사용자 경험을 향상시킬 것이다.","Good lighting can enhance the mood of a room.","좋은 조명은 방의 분위기를 향상시킬 수 있다.","","",2
-hazard,위험 요소,n,"Wet floors are a common hazard in kitchens.","젖은 바닥은 주방에서 흔한 위험 요소다.","Loose cables on the floor are a tripping hazard.","바닥에 늘어진 전선은 걸려 넘어질 위험 요소이다.","","",2
+hazard,위험 요소,n,"Wet floors are a common hazard in kitchens.","젖은 바닥은 주방에서 흔한 위험 요소다.","Loose cables on the floor are a tripping hazard.","바닥에 늘어진 전선은 걸려 넘어질 위험 요소이다.","occupational hazard","직업병(직업상 위험 요소)",2
 presidential,대통령의,adj,"The presidential election is held every four years.","대통령 선거는 4년마다 치러진다.","The two candidates faced off in a presidential debate.","두 후보는 대통령 후보 토론에서 맞붙었다.","","",2
-attorney,변호사,n,"She hired an attorney to handle the contract.","그녀는 계약을 처리하기 위해 변호사를 고용했다.","The attorney advised her client not to sign the document yet.","그 변호사는 의뢰인에게 아직 그 서류에 서명하지 말라고 조언했다.","","",2
-cognitive,인지의,adj,"The test measures a child's cognitive development.","그 검사는 아이의 인지 발달을 측정한다.","Puzzles can help maintain cognitive function as people age.","퍼즐은 사람들이 나이가 들어도 인지 기능을 유지하는 데 도움이 될 수 있다.","","",2
+attorney,변호사,n,"She hired an attorney to handle the contract.","그녀는 계약을 처리하기 위해 변호사를 고용했다.","The attorney advised her client not to sign the document yet.","그 변호사는 의뢰인에게 아직 그 서류에 서명하지 말라고 조언했다.","attorney general","법무장관(검찰총장)",2
+cognitive,인지의,adj,"The test measures a child's cognitive development.","그 검사는 아이의 인지 발달을 측정한다.","Puzzles can help maintain cognitive function as people age.","퍼즐은 사람들이 나이가 들어도 인지 기능을 유지하는 데 도움이 될 수 있다.","cognitive dissonance","인지 부조화",2
 cooperation,협력,n,"The project succeeded through close cooperation between teams.","그 프로젝트는 팀들 간의 긴밀한 협력을 통해 성공했다.","The two nations signed an agreement to strengthen economic cooperation.","두 나라는 경제 협력을 강화하기 위한 협정을 체결했다.","","",2
 demonstrate,입증하다/보여주다,v,"The study demonstrates a clear link between diet and health.","그 연구는 식습관과 건강 사이의 명확한 연관성을 보여준다.","He demonstrated how the new machine works to the whole staff.","그는 전체 직원들에게 그 새 기계가 어떻게 작동하는지 보여주었다.","","",2
-surpass,능가하다,v,"Sales this year surpassed all expectations.","올해 매출은 모든 예상을 뛰어넘었다.","Her test score surpassed everyone's expectations.","그녀의 시험 점수는 모두의 예상을 뛰어넘었다.","","",2
+surpass,능가하다,v,"Sales this year surpassed all expectations.","올해 매출은 모든 예상을 뛰어넘었다.","Her test score surpassed everyone's expectations.","그녀의 시험 점수는 모두의 예상을 뛰어넘었다.","surpass expectations","기대를 뛰어넘다",2
 considerable,상당한,adj,"Renovating the house required a considerable amount of money.","집을 리모델링하는 데는 상당한 돈이 필요했다.","The new bridge took a considerable amount of time to build.","그 새 다리를 짓는 데는 상당한 시간이 걸렸다.","","",2
 vary,달라지다,v,"Prices vary depending on the season.","가격은 계절에 따라 달라진다.","Opinions on the new policy vary widely among staff.","그 새 정책에 대한 의견은 직원들 사이에서 크게 달라진다.","","",2
-discipline,훈육/규율,n,"The coach values discipline more than raw talent.","그 코치는 타고난 재능보다 규율을 더 중시한다.","Learning an instrument requires a lot of discipline.","악기를 배우는 것은 많은 규율(자기 절제)을 필요로 한다.","","",2
-liberty,자유,n,"Citizens are guaranteed the liberty to express their opinions.","시민들은 자신의 의견을 표현할 자유를 보장받는다.","The prisoners were finally granted their liberty after the trial.","그 죄수들은 재판 후 마침내 자유를 얻었다.","","",2
+discipline,훈육/규율,n,"The coach values discipline more than raw talent.","그 코치는 타고난 재능보다 규율을 더 중시한다.","Learning an instrument requires a lot of discipline.","악기를 배우는 것은 많은 규율(자기 절제)을 필요로 한다.","self-discipline","자기 절제(자기 훈육)",2
+liberty,자유,n,"Citizens are guaranteed the liberty to express their opinions.","시민들은 자신의 의견을 표현할 자유를 보장받는다.","The prisoners were finally granted their liberty after the trial.","그 죄수들은 재판 후 마침내 자유를 얻었다.","civil liberties","시민의 자유(기본권)",2
 prestigious,명망 있는,adj,"She was accepted into a prestigious university.","그녀는 명망 있는 대학에 합격했다.","Winning the prestigious award boosted the firm's reputation.","그 명망 있는 상을 수상한 것은 그 회사의 평판을 높였다.","","",2
-lethal,치명적인,adj,"The snake's venom can be lethal to small animals.","그 뱀의 독은 작은 동물들에게 치명적일 수 있다.","Even a small amount of the poison can be lethal.","그 독은 소량이라도 치명적일 수 있다.","","",2
-vessel,선박,n,"The fishing vessel returned to port before the storm.","그 어선은 폭풍이 오기 전에 항구로 돌아왔다.","The cargo vessel was delayed by rough seas.","그 화물선은 거친 바다 때문에 지연되었다.","","",2
-commodity,상품,n,"Coffee is one of the world's most traded commodities.","커피는 세계에서 가장 많이 거래되는 상품 중 하나다.","Wheat prices rose sharply after the commodity market shifted.","원자재 시장이 바뀐 후 밀 가격이 급등했다.","","",2
+lethal,치명적인,adj,"The snake's venom can be lethal to small animals.","그 뱀의 독은 작은 동물들에게 치명적일 수 있다.","Even a small amount of the poison can be lethal.","그 독은 소량이라도 치명적일 수 있다.","lethal injection","치명적 주사(사형 집행 방법)",2
+vessel,선박,n,"The fishing vessel returned to port before the storm.","그 어선은 폭풍이 오기 전에 항구로 돌아왔다.","The cargo vessel was delayed by rough seas.","그 화물선은 거친 바다 때문에 지연되었다.","cargo vessel","화물선",2
+commodity,상품,n,"Coffee is one of the world's most traded commodities.","커피는 세계에서 가장 많이 거래되는 상품 중 하나다.","Wheat prices rose sharply after the commodity market shifted.","원자재 시장이 바뀐 후 밀 가격이 급등했다.","commodity market","원자재 시장(상품 시장)",2
 magnificent,참으로 아름다운,adj,"The view from the summit was magnificent.","정상에서 바라본 경치는 참으로 아름다웠다.","The cathedral's ceiling was decorated with a magnificent mural.","그 대성당의 천장은 참으로 아름다운 벽화로 장식되어 있었다.","","",2
-strain,부담/혹사하다,n,"The extra workload put a strain on the whole team.","추가된 업무량이 팀 전체에 부담을 주었다.","The old bridge showed signs of strain under the heavy trucks.","그 오래된 다리는 무거운 트럭들의 무게로 부담의 흔적을 보였다.","","",2
-prone,~하기 쉬운,adj,"This area is prone to flooding during the rainy season.","이 지역은 우기에 홍수가 나기 쉽다.","He is prone to catching colds every winter.","그는 매년 겨울마다 감기에 걸리기 쉽다.","","",2
-yield,생산하다/항복하다,v,"The new method is expected to yield better results.","새로운 방법은 더 나은 결과를 낼 것으로 기대된다.","The negotiations finally yielded a compromise both sides could accept.","그 협상은 마침내 양측이 받아들일 수 있는 타협안을 낳았다.","","",2
+strain,부담/혹사하다,n,"The extra workload put a strain on the whole team.","추가된 업무량이 팀 전체에 부담을 주었다.","The old bridge showed signs of strain under the heavy trucks.","그 오래된 다리는 무거운 트럭들의 무게로 부담의 흔적을 보였다.","muscle strain","근육 염좌(근육 부담)",2
+prone,~하기 쉬운,adj,"This area is prone to flooding during the rainy season.","이 지역은 우기에 홍수가 나기 쉽다.","He is prone to catching colds every winter.","그는 매년 겨울마다 감기에 걸리기 쉽다.","accident-prone","사고를 잘 내는(사고가 잦은)",2
+yield,생산하다/항복하다,v,"The new method is expected to yield better results.","새로운 방법은 더 나은 결과를 낼 것으로 기대된다.","The negotiations finally yielded a compromise both sides could accept.","그 협상은 마침내 양측이 받아들일 수 있는 타협안을 낳았다.","yield to temptation","유혹에 굴복하다",2
 surge,밀려들다,v,"Demand for masks surged during the outbreak.","발병 기간 동안 마스크 수요가 급증했다.","Traffic to the website surged after the news went viral.","그 뉴스가 화제가 된 후 웹사이트 방문량이 급증했다.","","",2
 prosperous,번창한,adj,"The town became prosperous after the factory opened.","그 마을은 공장이 문을 연 뒤 번창하게 되었다.","The family hoped for a prosperous new year.","그 가족은 번창하는 새해를 기원했다.","","",2
-invasion,침략,n,"The museum's new exhibit covers the invasion of the region.","박물관의 새 전시는 그 지역의 침략 역사를 다룬다.","Historians still debate the causes of the invasion.","역사학자들은 여전히 그 침략의 원인에 대해 논쟁한다.","","",2
+invasion,침략,n,"The museum's new exhibit covers the invasion of the region.","박물관의 새 전시는 그 지역의 침략 역사를 다룬다.","Historians still debate the causes of the invasion.","역사학자들은 여전히 그 침략의 원인에 대해 논쟁한다.","invasion of privacy","사생활 침해",2
 conform,따르다/일치하다,v,"New buildings must conform to the city's safety codes.","새 건물은 시의 안전 규정을 따라야 한다.","She refused to conform to the office dress code.","그녀는 사무실 복장 규정에 따르기를 거부했다.","","",2
-culinary,요리의,adj,"The city is famous for its culinary traditions.","그 도시는 요리 전통으로 유명하다.","He studied at a top culinary school in Paris.","그는 파리의 최고 요리 학교에서 공부했다.","","",2
-surveillance,감시,n,"The store uses surveillance cameras to prevent theft.","그 매장은 도난 방지를 위해 감시 카메라를 사용한다.","The neighborhood was placed under police surveillance after the break-ins.","그 동네는 도난 사건들 이후 경찰의 감시하에 놓였다.","","",2
-pension,연금,n,"He plans to live on his pension after retiring.","그는 은퇴 후 연금으로 생활할 계획이다.","Her pension covers most of her monthly expenses.","그녀의 연금은 매달 생활비 대부분을 충당한다.","","",2
-consent,동의,n,"The doctor needs the patient's consent before surgery.","의사는 수술 전에 환자의 동의가 필요하다.","The researchers obtained consent from every participant.","연구자들은 모든 참가자로부터 동의를 얻었다.","","",2
-incur,발생시키다,v,"Late payments will incur an extra fee.","연체하면 추가 수수료가 발생한다.","Canceling the trip will incur a hefty penalty fee.","그 여행을 취소하면 상당한 위약금이 발생할 것이다.","","",2
+culinary,요리의,adj,"The city is famous for its culinary traditions.","그 도시는 요리 전통으로 유명하다.","He studied at a top culinary school in Paris.","그는 파리의 최고 요리 학교에서 공부했다.","culinary arts","요리 예술(조리 기술)",2
+surveillance,감시,n,"The store uses surveillance cameras to prevent theft.","그 매장은 도난 방지를 위해 감시 카메라를 사용한다.","The neighborhood was placed under police surveillance after the break-ins.","그 동네는 도난 사건들 이후 경찰의 감시하에 놓였다.","surveillance camera","감시 카메라",2
+pension,연금,n,"He plans to live on his pension after retiring.","그는 은퇴 후 연금으로 생활할 계획이다.","Her pension covers most of her monthly expenses.","그녀의 연금은 매달 생활비 대부분을 충당한다.","pension fund","연금 기금",2
+consent,동의,n,"The doctor needs the patient's consent before surgery.","의사는 수술 전에 환자의 동의가 필요하다.","The researchers obtained consent from every participant.","연구자들은 모든 참가자로부터 동의를 얻었다.","informed consent","사전 동의(고지된 동의)",2
+incur,발생시키다,v,"Late payments will incur an extra fee.","연체하면 추가 수수료가 발생한다.","Canceling the trip will incur a hefty penalty fee.","그 여행을 취소하면 상당한 위약금이 발생할 것이다.","incur costs","비용을 발생시키다",2
 patriotism,애국심,n,"The song is often played at events celebrating patriotism.","그 노래는 애국심을 기리는 행사에서 자주 연주된다.","The parade was meant to inspire a sense of patriotism.","그 퍼레이드는 애국심을 불러일으키기 위한 것이었다.","","",2
 heroic,영웅적인,adj,"The firefighter's heroic effort saved the whole family.","소방관의 영웅적인 노력이 가족 전체를 구했다.","","","","",3
 intact,온전한,adj,"Despite the crash, the package arrived intact.","충돌 사고에도 불구하고 그 소포는 온전한 상태로 도착했다.","","","","",3
@@ -896,7 +896,7 @@ abridge,축약하다,v,"The editor abridged the novel for younger readers.","편
 abridged,축소된,adj,"They read an abridged version of the classic story.","그들은 그 고전 이야기의 축약본을 읽었다.","","","","",3
 acquit,무죄로 하다,v,"The jury voted to acquit the defendant.","배심원단은 피고인에게 무죄 평결을 내리기로 했다.","","","","",4
 adherent,추종자/지지자,n,"The political party gained many new adherents.","그 정당은 많은 새로운 지지자를 얻었다.","","","","",4
-adhesive,접착성의,adj,"She used a strong adhesive to fix the broken handle.","그녀는 부러진 손잡이를 고치기 위해 강력한 접착제를 사용했다.","Make sure the adhesive tape is completely dry before touching it.","만지기 전에 접착 테이프가 완전히 말랐는지 확인하라.","","",2
+adhesive,접착성의,adj,"She used a strong adhesive to fix the broken handle.","그녀는 부러진 손잡이를 고치기 위해 강력한 접착제를 사용했다.","Make sure the adhesive tape is completely dry before touching it.","만지기 전에 접착 테이프가 완전히 말랐는지 확인하라.","adhesive tape","접착 테이프",2
 admonition,훈계,n,"He ignored his mother's gentle admonition to be careful.","그는 조심하라는 어머니의 부드러운 훈계를 무시했다.","","","","",4
 adulation,과찬,n,"The singer seemed uncomfortable with all the adulation.","그 가수는 쏟아지는 과도한 찬사를 불편해하는 듯했다.","","","","",5
 agitate,불안하게 만들다,v,"The loud noise outside began to agitate the baby.","밖에서 나는 시끄러운 소리가 아기를 불안하게 만들기 시작했다.","","","","",3
@@ -929,13 +929,13 @@ complacency,안주/자기만족,n,"Success led to complacency within the team.",
 concession,양보,n,"Both sides made concessions to reach an agreement.","양측은 합의에 이르기 위해 양보했다.","","","","",3
 conciliate,누그러뜨리다/달래다,v,"He tried to conciliate the angry customer with a refund.","그는 환불로 화난 고객을 달래려 했다.","","","","",5
 confrontational,대립적인,adj,"His confrontational tone made the meeting tense.","그의 대립적인 어조가 회의를 긴장되게 만들었다.","","","","",3
-congested,정체한/혼잡한,adj,"Traffic was heavily congested during rush hour.","출퇴근 시간에는 교통이 몹시 정체되었다.","The highway gets congested every evening around six.","그 고속도로는 매일 저녁 6시경 정체된다.","","",2
+congested,정체한/혼잡한,adj,"Traffic was heavily congested during rush hour.","출퇴근 시간에는 교통이 몹시 정체되었다.","The highway gets congested every evening around six.","그 고속도로는 매일 저녁 6시경 정체된다.","congested traffic","혼잡한 교통",2
 connotation,함축/숨은 뜻,n,"The word carries a negative connotation in this context.","이 맥락에서 그 단어는 부정적인 함축을 지닌다.","","","","",4
 consign,넘겨주다/위임하다,v,"The old furniture was consigned to storage.","그 낡은 가구는 창고로 넘겨졌다.","","","","",4
 remit,(부채·의무를) 면제해 주다,v,"The court agreed to remit part of the fine.","법원은 벌금의 일부를 면제해 주기로 합의했다.","","","","",4
 construe,해석하다,v,"Her silence was construed as agreement.","그녀의 침묵은 동의로 해석되었다.","","","","",4
 parse,(문장을) 분석하다,v,"The program parses each line of code before running it.","그 프로그램은 실행하기 전에 코드의 각 줄을 분석한다.","","","","",3
-contaminate,오염시키다,v,"Chemicals from the factory contaminated the river.","공장에서 나온 화학물질이 그 강을 오염시켰다.","A leaking pipe contaminated the drinking water supply.","새는 파이프가 식수 공급을 오염시켰다.","","",2
+contaminate,오염시키다,v,"Chemicals from the factory contaminated the river.","공장에서 나온 화학물질이 그 강을 오염시켰다.","A leaking pipe contaminated the drinking water supply.","새는 파이프가 식수 공급을 오염시켰다.","contaminated water","오염된 물",2
 contravene,(법·규칙을) 위반하다,v,"The company's actions contravened international law.","그 회사의 행위는 국제법을 위반했다.","","","","",4
 contrite,죄를 뉘우치는,adj,"He gave a contrite apology after the incident.","그는 그 사건 이후 진심으로 뉘우치는 사과를 했다.","","","","",5
 contrivance,고안물/발명품,n,"The old clock was a clever mechanical contrivance.","그 오래된 시계는 정교한 기계 장치였다.","","","","",5
@@ -959,20 +959,20 @@ despotism,폭정,n,"The revolution ended decades of despotism.","그 혁명은 �
 destitute,궁핍한,adj,"The flood left many families destitute.","그 홍수는 많은 가족을 궁핍하게 만들었다.","","","","",3
 detrimental,손해를 입히는/해로운,adj,"Smoking is detrimental to your health.","흡연은 건강에 해롭다.","","","","",3
 deviant,(표준에서) 벗어난,adj,"The report focused on deviant behavior among teenagers.","그 보고서는 십대들 사이의 일탈 행동에 초점을 맞췄다.","","","","",4
-devour,게걸스럽게 먹다,v,"The hungry boys devoured the entire pizza in minutes.","배고픈 소년들은 몇 분 만에 피자 전체를 게걸스럽게 먹어치웠다.","The dog devoured its meal in less than a minute.","그 개는 1분도 안 되어 밥을 게걸스럽게 먹어치웠다.","","",2
+devour,게걸스럽게 먹다,v,"The hungry boys devoured the entire pizza in minutes.","배고픈 소년들은 몇 분 만에 피자 전체를 게걸스럽게 먹어치웠다.","The dog devoured its meal in less than a minute.","그 개는 1분도 안 되어 밥을 게걸스럽게 먹어치웠다.","devour a book","책을 게걸스럽게(순식간에) 읽다",2
 imbibe,(술 등을) 마시다,v,"He imbibed freely at the celebration.","그는 축하 자리에서 거리낌 없이 술을 마셨다.","","","","",5
 dexterity,기술/손재주,n,"The surgeon performed the operation with great dexterity.","그 외과의사는 뛰어난 손재주로 수술을 집도했다.","","","","",3
 digressive,지엽적인,adj,"The professor's digressive lecture wandered off topic.","교수의 산만한 강의는 주제에서 벗어나 헤맸다.","","","","",5
 dilatory,꾸물대는/더딘,adj,"The company was criticized for its dilatory response.","그 회사는 꾸물대는 대응으로 비판받았다.","","","","",5
 disciplined,훈련된,adj,"The athletes followed a disciplined training routine.","선수들은 훈련된 규칙적인 운동 루틴을 따랐다.","She kept a disciplined study schedule leading up to the exam.","그녀는 시험을 앞두고 훈련된 규칙적인 학습 일정을 지켰다.","","",2
-disguise,변장시키다,v,"He wore a disguise so no one would recognize him.","그는 아무도 자신을 알아보지 못하도록 변장을 했다.","The spy disguised herself as a hotel maid to enter the building.","그 스파이는 건물에 들어가기 위해 호텔 청소부로 변장했다.","","",2
+disguise,변장시키다,v,"He wore a disguise so no one would recognize him.","그는 아무도 자신을 알아보지 못하도록 변장을 했다.","The spy disguised herself as a hotel maid to enter the building.","그 스파이는 건물에 들어가기 위해 호텔 청소부로 변장했다.","blessing in disguise","전화위복(불행처럼 보이나 다행인 일)",2
 disorient,길을 잃게 하다,v,"The maze of hallways disoriented the new employees.","미로 같은 복도가 신입 직원들을 헷갈리게 만들었다.","","","","",3
 dissident,반체제의,adj,"The dissident writer was jailed for his articles.","그 반체제 작가는 자신의 글 때문에 투옥되었다.","","","","",4
 perverse,비뚤어진,adj,"He took a perverse pleasure in others' failures.","그는 남의 실패에서 비뚤어진 쾌감을 느꼈다.","","","","",4
 dissuade,그만두게 하다,v,"She tried to dissuade him from quitting his job.","그녀는 그가 일을 그만두지 않도록 설득하려 했다.","","","","",3
 divert,다른 데로 돌리다,v,"Police diverted traffic away from the accident scene.","경찰은 사고 현장에서 차량을 우회시켰다.","","","","",3
 dormant,잠자는/휴면 중인,adj,"The volcano has been dormant for centuries.","그 화산은 수 세기 동안 휴화산 상태였다.","","","","",3
-dotted,산재한,adj,"The countryside was dotted with small farms.","그 시골 지역에는 작은 농장들이 곳곳에 흩어져 있었다.","The night sky was dotted with thousands of stars.","밤하늘에는 수천 개의 별들이 산재해 있었다.","","",2
+dotted,산재한,adj,"The countryside was dotted with small farms.","그 시골 지역에는 작은 농장들이 곳곳에 흩어져 있었다.","The night sky was dotted with thousands of stars.","밤하늘에는 수천 개의 별들이 산재해 있었다.","dotted line","점선",2
 drab,칙칙한,adj,"The office walls were painted a drab gray.","사무실 벽은 칙칙한 회색으로 칠해져 있었다.","","","","",3
 ebullience,용솟음/넘침,n,"She greeted the news with sheer ebullience.","그녀는 그 소식을 순수한 기쁨의 감정으로 맞이했다.","","","","",5
 ecstatic,무아지경의/도취한,adj,"She was ecstatic when she heard the good news.","그녀는 좋은 소식을 듣고 무아지경으로 기뻐했다.","","","","",3
@@ -1016,15 +1016,15 @@ oscillate,(감정·행동이) 오가다,v,"His mood seemed to oscillate between 
 fraternize,형제처럼 친하게 사귀다,v,"Employees were told not to fraternize with clients.","직원들은 고객과 지나치게 친밀하게 지내지 말라는 지시를 받았다.","","","","",5
 frisk,몸수색하다,v,"Security guards frisked every visitor at the entrance.","경비원들은 입구에서 모든 방문객의 몸을 수색했다.","","","","",4
 genocide,인종학살,n,"The museum documents the history of the genocide.","그 박물관은 그 인종학살의 역사를 기록하고 있다.","","","","",4
-glimpse,잠깐 봄,n,"She caught a glimpse of the singer through the crowd.","그녀는 인파 사이로 그 가수를 잠깐 보았다.","He got only a brief glimpse of the accident from his window.","그는 창문에서 그 사고를 잠깐 보았을 뿐이다.","","",2
+glimpse,잠깐 봄,n,"She caught a glimpse of the singer through the crowd.","그녀는 인파 사이로 그 가수를 잠깐 보았다.","He got only a brief glimpse of the accident from his window.","그는 창문에서 그 사고를 잠깐 보았을 뿐이다.","catch a glimpse","잠깐 보다(언뜻 보다)",2
 glitch,작은 문제/결함,n,"A minor glitch delayed the software update.","사소한 결함이 소프트웨어 업데이트를 지연시켰다.","","","","",3
 hitch,(잠깐 지체하게 하는) 문제,n,"The plan went smoothly without a single hitch.","그 계획은 아무런 차질 없이 순조롭게 진행되었다.","","","","",3
 gluttonous,대식하는/식탐하는,adj,"He felt gluttonous after eating the whole cake.","그는 케이크를 통째로 먹고 나서 과식했다고 느꼈다.","","","","",4
 gobble,통째로 삼키다,v,"The children gobbled up their breakfast before school.","아이들은 등교 전에 아침을 허겁지겁 먹어치웠다.","","","","",3
-stuff,(가득) 채워 넣다,v,"She stuffed her suitcase with extra clothes.","그녀는 여행 가방에 여분의 옷을 가득 채워 넣었다.","He stuffed the pillow with extra feathers.","그는 베개에 여분의 깃털을 채워 넣었다.","","",2
+stuff,(가득) 채워 넣다,v,"She stuffed her suitcase with extra clothes.","그녀는 여행 가방에 여분의 옷을 가득 채워 넣었다.","He stuffed the pillow with extra feathers.","그는 베개에 여분의 깃털을 채워 넣었다.","stuff a turkey","칠면조 속을 채우다",2
 gratify,기쁘게 하다,v,"Nothing gratifies a teacher more than a student's success.","학생의 성공만큼 교사를 기쁘게 하는 것은 없다.","","","","",4
 harbinger,전조/조짐,n,"The dark clouds were a harbinger of the storm to come.","먹구름은 다가올 폭풍의 전조였다.","","","","",5
-hassle,번거로운 일,n,"Renewing the visa turned out to be a real hassle.","비자를 갱신하는 일은 정말 번거로운 일로 판명되었다.","Finding parking downtown is always a hassle.","시내에서 주차 자리를 찾는 것은 항상 번거로운 일이다.","","",2
+hassle,번거로운 일,n,"Renewing the visa turned out to be a real hassle.","비자를 갱신하는 일은 정말 번거로운 일로 판명되었다.","Finding parking downtown is always a hassle.","시내에서 주차 자리를 찾는 것은 항상 번거로운 일이다.","hassle-free","번거롭지 않은(수월한)",2
 heave,들어올리다/끌어올리다,v,"The workers heaved the heavy crate onto the truck.","인부들은 무거운 상자를 트럭 위로 힘겹게 들어올렸다.","","","","",3
 heinous,극악한,adj,"The court condemned the heinous crime.","법원은 그 극악한 범죄를 규탄했다.","","","","",4
 horrendous,대단히 충격적인,adj,"The traffic this morning was horrendous.","오늘 아침 교통 체증은 정말 끔찍했다.","","","","",3
@@ -1049,7 +1049,7 @@ infringement,위반/침해,n,"The lawsuit alleged a copyright infringement.","�
 inkling,어렴풋이 알아차리기,n,"She had no inkling that a surprise party was planned.","그녀는 깜짝 파티가 계획되어 있다는 것을 전혀 눈치채지 못했다.","","","","",4
 inoculate,예방 접종하다,v,"Farmers inoculate their livestock against disease.","농부들은 가축에게 질병 예방 접종을 한다.","","","","",3
 inoculation,(예방) 접종,n,"The clinic offers free inoculation for children.","그 병원은 어린이를 위한 무료 예방 접종을 제공한다.","","","","",3
-shot,(주사) 한 대,n,"The nurse gave him a flu shot at the clinic.","간호사는 병원에서 그에게 독감 주사를 놓아주었다.","The doctor recommended a booster shot every year.","의사는 매년 추가 접종 한 대를 권장했다.","","",1
+shot,(주사) 한 대,n,"The nurse gave him a flu shot at the clinic.","간호사는 병원에서 그에게 독감 주사를 놓아주었다.","The doctor recommended a booster shot every year.","의사는 매년 추가 접종 한 대를 권장했다.","flu shot","독감 예방주사",1
 inquisitive,탐구심이 많은,adj,"The inquisitive child kept asking why.","그 탐구심 많은 아이는 계속 왜냐고 물었다.","","","","",3
 insinuation,빗대어 말하기/암시,n,"He was offended by her insinuation that he had lied.","그는 그가 거짓말을 했다는 그녀의 암시에 기분이 상했다.","","","","",5
 instrumental,도움이 되는,adj,"She was instrumental in organizing the charity event.","그녀는 그 자선 행사를 조직하는 데 큰 역할을 했다.","","","","",3
@@ -1061,7 +1061,7 @@ intrigue,호기심을 자극하다,v,"The mystery novel's plot intrigued readers
 submerge,물속에 잠기다,v,"The whole village was submerged after the flood.","그 마을 전체가 홍수 이후 물에 잠겼다.","Divers submerged themselves to inspect the ship's hull.","잠수부들은 배의 선체를 점검하기 위해 물속에 잠겼다.","","",2
 invincible,정복당하지 않는,adj,"The champion seemed invincible until his last match.","그 챔피언은 마지막 경기 전까지 무적으로 보였다.","","","","",3
 irksome,지루한/진저리 나는,adj,"Filling out the forms was an irksome task.","서류를 작성하는 일은 진저리 나는 작업이었다.","","","","",4
-jerk,갑자기 홱 움직이다,v,"The bus jerked forward, nearly knocking her over.","버스가 갑자기 홱 앞으로 움직여 그녀는 하마터면 넘어질 뻔했다.","He jerked his hand back when he touched the hot pan.","그는 뜨거운 팬을 만지자 손을 갑자기 홱 뒤로 뺐다.","","",2
+jerk,갑자기 홱 움직이다,v,"The bus jerked forward, nearly knocking her over.","버스가 갑자기 홱 앞으로 움직여 그녀는 하마터면 넘어질 뻔했다.","He jerked his hand back when he touched the hot pan.","그는 뜨거운 팬을 만지자 손을 갑자기 홱 뒤로 뺐다.","knee-jerk reaction","즉각적인(반사적인) 반응",2
 jitter,안절부절 못하는 기분,n,"She had a case of the jitters before the interview.","그녀는 면접 전에 안절부절못하는 기분을 느꼈다.","","","","",3
 judicial,사법의/판결의,adj,"The case will be decided by the judicial system.","그 사건은 사법 제도에 의해 판결될 것이다.","","","","",3
 judiciary,사법부,n,"The judiciary is meant to be independent of politics.","사법부는 정치로부터 독립적이어야 한다.","","","","",4
@@ -1099,7 +1099,7 @@ petition,탄원(서),n,"Thousands signed the petition to save the park.","수천
 tumble,빠르게 하락하다,v,"Stock prices tumbled after the announcement.","발표 이후 주가가 급격히 하락했다.","","","","",3
 plunder,약탈하다,v,"Soldiers plundered the village during the war.","병사들은 전쟁 중에 그 마을을 약탈했다.","","","","",4
 predilection,매우 좋아함,n,"He has a predilection for spicy food.","그는 매운 음식을 유난히 좋아한다.","","","","",5
-preference,선호,n,"Her preference is always for tea over coffee.","그녀는 항상 커피보다 차를 선호한다.","Employees were asked about their preference for remote or office work.","직원들은 재택근무와 사무실 근무 중 선호를 질문받았다.","","",2
+preference,선호,n,"Her preference is always for tea over coffee.","그녀는 항상 커피보다 차를 선호한다.","Employees were asked about their preference for remote or office work.","직원들은 재택근무와 사무실 근무 중 선호를 질문받았다.","personal preference","개인적 취향",2
 preoccupy,열중케 하다,v,"Work worries preoccupied her all weekend.","업무에 대한 걱정이 주말 내내 그녀의 마음을 사로잡았다.","","","","",4
 prerogative,특권,n,"It's the manager's prerogative to make the final call.","최종 결정을 내리는 것은 매니저의 특권이다.","","","","",4
 pretentious,허세 부리는,adj,"His pretentious remarks annoyed the other guests.","그의 허세 부리는 발언이 다른 손님들을 짜증나게 했다.","","","","",4
@@ -1109,7 +1109,7 @@ untarnished,더러움이 없는,adj,"Her reputation remained untarnished despite
 probe,조사,n,"Investigators launched a probe into the accident.","수사관들은 그 사고에 대한 조사에 착수했다.","","","","",3
 proclaim,선언하다,v,"The king proclaimed a national holiday.","왕은 국경일을 선포했다.","","","","",3
 prodigy,천재/신동,n,"She was a musical prodigy at the age of six.","그녀는 여섯 살에 음악 신동이었다.","","","","",3
-prolong,연장시키다,v,"The medicine helped prolong the patient's life.","그 약은 환자의 생명을 연장하는 데 도움이 되었다.","Refrigeration helps prolong the freshness of vegetables.","냉장 보관은 채소의 신선도를 연장시키는 데 도움이 된다.","","",2
+prolong,연장시키다,v,"The medicine helped prolong the patient's life.","그 약은 환자의 생명을 연장하는 데 도움이 되었다.","Refrigeration helps prolong the freshness of vegetables.","냉장 보관은 채소의 신선도를 연장시키는 데 도움이 된다.","prolong life","생명을 연장하다",2
 promulgate,공포하다,v,"The new law was promulgated last month.","새 법은 지난달에 공포되었다.","","","","",5
 proposition,제의/건의,n,"The salesman made an attractive proposition.","그 영업사원은 매력적인 제안을 했다.","","","","",3
 prosecute,기소하다,v,"The state decided to prosecute the case in full.","검찰은 그 사건을 철저히 기소하기로 했다.","","","","",3
@@ -1140,7 +1140,7 @@ restoration,복원,n,"The restoration of the old building took two years.","그 
 retard,늦추다,v,"The drug is designed to retard the spread of the disease.","그 약은 질병의 확산을 늦추도록 설계되었다.","","","","",4
 retention,보유/보존,n,"The company focused on improving customer retention.","그 회사는 고객 유지율을 높이는 데 주력했다.","","","","",3
 retort,반박하다/대꾸하다,v,"""That's not true,"" she retorted sharply.","""그건 사실이 아니야,"" 그녀는 날카롭게 쏘아붙였다.","","","","",4
-retrieve,되찾아오다/회수하다,v,"He retrieved his lost wallet from the lost and found.","그는 분실물 보관소에서 잃어버린 지갑을 되찾았다.","The dog was trained to retrieve the newspaper every morning.","그 개는 매일 아침 신문을 물어오도록 훈련받았다.","","",2
+retrieve,되찾아오다/회수하다,v,"He retrieved his lost wallet from the lost and found.","그는 분실물 보관소에서 잃어버린 지갑을 되찾았다.","The dog was trained to retrieve the newspaper every morning.","그 개는 매일 아침 신문을 물어오도록 훈련받았다.","retrieve data","데이터를 검색(복구)하다",2
 revamp,개선하다,v,"The company plans to revamp its entire website.","그 회사는 웹사이트 전체를 개편할 계획이다.","","","","",3
 revert,되돌아가다,v,"After the trial period, prices reverted to normal.","체험 기간이 끝난 후 가격은 원래대로 돌아갔다.","","","","",3
 revulsion,격변/혐오감,n,"She felt a wave of revulsion at the sight of the wound.","그녀는 그 상처를 보고 강한 혐오감을 느꼈다.","","","","",5
@@ -1154,7 +1154,7 @@ savagely,잔인하게,adv,"The critic savagely attacked the new film.","그 평�
 savor,음미하다,v,"She savored every bite of the dessert.","그녀는 디저트의 한 입 한 입을 음미했다.","","","","",3
 savvy,요령 있는,adj,"She is a savvy investor who reads the market well.","그녀는 시장을 잘 읽는 요령 있는 투자자다.","","","","",3
 score,악보,n,"The pianist studied the score before the concert.","그 피아니스트는 콘서트 전에 악보를 연구했다.","","","","",3
-transcript,글로 옮긴 기록,n,"Please send an official transcript from your school.","학교에서 공식 성적 증명서를 보내주세요.","A transcript of the interview was published in the newspaper.","그 인터뷰의 글로 옮긴 기록이 신문에 실렸다.","","",2
+transcript,글로 옮긴 기록,n,"Please send an official transcript from your school.","학교에서 공식 성적 증명서를 보내주세요.","A transcript of the interview was published in the newspaper.","그 인터뷰의 글로 옮긴 기록이 신문에 실렸다.","academic transcript","학업 성적 증명서",2
 scrutiny,정밀한 조사,n,"The proposal came under close scrutiny.","그 제안은 면밀한 검토를 받았다.","","","","",4
 seclusion,격리/은퇴,n,"The writer lived in seclusion for many years.","그 작가는 오랫동안 은둔 생활을 했다.","","","","",4
 sedative,진정시키는,adj,"The doctor prescribed a mild sedative to help her sleep.","의사는 그녀의 수면을 돕기 위해 가벼운 진정제를 처방했다.","","","","",3
@@ -1169,7 +1169,7 @@ spasmodic,돌발적인,adj,"The patient suffered from spasmodic muscle movements
 squander,허비하다,v,"He squandered his entire fortune within a few years.","그는 몇 년 만에 자신의 전 재산을 탕진했다.","","","","",4
 frivol,허송 세월을 하다,v,"She tends to frivol away her weekends doing nothing.","그녀는 주말을 아무것도 하지 않고 허비하는 경향이 있다.","","","","",5
 stall,(갑자기) 시동이 꺼지다,v,"The old car stalled at every red light.","그 낡은 차는 빨간불마다 시동이 꺼졌다.","","","","",3
-steer,조종하다,v,"He steered the boat carefully around the rocks.","그는 바위를 조심스럽게 피해 배를 조종했다.","She steered the conversation away from the awkward topic.","그녀는 대화를 그 어색한 주제로부터 다른 쪽으로 조종했다.","","",2
+steer,조종하다,v,"He steered the boat carefully around the rocks.","그는 바위를 조심스럽게 피해 배를 조종했다.","She steered the conversation away from the awkward topic.","그녀는 대화를 그 어색한 주제로부터 다른 쪽으로 조종했다.","steer clear of","~을 피하다(멀리하다)",2
 stifle,(감정 등을) 억누르다/참다,v,"She stifled a laugh during the serious meeting.","그녀는 진지한 회의 중에 웃음을 참았다.","","","","",4
 squelch,진압하다,v,"The government moved quickly to squelch the rumor.","정부는 그 소문을 신속히 진압하기 위해 움직였다.","","","","",5
 stipulate,규정하다/명기하다,v,"The contract stipulates a two-week notice period.","그 계약서는 2주간의 사전 통지 기간을 규정한다.","","","","",4
@@ -1185,9 +1185,9 @@ suffrage,투표권,n,"Women fought for decades to win the right of suffrage.","�
 surmise,추측하다,v,"She surmised from his tone that something was wrong.","그녀는 그의 어조에서 뭔가 잘못되었다는 것을 추측했다.","","","","",4
 surrogate,대리의/대행하는,adj,"The couple used a surrogate mother to have a child.","그 부부는 아이를 갖기 위해 대리모를 이용했다.","","","","",4
 sustenance,자양물/생명 유지에 필요한 것,n,"The small garden provided sustenance for the whole family.","그 작은 텃밭은 온 가족의 생계를 뒷받침해 주었다.","","","","",4
-swipe,강타하다/(카드를) 긁다,v,"She swiped her card to enter the building.","그녀는 건물에 들어가기 위해 카드를 긁었다.","He swiped his badge at the door to clock in for his shift.","그는 근무를 시작하기 위해 문 앞에서 사원증을 긁었다.","","",2
+swipe,강타하다/(카드를) 긁다,v,"She swiped her card to enter the building.","그녀는 건물에 들어가기 위해 카드를 긁었다.","He swiped his badge at the door to clock in for his shift.","그는 근무를 시작하기 위해 문 앞에서 사원증을 긁었다.","swipe right","(데이팅 앱에서) 오른쪽으로 스와이프하다",2
 synthesize,통합하다/종합하다,v,"The report synthesizes data from dozens of studies.","그 보고서는 수십 개 연구의 데이터를 종합한다.","","","","",3
-tactic,전법/방책,n,"The team changed its tactic in the second half.","그 팀은 후반전에 전술을 바꾸었다.","Delaying the response was a deliberate tactic to gain time.","응답을 지연시키는 것은 시간을 벌기 위한 의도적인 전술이었다.","","",2
+tactic,전법/방책,n,"The team changed its tactic in the second half.","그 팀은 후반전에 전술을 바꾸었다.","Delaying the response was a deliberate tactic to gain time.","응답을 지연시키는 것은 시간을 벌기 위한 의도적인 전술이었다.","scare tactics","겁주기 전술(공포 조장 전략)",2
 tenable,공격에 견딜 수 있는,adj,"His argument was no longer tenable after new evidence appeared.","새로운 증거가 나오자 그의 주장은 더 이상 지지될 수 없었다.","","","","",5
 tenacity,고집/완강함,n,"She solved the problem through sheer tenacity.","그녀는 순전히 끈질긴 근성으로 그 문제를 해결했다.","","","","",4
 tenet,신조/주의,n,"Equality is a core tenet of the organization.","평등은 그 단체의 핵심 신조다.","","","","",4
@@ -1201,7 +1201,7 @@ treatise,논문,n,"He wrote a lengthy treatise on economic theory.","그는 경�
 trespass,무단 침입하다,v,"Signs warned visitors not to trespass on the property.","표지판은 방문객들에게 그 부지에 무단 침입하지 말라고 경고했다.","","","","",3
 tyranny,독재,n,"The people rose up against years of tyranny.","사람들은 수년간의 독재에 맞서 봉기했다.","","","","",4
 undermine,약화시키다,v,"Constant criticism undermined her confidence.","끊임없는 비판이 그녀의 자신감을 약화시켰다.","","","","",3
-undo,원상으로 되돌리다/취소하다,v,"There's no way to undo the damage now.","이제 그 피해를 되돌릴 방법은 없다.","She quickly pressed the button to undo her last edit.","그녀는 자신의 마지막 수정을 취소하려고 재빨리 버튼을 눌렀다.","","",2
+undo,원상으로 되돌리다/취소하다,v,"There's no way to undo the damage now.","이제 그 피해를 되돌릴 방법은 없다.","She quickly pressed the button to undo her last edit.","그녀는 자신의 마지막 수정을 취소하려고 재빨리 버튼을 눌렀다.","undo button","실행 취소 버튼",2
 unruly,고분고분하지 않은,adj,"The teacher struggled to control the unruly class.","교사는 통제하기 힘든 반을 다스리느라 애를 먹었다.","","","","",3
 unshapely,볼품 없는,adj,"The old sweater had become unshapely after many washes.","그 낡은 스웨터는 여러 번 세탁한 후 볼품없이 변해 있었다.","","","","",5
 unsolicited,부탁받지 않은,adj,"She received unsolicited advice from everyone at the party.","그녀는 파티에서 모두에게서 부탁하지 않은 조언을 받았다.","","","","",4
@@ -1219,7 +1219,7 @@ vengeful,복수심이 있는,adj,"He grew vengeful after losing everything in th
 vent,발산하다/드러내다,v,"She called a friend to vent about her bad day.","그녀는 힘들었던 하루를 털어놓으려고 친구에게 전화했다.","","","","",3
 release,발산하다,v,"Exercise helps release built-up stress.","운동은 쌓인 스트레스를 발산하는 데 도움이 된다.","Screaming into a pillow can release pent-up anger.","베개에 대고 소리치는 것은 쌓인 분노를 발산할 수 있다.","","",1
 veracious,거짓말을 하지 않는/정직한,adj,"The witness was known to be a veracious source.","그 목격자는 정직한 정보원으로 알려져 있었다.","","","","",5
-vivid,강렬한,adj,"She has vivid memories of her first trip abroad.","그녀는 첫 해외여행에 대한 생생한 기억을 가지고 있다.","He painted a vivid picture of life in the old village.","그는 그 옛 마을의 삶에 대해 강렬한 그림을 그려 보였다.","","",2
+vivid,강렬한,adj,"She has vivid memories of her first trip abroad.","그녀는 첫 해외여행에 대한 생생한 기억을 가지고 있다.","He painted a vivid picture of life in the old village.","그는 그 옛 마을의 삶에 대해 강렬한 그림을 그려 보였다.","vivid imagination","생생한 상상력",2
 wade,헤치고 나가다,v,"The children waded through the shallow stream.","아이들은 얕은 개울을 헤치고 걸어갔다.","","","","",3
 trudge,터덜터덜 걷다,v,"They trudged home through the heavy snow.","그들은 폭설을 뚫고 터덜터덜 집으로 걸어갔다.","","","","",4
 walkout,동맹 파업,n,"Workers staged a walkout to demand better pay.","노동자들은 더 나은 임금을 요구하며 동맹 파업을 벌였다.","","","","",3
@@ -1237,40 +1237,40 @@ component,요소,n,"Trust is a key component of any partnership.","신뢰는 모
 pioneer,선구자,n,"She is regarded as a pioneer in renewable energy.","그녀는 재생 에너지 분야의 선구자로 여겨진다.","He was a pioneer in the field of modern computing.","그는 현대 컴퓨터 공학 분야의 선구자였다.","","",2
 pioneer,개척하다,v,"The lab pioneered a new method for storing data.","그 연구소는 데이터 저장의 새로운 방법을 개척했다.","","","","",3
 convention,관습,n,"Wearing black to a funeral is a common convention.","장례식에 검은 옷을 입는 것은 흔한 관습이다.","Shaking hands when meeting someone is a common social convention.","누군가를 만날 때 악수하는 것은 흔한 사회적 관습이다.","","",2
-credit,칭찬/인정,n,"She deserves credit for solving the problem.","그녀는 그 문제를 해결한 것에 대해 인정받을 자격이 있다.","He gave all the credit for the project's success to his team.","그는 그 프로젝트 성공에 대한 모든 공을 자신의 팀에게 돌렸다.","","",2
+credit,칭찬/인정,n,"She deserves credit for solving the problem.","그녀는 그 문제를 해결한 것에 대해 인정받을 자격이 있다.","He gave all the credit for the project's success to his team.","그는 그 프로젝트 성공에 대한 모든 공을 자신의 팀에게 돌렸다.","credit where credit is due","공은 공대로 인정하다",2
 credit,~의 공으로 돌리다,v,"He credited his team with the project's success.","그는 프로젝트의 성공을 팀의 공으로 돌렸다.","","","","",3
 ingrained,타고난/깊이 배어든,adj,"Politeness is deeply ingrained in her personality.","공손함은 그녀의 성격에 깊이 배어 있다.","","","","",3
 vie for,~을 위해 겨루다,phr,"Several candidates are vying for the same position.","여러 후보자들이 같은 자리를 놓고 겨루고 있다.","","","","",3
-progress,나아감,n,"The team made steady progress on the project.","그 팀은 프로젝트에서 꾸준한 진전을 보였다.","There has been little progress on the negotiations this week.","이번 주 협상에서는 진전이 거의 없었다.","","",2
+progress,나아감,n,"The team made steady progress on the project.","그 팀은 프로젝트에서 꾸준한 진전을 보였다.","There has been little progress on the negotiations this week.","이번 주 협상에서는 진전이 거의 없었다.","make progress","진전을 이루다",2
 progress,진행하다,v,"The construction is progressing faster than expected.","공사는 예상보다 빠르게 진행되고 있다.","Her recovery progressed well after the surgery.","그녀의 회복은 수술 후 순조롭게 진행되었다.","","",2
 reflect on,되돌아보다,phr,"She took a moment to reflect on her career choices.","그녀는 잠시 자신의 진로 선택을 되돌아보았다.","The retreat gave employees time to reflect on the past year.","그 워크숍은 직원들에게 지난 한 해를 되돌아볼 시간을 주었다.","","",2
 hominid,인류의 조상,n,"The fossil belonged to an early hominid species.","그 화석은 초기 인류 조상 종에 속한 것이었다.","","","","",5
 evolutionary,점진적인,adj,"The company took an evolutionary approach to change instead of a sudden one.","그 회사는 갑작스러운 변화 대신 점진적인 접근 방식을 택했다.","","","","",3
 be eager to,~을 하고 싶어하다,phr,"The new intern was eager to learn everything.","그 신입 인턴은 모든 것을 배우고 싶어했다.","Fans were eager to see the band's new music video.","팬들은 그 밴드의 새 뮤직비디오를 보고 싶어했다.","","",1
 off-the-page,생생한,adj,"The characters in the novel felt completely off-the-page.","그 소설 속 인물들은 완전히 생생하게 느껴졌다.","","","","",3
-embrace,수용하다,v,"The company embraced remote work early on.","그 회사는 일찍부터 원격 근무를 수용했다.","Younger employees quickly embraced the new digital tools.","젊은 직원들은 새로운 디지털 도구를 빠르게 수용했다.","","",2
+embrace,수용하다,v,"The company embraced remote work early on.","그 회사는 일찍부터 원격 근무를 수용했다.","Younger employees quickly embraced the new digital tools.","젊은 직원들은 새로운 디지털 도구를 빠르게 수용했다.","embrace change","변화를 수용(受容)하다",2
 predecessor,전임자,n,"The new CEO praised her predecessor's achievements.","신임 CEO는 전임자의 업적을 칭찬했다.","","","","",3
 roundabout,우회적인,adj,"He gave a roundabout answer instead of a direct one.","그는 직접적인 대답 대신 우회적인 답을 했다.","","","","",3
 attain,이루다,v,"It took years of effort to attain her goal.","그녀의 목표를 이루기까지 수년간의 노력이 필요했다.","He worked overtime for months to attain the sales record.","그는 그 판매 기록을 이루기 위해 몇 달 동안 초과 근무를 했다.","","",2
 inquire,알아보다,v,"He called the office to inquire about the job opening.","그는 채용 공고에 대해 알아보려고 사무실에 전화했다.","She wrote an email to inquire about the refund policy.","그녀는 환불 정책에 대해 알아보려고 이메일을 썼다.","","",2
 swamped with,~에 압도되다,phr,"She was swamped with emails after the vacation.","그녀는 휴가 후 이메일에 압도되었다.","","","","",3
 confide in,비밀을 털어놓다,phr,"She confided in her best friend about the problem.","그녀는 가장 친한 친구에게 그 문제에 대해 비밀을 털어놓았다.","","","","",3
-desire,욕구,n,"He has a strong desire to succeed.","그는 성공하고자 하는 강한 욕구를 가지고 있다.","Her desire for independence led her to move abroad.","독립에 대한 그녀의 욕구는 그녀를 해외로 이주하게 만들었다.","","",2
+desire,욕구,n,"He has a strong desire to succeed.","그는 성공하고자 하는 강한 욕구를 가지고 있다.","Her desire for independence led her to move abroad.","독립에 대한 그녀의 욕구는 그녀를 해외로 이주하게 만들었다.","burning desire","강렬한 욕구",2
 desire,바라다,v,"She desired nothing more than peace and quiet.","그녀는 평화와 고요함 외에는 아무것도 바라지 않았다.","He desired a simpler life away from the city.","그는 도시에서 벗어난 더 단순한 삶을 바랐다.","","",2
 reconfirm,재확인하다,v,"Please reconfirm your reservation before the trip.","여행 전에 예약을 재확인해 주세요.","The airline asked passengers to reconfirm their seats 24 hours before departure.","그 항공사는 승객들에게 출발 24시간 전에 좌석을 재확인해 달라고 요청했다.","","",2
 admiration,감탄/존경,n,"He looked at the painting with admiration.","그는 감탄하며 그 그림을 바라보았다.","The young athlete grew up with great admiration for the coach.","그 젊은 선수는 그 코치에 대한 큰 존경심을 품고 자랐다.","","",2
 stay out,외박하다,phr,"Teenagers were not allowed to stay out past midnight.","십대들은 자정이 넘도록 외박하는 것이 허락되지 않았다.","He got in trouble for staying out all night without calling.","그는 연락도 없이 밤새 외박을 해서 곤란해졌다.","","",2
-compromise,타협,n,"They finally reached a compromise on the budget.","그들은 마침내 예산에 대해 타협에 이르렀다.","The compromise satisfied neither side completely.","그 타협은 양측 모두를 완전히 만족시키지는 못했다.","","",1
-occasion,기회,n,"This is a rare occasion to meet the author in person.","이것은 작가를 직접 만날 수 있는 드문 기회이다.","They saved the good china for a special occasion.","그들은 특별한 기회를 위해 좋은 도자기 그릇을 아껴두었다.","","",2
+compromise,타협,n,"They finally reached a compromise on the budget.","그들은 마침내 예산에 대해 타협에 이르렀다.","The compromise satisfied neither side completely.","그 타협은 양측 모두를 완전히 만족시키지는 못했다.","reach a compromise","타협에 이르다",1
+occasion,기회,n,"This is a rare occasion to meet the author in person.","이것은 작가를 직접 만날 수 있는 드문 기회이다.","They saved the good china for a special occasion.","그들은 특별한 기회를 위해 좋은 도자기 그릇을 아껴두었다.","special occasion","특별한 경우(행사)",2
 occasion,~을 야기하다,v,"The announcement occasioned widespread confusion.","그 발표는 광범위한 혼란을 야기했다.","","","","",4
 curfew,통금 시간,n,"The city imposed a curfew after the storm.","그 도시는 폭풍 이후 통금 시간을 시행했다.","","","","",3
 on strike,파업 중,phr,"Factory workers have been on strike for a week.","공장 노동자들은 일주일째 파업 중이다.","Bus drivers went on strike over unpaid overtime.","버스 운전기사들은 미지급 초과 근무 수당 문제로 파업에 들어갔다.","","",2
-union,조합/협회,n,"The union negotiated better wages for its members.","그 조합은 회원들을 위해 더 나은 임금을 협상했다.","He has been a union member for over twenty years.","그는 20년 넘게 노동조합원으로 있었다.","","",2
-nature,천성,n,"It is human nature to seek comfort.","편안함을 추구하는 것은 인간의 천성이다.","Curiosity is simply part of a child's nature.","호기심은 그저 아이의 천성의 일부이다.","","",2
+union,조합/협회,n,"The union negotiated better wages for its members.","그 조합은 회원들을 위해 더 나은 임금을 협상했다.","He has been a union member for over twenty years.","그는 20년 넘게 노동조합원으로 있었다.","labor union","노동조합",2
+nature,천성,n,"It is human nature to seek comfort.","편안함을 추구하는 것은 인간의 천성이다.","Curiosity is simply part of a child's nature.","호기심은 그저 아이의 천성의 일부이다.","human nature","인간의 본성",2
 constraint,제약,n,"Budget constraints forced the team to cut costs.","예산 제약으로 인해 팀은 비용을 줄여야 했다.","","","","",3
 go around,돌아다니다,phr,"A rumor started to go around the office.","소문이 사무실에 돌아다니기 시작했다.","There isn't enough food to go around for everyone at the party.","그 파티에서 모두에게 돌아갈 만큼 음식이 충분하지 않다.","","",1
-stock,재고품,n,"The store ran out of stock before the holiday.","그 매장은 휴일 전에 재고품이 바닥났다.","The warehouse keeps extra stock for the holiday season.","그 창고는 연휴철을 위해 여분의 재고품을 보관한다.","","",2
-aisle,통로,n,"He walked down the aisle looking for the cereal.","그는 시리얼을 찾아 통로를 걸어갔다.","She grabbed a shopping cart and headed down the snack aisle.","그녀는 쇼핑 카트를 잡고 과자 통로로 향했다.","","",2
+stock,재고품,n,"The store ran out of stock before the holiday.","그 매장은 휴일 전에 재고품이 바닥났다.","The warehouse keeps extra stock for the holiday season.","그 창고는 연휴철을 위해 여분의 재고품을 보관한다.","out of stock","품절(재고 없음)",2
+aisle,통로,n,"He walked down the aisle looking for the cereal.","그는 시리얼을 찾아 통로를 걸어갔다.","She grabbed a shopping cart and headed down the snack aisle.","그녀는 쇼핑 카트를 잡고 과자 통로로 향했다.","aisle seat","통로 쪽 좌석",2
 afford,형편이 되다,v,"They can't afford a new car right now.","그들은 지금 당장 새 차를 살 형편이 안 된다.","We simply can't afford to lose another client this year.","우리는 올해 또 다른 고객을 잃을 형편이 전혀 안 된다.","","",1
 eyesore,흉물스러운 것,n,"The abandoned building became an eyesore in the neighborhood.","그 버려진 건물은 동네의 흉물스러운 것이 되었다.","","","","",4
 high-rise,고층의,adj,"They moved into a high-rise apartment downtown.","그들은 시내의 고층 아파트로 이사했다.","A new high-rise office tower is being built near the station.","역 근처에 새로운 고층 사무용 건물이 지어지고 있다.","","",1
@@ -1282,35 +1282,35 @@ make out,이해하다,phr,"I couldn't make out what he was saying.","나는 그�
 unintelligible,이해할 수 없는,adj,"His handwriting was completely unintelligible.","그의 글씨체는 완전히 이해할 수 없었다.","","","","",4
 wholehearted,전폭적인,adj,"She gave the plan her wholehearted support.","그녀는 그 계획에 전폭적인 지지를 보냈다.","","","","",3
 hang up,(전화를) 끊다,phr,"He hung up before she could finish her sentence.","그녀가 말을 끝내기도 전에 그는 전화를 끊었다.","Please don't hang up; I still have a few questions.","전화 끊지 마세요, 아직 몇 가지 질문이 남아 있어요.","","",1
-circulate,순환시키다,v,"The heart circulates blood throughout the body.","심장은 온몸으로 혈액을 순환시킨다.","Fans help circulate cool air throughout the room.","선풍기는 방 전체에 시원한 공기를 순환시키는 데 도움이 된다.","","",2
+circulate,순환시키다,v,"The heart circulates blood throughout the body.","심장은 온몸으로 혈액을 순환시킨다.","Fans help circulate cool air throughout the room.","선풍기는 방 전체에 시원한 공기를 순환시키는 데 도움이 된다.","circulate blood","혈액을 순환시키다",2
 market share,시장 점유율,n,"The company's market share grew last quarter.","그 회사의 시장 점유율은 지난 분기에 증가했다.","The new phone helped the company win back market share.","그 새 휴대폰은 그 회사가 시장 점유율을 되찾는 데 도움이 되었다.","","",2
 cramped,비좁은,adj,"They lived in a cramped apartment with no elevator.","그들은 엘리베이터도 없는 비좁은 아파트에서 살았다.","Five people shared one cramped office with a single window.","다섯 명이 창문 하나뿐인 비좁은 사무실을 함께 썼다.","","",2
 acclaim,칭찬,n,"The film received widespread critical acclaim.","그 영화는 평단으로부터 폭넓은 칭찬을 받았다.","","","","",3
-arrangement,준비,n,"She made all the arrangements for the wedding.","그녀는 결혼식을 위한 모든 준비를 했다.","The travel agency handled all the arrangements for the trip.","그 여행사가 그 여행을 위한 모든 준비를 처리했다.","","",2
+arrangement,준비,n,"She made all the arrangements for the wedding.","그녀는 결혼식을 위한 모든 준비를 했다.","The travel agency handled all the arrangements for the trip.","그 여행사가 그 여행을 위한 모든 준비를 처리했다.","make arrangements","준비하다(채비하다)",2
 preferential,특혜를 주는,adj,"Members receive preferential treatment at the club.","회원들은 클럽에서 특혜를 받는다.","","","","",4
-expand,확장시키다,v,"The company plans to expand its business overseas.","그 회사는 해외로 사업을 확장시킬 계획이다.","The city plans to expand the subway line next year.","그 시는 내년에 지하철 노선을 확장시킬 계획이다.","","",1
+expand,확장시키다,v,"The company plans to expand its business overseas.","그 회사는 해외로 사업을 확장시킬 계획이다.","The city plans to expand the subway line next year.","그 시는 내년에 지하철 노선을 확장시킬 계획이다.","expand your horizons","시야를 넓히다",1
 attribute to,~의 덕분으로 돌리다,phr,"She attributes her success to hard work.","그녀는 자신의 성공을 노력의 덕분으로 돌린다.","","","","",3
 marble,대리석,n,"The floor of the museum was made of marble.","박물관의 바닥은 대리석으로 만들어졌다.","The statue was carved entirely from white marble.","그 조각상은 전부 흰 대리석으로 조각되었다.","","",2
-proper,제대로 된,adj,"He never got a proper explanation for the delay.","그는 지연에 대한 제대로 된 설명을 듣지 못했다.","Make sure you use the proper tools for this repair.","이 수리에는 제대로 된 도구를 사용하도록 하세요.","","",1
+proper,제대로 된,adj,"He never got a proper explanation for the delay.","그는 지연에 대한 제대로 된 설명을 듣지 못했다.","Make sure you use the proper tools for this repair.","이 수리에는 제대로 된 도구를 사용하도록 하세요.","proper noun","고유명사",1
 promote,홍보하다,v,"The band toured the country to promote their new album.","그 밴드는 새 앨범을 홍보하기 위해 전국을 순회했다.","The city used billboards to promote the new festival.","그 시는 새 축제를 홍보하기 위해 광고판을 사용했다.","","",2
 goddess,여신,n,"Athena was worshipped as the goddess of wisdom.","아테나는 지혜의 여신으로 숭배받았다.","The ancient temple was dedicated to the goddess of the harvest.","그 고대 신전은 수확의 여신에게 바쳐진 것이었다.","","",1
 depict,묘사하다,v,"The mural depicts scenes from the town's history.","그 벽화는 그 마을 역사의 장면들을 묘사한다.","The novel depicts a family struggling through hard times.","그 소설은 힘든 시기를 헤쳐나가는 한 가족을 묘사한다.","","",2
-sculpture,조각품,n,"A bronze sculpture stood in the center of the plaza.","청동 조각품이 광장 중앙에 서 있었다.","Visitors admired the ice sculpture at the winter festival.","방문객들은 겨울 축제에서 얼음 조각품에 감탄했다.","","",1
+sculpture,조각품,n,"A bronze sculpture stood in the center of the plaza.","청동 조각품이 광장 중앙에 서 있었다.","Visitors admired the ice sculpture at the winter festival.","방문객들은 겨울 축제에서 얼음 조각품에 감탄했다.","ice sculpture","얼음 조각",1
 ensure,보장하다,v,"The company took steps to ensure customer safety.","그 회사는 고객 안전을 보장하기 위한 조치를 취했다.","Please double-check the wiring to ensure everything is safe.","모든 것이 안전한지 보장하기 위해 배선을 다시 확인해 주세요.","","",2
 tendency,경향,n,"He has a tendency to procrastinate.","그는 일을 미루는 경향이 있다.","She has a tendency to interrupt others while they're talking.","그녀는 다른 사람이 말할 때 끼어드는 경향이 있다.","","",2
 tend,경향이 있다,v,"Prices tend to rise during the holiday season.","가격은 휴가철에 오르는 경향이 있다.","People tend to eat more when they're stressed.","사람들은 스트레스를 받으면 더 많이 먹는 경향이 있다.","","",2
-subject,주제,n,"They avoided the subject of money during dinner.","그들은 저녁 식사 중에 돈에 관한 주제를 피했다.","He changed the subject whenever his salary came up.","그는 자신의 급여 이야기가 나올 때마다 주제를 바꿨다.","","",1
+subject,주제,n,"They avoided the subject of money during dinner.","그들은 저녁 식사 중에 돈에 관한 주제를 피했다.","He changed the subject whenever his salary came up.","그는 자신의 급여 이야기가 나올 때마다 주제를 바꿨다.","subject matter","주제(대상)",1
 essence,본질,n,"Honesty is the essence of a good relationship.","정직은 좋은 관계의 본질이다.","","","","",3
-treatment,치료,n,"The patient responded well to the treatment.","그 환자는 치료에 잘 반응했다.","The clinic offers a new treatment for chronic back pain.","그 병원은 만성 요통에 대한 새로운 치료를 제공한다.","","",2
-significant,중요한,adj,"The discovery had a significant impact on medicine.","그 발견은 의학에 중요한 영향을 미쳤다.","There was a significant drop in sales last month.","지난달 매출에 상당한 감소가 있었다.","","",2
-pressure,압박,n,"She felt a lot of pressure before the exam.","그녀는 시험 전에 많은 압박을 느꼈다.","He performs best under pressure.","그는 압박 속에서 최고의 실력을 발휘한다.","","",1
-responsibility,책임,n,"Taking care of the dog is his responsibility.","그 개를 돌보는 것은 그의 책임이다.","Managing the budget is now her responsibility.","예산을 관리하는 것은 이제 그녀의 책임이다.","","",1
+treatment,치료,n,"The patient responded well to the treatment.","그 환자는 치료에 잘 반응했다.","The clinic offers a new treatment for chronic back pain.","그 병원은 만성 요통에 대한 새로운 치료를 제공한다.","silent treatment","무언의 냉대(말을 안 하며 무시하기)",2
+significant,중요한,adj,"The discovery had a significant impact on medicine.","그 발견은 의학에 중요한 영향을 미쳤다.","There was a significant drop in sales last month.","지난달 매출에 상당한 감소가 있었다.","significant other","배우자·연인(중요한 상대방)",2
+pressure,압박,n,"She felt a lot of pressure before the exam.","그녀는 시험 전에 많은 압박을 느꼈다.","He performs best under pressure.","그는 압박 속에서 최고의 실력을 발휘한다.","blood pressure","혈압",1
+responsibility,책임,n,"Taking care of the dog is his responsibility.","그 개를 돌보는 것은 그의 책임이다.","Managing the budget is now her responsibility.","예산을 관리하는 것은 이제 그녀의 책임이다.","take responsibility","책임을 지다",1
 responsible,책임이 있는,adj,"Who is responsible for this mistake?","이 실수에 대해 누가 책임이 있는가?","The driver was found responsible for the accident.","그 운전자는 그 사고에 책임이 있는 것으로 밝혀졌다.","","",1
 quite,꽤,adv,"The movie was quite long, over three hours.","그 영화는 세 시간이 넘게 꽤 길었다.","It was quite cold this morning, colder than expected.","오늘 아침은 예상보다 꽤 추웠다.","","",1
-construction,건설,n,"Construction on the bridge began last spring.","그 다리의 건설은 지난봄에 시작되었다.","The new stadium's construction is expected to finish next year.","그 새 경기장의 건설은 내년에 끝날 것으로 예상된다.","","",1
+construction,건설,n,"Construction on the bridge began last spring.","그 다리의 건설은 지난봄에 시작되었다.","The new stadium's construction is expected to finish next year.","그 새 경기장의 건설은 내년에 끝날 것으로 예상된다.","under construction","공사 중",1
 eventually,결국,adv,"He eventually agreed to the new terms.","그는 결국 새로운 조건에 동의했다.","After much debate, the board eventually approved the plan.","많은 논쟁 끝에 이사회는 결국 그 계획을 승인했다.","","",1
-valuable,소중한,adj,"Her advice was extremely valuable to me.","그녀의 조언은 나에게 매우 소중했다.","He offered some valuable feedback on my resume.","그는 내 이력서에 대해 소중한 피드백을 주었다.","","",1
-comprehension,이해,n,"The exercise is designed to test reading comprehension.","그 연습 문제는 독해력을 시험하기 위해 만들어졌다.","The lecture was too fast for the students' comprehension.","그 강의는 학생들의 이해력에 비해 너무 빨랐다.","","",2
+valuable,소중한,adj,"Her advice was extremely valuable to me.","그녀의 조언은 나에게 매우 소중했다.","He offered some valuable feedback on my resume.","그는 내 이력서에 대해 소중한 피드백을 주었다.","valuable lesson","소중한 교훈",1
+comprehension,이해,n,"The exercise is designed to test reading comprehension.","그 연습 문제는 독해력을 시험하기 위해 만들어졌다.","The lecture was too fast for the students' comprehension.","그 강의는 학생들의 이해력에 비해 너무 빨랐다.","reading comprehension","독해력",2
 enrollment,등록,n,"School enrollment dropped this year.","올해 학교 등록이 줄었다.","The college reported a rise in enrollment this fall.","그 대학은 올가을 등록자 수 증가를 보고했다.","","",2
 parochial,편협한,adj,"His parochial views limited his career opportunities.","그의 편협한 시각은 그의 경력 기회를 제한했다.","","","","",5
 enroll,등록하다,v,"She enrolled in a night class to learn Spanish.","그녀는 스페인어를 배우려고 야간 수업에 등록했다.","He plans to enroll in a coding bootcamp next month.","그는 다음 달 코딩 부트캠프에 등록할 계획이다.","","",1
@@ -1319,13 +1319,13 @@ extant,현존하는,adj,"Only a few copies of the manuscript are still extant.",
 shortcoming,결점,n,"Every plan has its shortcomings.","모든 계획에는 결점이 있다.","","","","",3
 injustice,부당함,n,"The protest was held to fight against injustice.","그 시위는 부당함에 맞서 싸우기 위해 열렸다.","","","","",3
 expose,폭로하다,v,"The report exposed corruption in the city government.","그 보고서는 시 정부의 부패를 폭로했다.","The investigation exposed a network of fake reviews online.","그 조사는 온라인상의 가짜 후기 네트워크를 폭로했다.","","",2
-capture,포획하다,v,"Rangers captured the escaped lion within hours.","경비대는 몇 시간 만에 탈출한 사자를 포획했다.","The zoo team worked for hours to capture the escaped monkey.","동물원 팀은 탈출한 원숭이를 포획하기 위해 몇 시간 동안 애썼다.","","",2
+capture,포획하다,v,"Rangers captured the escaped lion within hours.","경비대는 몇 시간 만에 탈출한 사자를 포획했다.","The zoo team worked for hours to capture the escaped monkey.","동물원 팀은 탈출한 원숭이를 포획하기 위해 몇 시간 동안 애썼다.","capture the moment","순간을 포착하다",2
 portrayal,묘사,n,"Critics praised her portrayal of the queen.","평론가들은 여왕에 대한 그녀의 묘사를 칭찬했다.","","","","",3
 prejudice,편견,n,"The novel deals with racial prejudice.","그 소설은 인종적 편견을 다룬다.","The training program aims to reduce prejudice in the workplace.","그 교육 프로그램은 직장 내 편견을 줄이는 것을 목표로 한다.","","",2
 critique,비평,n,"He wrote a thoughtful critique of the exhibition.","그는 그 전시회에 대해 사려 깊은 비평을 썼다.","","","","",3
 critique,비평하다,v,"The professor critiqued each student's essay.","교수는 각 학생의 에세이를 비평했다.","","","","",3
 up to,~까지,phr,"The warranty covers repairs for up to two years.","그 보증은 최대 2년까지 수리를 보장한다.","You can save up to thirty percent during the sale.","그 세일 기간 동안 최대 30퍼센트까지 절약할 수 있다.","","",1
-executive,경영진,n,"The executives met to discuss next year's budget.","경영진은 내년 예산을 논의하기 위해 모였다.","A senior executive announced the merger to the press.","한 고위 경영진이 언론에 그 합병을 발표했다.","","",2
+executive,경영진,n,"The executives met to discuss next year's budget.","경영진은 내년 예산을 논의하기 위해 모였다.","A senior executive announced the merger to the press.","한 고위 경영진이 언론에 그 합병을 발표했다.","chief executive","최고 경영자",2
 candidate,후보자,n,"Three candidates are running for mayor.","세 명의 후보자가 시장직에 출마했다.","The hiring manager interviewed five candidates for the position.","그 채용 담당자는 그 자리를 위해 다섯 명의 후보자를 면접했다.","","",1
 elude,피하다,v,"The answer to the puzzle eluded him for hours.","그 퍼즐의 답은 몇 시간 동안 그를 피해 갔다.","","","","",4
 sanity,온전한 정신,n,"He struggled to keep his sanity during the crisis.","그는 위기 동안 온전한 정신을 유지하려 애썼다.","","","","",4
@@ -1340,14 +1340,14 @@ overthrow,타도하다,v,"Rebels attempted to overthrow the government.","반군
 encroachment,잠식,n,"Residents complained about the encroachment on the park.","주민들은 공원에 대한 잠식에 대해 불평했다.","","","","",5
 bypass,우회하다,v,"The new highway bypasses the town center.","새 고속도로는 시내 중심가를 우회한다.","","","","",3
 far-reaching,지대한 영향을 미치는,adj,"The policy change had far-reaching consequences.","그 정책 변화는 지대한 영향을 미치는 결과를 가져왔다.","","","","",4
-encounter,맞닥뜨리다,v,"Hikers may encounter wildlife on this trail.","등산객들은 이 산길에서 야생동물과 맞닥뜨릴 수 있다.","Travelers may encounter delays due to the storm.","여행객들은 그 폭풍으로 인한 지연을 맞닥뜨릴 수 있다.","","",2
+encounter,맞닥뜨리다,v,"Hikers may encounter wildlife on this trail.","등산객들은 이 산길에서 야생동물과 맞닥뜨릴 수 있다.","Travelers may encounter delays due to the storm.","여행객들은 그 폭풍으로 인한 지연을 맞닥뜨릴 수 있다.","close encounter","(뜻밖의) 마주침, 조우",2
 synergistic,시너지 효과를 내는,adj,"The merger created a synergistic effect for both companies.","그 합병은 두 회사 모두에게 시너지 효과를 냈다.","","","","",5
 in concert,협력하여,phr,"The two agencies worked in concert to solve the case.","두 기관은 그 사건을 해결하기 위해 협력하여 일했다.","","","","",4
-dietary,식이 요법의,adj,"The doctor recommended some dietary changes.","의사는 몇 가지 식이 요법의 변화를 권했다.","Please let the caterer know about any dietary restrictions.","식이 제한 사항이 있다면 출장 요리업체에 알려주세요.","","",2
+dietary,식이 요법의,adj,"The doctor recommended some dietary changes.","의사는 몇 가지 식이 요법의 변화를 권했다.","Please let the caterer know about any dietary restrictions.","식이 제한 사항이 있다면 출장 요리업체에 알려주세요.","dietary fiber","식이섬유",2
 precise,정확한,adj,"She gave precise instructions to the new employee.","그녀는 신입 사원에게 정확한 지시를 내렸다.","The surgeon made a precise incision along the marked line.","그 외과의는 표시된 선을 따라 정확한 절개를 했다.","","",2
-isolate,고립시키다,v,"The village was isolated by the flood for days.","그 마을은 홍수로 인해 며칠 동안 고립되었다.","Doctors isolated the patient to prevent the infection from spreading.","의사들은 감염이 퍼지는 것을 막기 위해 그 환자를 격리했다.","","",2
-representative,대표,n,"A representative from the company attended the meeting.","그 회사의 대표가 회의에 참석했다.","A sales representative called to follow up on the order.","영업 대표가 그 주문을 확인하려고 전화했다.","","",2
-nutrition,영양,n,"Good nutrition is essential for children's growth.","좋은 영양은 아이들의 성장에 필수적이다.","The label lists detailed nutrition information for the product.","그 라벨에는 그 제품의 상세한 영양 정보가 나와 있다.","","",2
+isolate,고립시키다,v,"The village was isolated by the flood for days.","그 마을은 홍수로 인해 며칠 동안 고립되었다.","Doctors isolated the patient to prevent the infection from spreading.","의사들은 감염이 퍼지는 것을 막기 위해 그 환자를 격리했다.","self-isolate","자가 격리하다",2
+representative,대표,n,"A representative from the company attended the meeting.","그 회사의 대표가 회의에 참석했다.","A sales representative called to follow up on the order.","영업 대표가 그 주문을 확인하려고 전화했다.","sales representative","영업 사원(판매 대표)",2
+nutrition,영양,n,"Good nutrition is essential for children's growth.","좋은 영양은 아이들의 성장에 필수적이다.","The label lists detailed nutrition information for the product.","그 라벨에는 그 제품의 상세한 영양 정보가 나와 있다.","nutrition label","영양 성분표",2
 terminology,전문 용어,n,"Medical terminology can be confusing for patients.","의학 전문 용어는 환자들에게 혼란스러울 수 있다.","","","","",3
 conversion,전환,n,"The conversion of the warehouse into apartments took a year.","그 창고를 아파트로 전환하는 데 일 년이 걸렸다.","","","","",3
 ostracism,배척,n,"He faced social ostracism after the scandal.","그는 그 스캔들 이후 사회적 배척에 직면했다.","","","","",5
@@ -1360,11 +1360,11 @@ affectionate,다정한,adj,"The dog gave its owner an affectionate look.","그 �
 beloved,사랑받는,adj,"The beloved teacher retired after thirty years.","그 사랑받는 선생님은 30년 만에 은퇴했다.","Fans mourned the loss of their beloved actor.","팬들은 그들의 사랑받는 배우를 잃은 것을 애도했다.","","",2
 embalm,방부 처리하다,v,"Ancient Egyptians embalmed their dead before burial.","고대 이집트인들은 매장 전에 시신을 방부 처리했다.","","","","",4
 mistreatment,학대,n,"The organization investigates animal mistreatment.","그 단체는 동물 학대를 조사한다.","","","","",3
-due,마땅한,adj,"The rent is due at the end of each month.","임대료는 매달 말에 지불 기한이 마땅하다.","The final payment is due within thirty days.","최종 대금은 30일 이내에 지불되어야 한다.","","",1
+due,마땅한,adj,"The rent is due at the end of each month.","임대료는 매달 말에 지불 기한이 마땅하다.","The final payment is due within thirty days.","최종 대금은 30일 이내에 지불되어야 한다.","due diligence","적절한 주의(실사)",1
 announce,발표하다,v,"The company announced record profits this year.","그 회사는 올해 기록적인 이익을 발표했다.","The airline announced a delay just before boarding.","그 항공사는 탑승 직전 지연을 발표했다.","","",1
 announcement,발표,n,"The teacher made an announcement about the field trip.","선생님은 현장 학습에 대해 발표를 했다.","An announcement over the intercom asked everyone to evacuate.","인터콤을 통한 발표는 모두에게 대피하라고 알렸다.","","",1
-majority,다수,n,"The majority of voters supported the new law.","유권자의 다수가 그 새로운 법을 지지했다.","The majority of the class passed the final exam.","그 반의 다수가 기말 시험을 통과했다.","","",1
-ancient,고대의,adj,"They explored the ruins of an ancient city.","그들은 고대 도시의 유적을 탐사했다.","The museum's collection includes several ancient coins.","그 박물관의 소장품에는 여러 개의 고대 동전이 포함되어 있다.","","",1
+majority,다수,n,"The majority of voters supported the new law.","유권자의 다수가 그 새로운 법을 지지했다.","The majority of the class passed the final exam.","그 반의 다수가 기말 시험을 통과했다.","majority rule","다수결 원칙",1
+ancient,고대의,adj,"They explored the ruins of an ancient city.","그들은 고대 도시의 유적을 탐사했다.","The museum's collection includes several ancient coins.","그 박물관의 소장품에는 여러 개의 고대 동전이 포함되어 있다.","ancient history","고대 역사(오래된 옛날 일)",1
 swing by,잠깐 들르다,phr,"I'll swing by the store on my way home.","집에 가는 길에 가게에 잠깐 들를게.","Can you swing by the pharmacy on your way back?","돌아오는 길에 약국에 잠깐 들를 수 있어?","","",2
 make up,화해하다,phr,"The two friends made up after their argument.","두 친구는 말다툼 후에 화해했다.","They made up quickly after the small misunderstanding.","그들은 작은 오해 후 빠르게 화해했다.","","",2
 step out,잠깐 자리를 비우다,phr,"She stepped out of the meeting to take a call.","그녀는 전화를 받으려고 회의에서 잠깐 자리를 비웠다.","He stepped out for a few minutes to get some fresh air.","그는 바람을 좀 쐬려고 잠깐 자리를 비웠다.","","",2
@@ -1378,7 +1378,7 @@ fill out,작성하다,phr,"Please fill out this form before your appointment.","
 pay off,성과를 내다,phr,"All her hard work finally paid off.","그녀의 모든 노력이 마침내 성과를 냈다.","Years of studying finally paid off when she got into medical school.","수년간의 공부는 그녀가 의대에 합격했을 때 마침내 성과를 냈다.","","",2
 be supposed to,~하기로 되어 있다,phr,"The train was supposed to arrive at noon.","그 기차는 정오에 도착하기로 되어 있었다.","He was supposed to call me back yesterday.","그는 어제 나에게 다시 전화하기로 되어 있었다.","","",1
 turn down,거절하다,phr,"She turned down the job offer to stay closer to home.","그녀는 집 가까이 있기 위해 그 일자리 제안을 거절했다.","He turned down a promotion to stay with his current team.","그는 현재 팀에 남기 위해 승진을 거절했다.","","",2
-resolve,해결하다,v,"The two companies resolved their dispute out of court.","그 두 회사는 법정 밖에서 분쟁을 해결했다.","They finally resolved the misunderstanding over dinner.","그들은 저녁 식사 자리에서 마침내 그 오해를 해결했다.","","",1
+resolve,해결하다,v,"The two companies resolved their dispute out of court.","그 두 회사는 법정 밖에서 분쟁을 해결했다.","They finally resolved the misunderstanding over dinner.","그들은 저녁 식사 자리에서 마침내 그 오해를 해결했다.","resolve a dispute","분쟁을 해결하다",1
 resolve,결심/결단력,n,"It took great resolve to finish the marathon.","마라톤을 완주하는 데는 대단한 결단력이 필요했다.","","","","",3
 resolved,단호한,adj,"She remained resolved to finish what she had started.","그녀는 시작한 일을 끝내겠다는 단호한 태도를 유지했다.","He looked resolved, as if nothing could change his mind.","그는 마치 아무것도 그의 마음을 바꿀 수 없다는 듯 단호해 보였다.","","",2
 wrath,분노,n,"The king's wrath fell upon anyone who defied him.","왕의 분노는 자신에게 반항하는 자 누구에게든 떨어졌다.","","","","",4
