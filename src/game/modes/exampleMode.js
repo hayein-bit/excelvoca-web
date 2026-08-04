@@ -83,7 +83,10 @@ export function createExampleMode({ words, progress, comboState }) {
 
     recordAnswer(progress, currentQuestion.key, wasCorrect, comboState.combo);
 
-    const answerText = currentQuestion.choices[currentQuestion.correctIndex];
+    // Unlike classic mode, the answer-row cell shows the sentence's Korean
+    // translation here, not just the target word's meaning — that's the whole
+    // point of reading it in context.
+    const answerText = currentQuestion.exampleKo;
     const history = currentHistory();
     history.push({ cellIndex, display: currentQuestion.display, wasCorrect, dontKnow: false, answerText });
     if (history.length > MAX_HISTORY) history.shift();
@@ -106,7 +109,7 @@ export function createExampleMode({ words, progress, comboState }) {
     onWrong(comboState);
     recordAnswer(progress, currentQuestion.key, false, comboState.combo, { dontKnow: true });
 
-    const answerText = currentQuestion.choices[currentQuestion.correctIndex];
+    const answerText = currentQuestion.exampleKo;
     const history = currentHistory();
     history.push({ cellIndex, display: currentQuestion.display, wasCorrect: false, dontKnow: true, answerText });
     if (history.length > MAX_HISTORY) history.shift();
