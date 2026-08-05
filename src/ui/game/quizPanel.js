@@ -17,6 +17,30 @@ const IRREGULAR_FORMS = {
 // Compound verbs ending in an irregular root (overcome, become, ...) inflect
 // by swapping that root's ending the same way the plain root would.
 const IRREGULAR_SUFFIXES = { come: 'came' };
+// "be" (as in "be drenched in", "be obsessed with") conjugates instead of
+// inflecting by suffix, so it needs its own fixed candidate list rather than
+// going through stemCandidates.
+const BE_FORMS = ['being', 'been', 'were', 'was', 'are', 'am', 'is', 'be'];
+
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/** Wraps each `[start, end]` range of `sentence` in <b>, escaping everything else. Returns null if `ranges` is empty. */
+function boldRanges(sentence, ranges) {
+  if (ranges.length === 0) return null;
+  ranges.sort((a, b) => a[0] - b[0]);
+  let html = '';
+  let cursor = 0;
+  for (const [start, end] of ranges) {
+    if (start < cursor) continue;
+    html += escapeHtml(sentence.slice(cursor, start));
+    html += `<b>${escapeHtml(sentence.slice(start, end))}</b>`;
+    cursor = end;
+  }
+  html += escapeHtml(sentence.slice(cursor));
+  return html;
+}
 
 /**
  * Returns alternative spellings of `word` that a real sentence might use in
@@ -43,33 +67,70 @@ function stemCandidates(word) {
 }
 
 /**
- * Wraps the target word in <b> within `sentence`, HTML-escaping everything
- * else. Matches case-insensitively and tries several inflected stems (see
- * stemCandidates) since example sentences conjugate verbs/pluralize nouns
- * rather than using the bare dictionary form. Falls back to the plain
- * escaped sentence if no match is found.
+ * Wraps the target word/phrase in <b> within `sentence`, HTML-escaping
+ * everything else. Matches case-insensitively and tries several inflected
+ * stems (see stemCandidates) since example sentences conjugate verbs/
+ * pluralize nouns rather than using the bare dictionary form. Falls back to
+ * the plain escaped sentence if no match is found.
  *
- * For `phr` entries (pos === 'phr'), the full phrase almost never appears
- * verbatim — the first word conjugates ("refer to" -> "refers to") and a
- * leading "be" is itself always conjugated away ("be eager to" -> "was eager
- * to") — so only that one content word is matched, not the literal phrase.
+ * For `phr` entries (pos === 'phr'), only the *first* word conjugates
+ * ("refer to" -> "refers to", "get rid of" -> "got rid of") or, for a
+ * leading "be", "be" itself conjugates while the rest stays fixed ("be
+ * drenched in" -> "was drenched in") — so the whole phrase is matched as
+ * [conjugated head] + [literal fixed tail], not just the head word alone.
+ * Correlative structures (`either ~ or`, `no sooner ~ than`) have a "~"
+ * placeholder standing in for whatever comes between the two fixed parts, so
+ * those two parts are matched (and bolded) independently instead.
  */
 function boldedSentenceHtml(sentence, word, pos) {
-  let target = word;
-  if (pos === 'phr') {
-    const tokens = word.split(' ');
-    target = tokens[0].toLowerCase() === 'be' && tokens.length > 1 ? tokens[1] : tokens[0];
+  if (pos === 'phr' && word.includes('~')) {
+    const parts = word.split('~').map((p) => p.trim()).filter(Boolean);
+    const ranges = [];
+    for (const part of parts) {
+      const pattern = part.split(' ').map(escapeRegex).join('\\s+');
+      const match = sentence.match(new RegExp(`\\b${pattern}\\b`, 'i'));
+      if (match) ranges.push([match.index, match.index + match[0].length]);
+    }
+    return boldRanges(sentence, ranges) ?? escapeHtml(sentence);
   }
 
-  const candidates = stemCandidates(target)
-    .map((c) => c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  let target = word;
+  let tailTokens = [];
+  if (pos === 'phr') {
+    const tokens = word.split(' ');
+    target = tokens[0];
+    tailTokens = tokens.slice(1);
+  }
+
+  const candidates = (target.toLowerCase() === 'be' ? BE_FORMS : stemCandidates(target))
+    .map(escapeRegex)
     .sort((a, b) => b.length - a.length);
-  const match = sentence.match(new RegExp(`\\b(?:${candidates.join('|')})\\w*`, 'i'));
-  if (!match) return escapeHtml(sentence);
-  const before = escapeHtml(sentence.slice(0, match.index));
-  const matched = escapeHtml(match[0]);
-  const after = escapeHtml(sentence.slice(match.index + match[0].length));
-  return `${before}<b>${matched}</b>${after}`;
+  const headPattern = `\\b(?:${candidates.join('|')})\\w*`;
+
+  if (tailTokens.length) {
+    const tailPattern = tailTokens.map(escapeRegex).join('\\s+');
+    const fullMatch = sentence.match(new RegExp(`${headPattern}\\s+${tailPattern}`, 'i'));
+    if (fullMatch) return boldRanges(sentence, [[fullMatch.index, fullMatch.index + fullMatch[0].length]]);
+  }
+
+  const headMatch = sentence.match(new RegExp(headPattern, 'i'));
+  if (!headMatch) return escapeHtml(sentence);
+  const headRange = [headMatch.index, headMatch.index + headMatch[0].length];
+
+  // Head and tail aren't adjacent — either an object sits between them
+  // ("attributes her success to hard work") or the tail has a placeholder
+  // that doesn't literally occur ("take one's time" -> "take your time").
+  // Bold the tail's last fixed word wherever it independently occurs after
+  // the head, so the collocation pattern is still visible, not just its head.
+  if (tailTokens.length) {
+    const lastToken = tailTokens[tailTokens.length - 1];
+    const tailMatch = sentence.match(new RegExp(`\\b${escapeRegex(lastToken)}\\b`, 'i'));
+    if (tailMatch && tailMatch.index >= headRange[1]) {
+      return boldRanges(sentence, [headRange, [tailMatch.index, tailMatch.index + tailMatch[0].length]]);
+    }
+  }
+
+  return boldRanges(sentence, [headRange]);
 }
 
 /** Example mode only: shows the example sentence with the tested word bolded, so the choices alone don't leave the user guessing which word they're answering for. */
