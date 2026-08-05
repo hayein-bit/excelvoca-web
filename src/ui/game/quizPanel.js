@@ -4,16 +4,67 @@ function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// A handful of common irregular verbs whose inflected forms share no letter
+// prefix with the base word (get/got, pay/paid, ...), so no amount of suffix
+// matching finds them — these need to be listed explicitly.
+const IRREGULAR_FORMS = {
+  get: ['got', 'gotten'],
+  take: ['took', 'taken'],
+  make: ['made'],
+  pay: ['paid'],
+  hang: ['hung']
+};
+// Compound verbs ending in an irregular root (overcome, become, ...) inflect
+// by swapping that root's ending the same way the plain root would.
+const IRREGULAR_SUFFIXES = { come: 'came' };
+
+/**
+ * Returns alternative spellings of `word` that a real sentence might use in
+ * place of the bare dictionary form, covering the common English spelling
+ * changes a plain suffix match misses: silent-e drop before -ing/-ed
+ * ("adulterate" -> "adulterat" so "adulterating" matches), consonant+y -> i
+ * before -es/-ed ("apply" -> "appli" so "applies" matches), and ie -> y
+ * before -ing ("vie" -> "vy" so "vying" matches) — plus the irregular verbs
+ * above. Each candidate still gets a trailing \w* when used in the regex, so
+ * this only needs to produce the *stem*, not the full inflected form.
+ */
+function stemCandidates(word) {
+  const candidates = new Set([word]);
+  if (/[a-z]e$/i.test(word)) candidates.add(word.slice(0, -1));
+  if (/[^aeiou]y$/i.test(word)) candidates.add(word.slice(0, -1) + 'i');
+  if (/ie$/i.test(word)) candidates.add(word.slice(0, -2) + 'y');
+
+  const lower = word.toLowerCase();
+  if (IRREGULAR_FORMS[lower]) IRREGULAR_FORMS[lower].forEach((f) => candidates.add(f));
+  for (const [suffix, replacement] of Object.entries(IRREGULAR_SUFFIXES)) {
+    if (lower.endsWith(suffix)) candidates.add(lower.slice(0, -suffix.length) + replacement);
+  }
+  return [...candidates];
+}
+
 /**
  * Wraps the target word in <b> within `sentence`, HTML-escaping everything
- * else. Matches case-insensitively and allows a trailing inflection suffix
- * (e.g. "abandon" also bolds "abandoned") since example sentences conjugate
- * verbs/pluralize nouns rather than using the bare dictionary form. Falls
- * back to the plain escaped sentence if no match is found.
+ * else. Matches case-insensitively and tries several inflected stems (see
+ * stemCandidates) since example sentences conjugate verbs/pluralize nouns
+ * rather than using the bare dictionary form. Falls back to the plain
+ * escaped sentence if no match is found.
+ *
+ * For `phr` entries (pos === 'phr'), the full phrase almost never appears
+ * verbatim — the first word conjugates ("refer to" -> "refers to") and a
+ * leading "be" is itself always conjugated away ("be eager to" -> "was eager
+ * to") — so only that one content word is matched, not the literal phrase.
  */
-function boldedSentenceHtml(sentence, word) {
-  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = sentence.match(new RegExp(`\\b${escapedWord}\\w*`, 'i'));
+function boldedSentenceHtml(sentence, word, pos) {
+  let target = word;
+  if (pos === 'phr') {
+    const tokens = word.split(' ');
+    target = tokens[0].toLowerCase() === 'be' && tokens.length > 1 ? tokens[1] : tokens[0];
+  }
+
+  const candidates = stemCandidates(target)
+    .map((c) => c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .sort((a, b) => b.length - a.length);
+  const match = sentence.match(new RegExp(`\\b(?:${candidates.join('|')})\\w*`, 'i'));
   if (!match) return escapeHtml(sentence);
   const before = escapeHtml(sentence.slice(0, match.index));
   const matched = escapeHtml(match[0]);
@@ -25,7 +76,7 @@ function boldedSentenceHtml(sentence, word) {
 function appendExampleSentence(panel, question) {
   const el = document.createElement('div');
   el.className = 'quiz-example-sentence';
-  el.innerHTML = boldedSentenceHtml(question.example, question.word);
+  el.innerHTML = boldedSentenceHtml(question.example, question.word, question.pos);
   panel.appendChild(el);
 }
 
