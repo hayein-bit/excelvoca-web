@@ -1,4 +1,8 @@
-# ExcelVoca
+﻿# ExcelVoca
+
+[![Pages Build](https://github.com/hayein-bit/excelvoca-web/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hayein-bit/excelvoca-web/actions)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://hayein-bit.github.io/excelvoca-web/)
+[![Stack](https://img.shields.io/badge/stack-vanilla%20JS%20%2B%20Electron-yellow)](#)
 
 겉보기엔 엑셀, 실제로는 TEPS 어휘 퀴즈. `Tab` 한 번이면 화면 전체가 가짜 업무 대시보드(Boss Mode)로 바뀌고, 다시 `Tab`을 누르면 풀던 문제·콤보·통계 그대로 돌아옵니다.
 
