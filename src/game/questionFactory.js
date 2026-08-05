@@ -11,7 +11,7 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
   const wordDisplay = formatDisplay(wordObj);
 
   if (reverse) {
-    const distractors = getRandomOtherWordDisplays(wordObj.word, 3);
+    const distractors = getRandomOtherWordDisplays(wordObj.word, 3, wordObj.pos);
     const choices = shuffle([wordDisplay, ...distractors]);
     const correctIndex = choices.indexOf(wordDisplay);
 
@@ -30,7 +30,7 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
     };
   }
 
-  const distractors = getRandomOtherMeanings(wordObj.word, 3);
+  const distractors = getRandomOtherMeanings(wordObj.word, 3, wordObj.pos);
   const choices = shuffle([wordObj.meaning, ...distractors]);
   const correctIndex = choices.indexOf(wordObj.meaning);
 
@@ -63,7 +63,7 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
  * have a second example yet, so this quietly falls back to the only one.
  */
 export function buildExampleQuestion(wordObj) {
-  const distractors = getRandomOtherMeanings(wordObj.word, 3);
+  const distractors = getRandomOtherMeanings(wordObj.word, 3, wordObj.pos);
   const choices = shuffle([wordObj.meaning, ...distractors]);
   const correctIndex = choices.indexOf(wordObj.meaning);
 
