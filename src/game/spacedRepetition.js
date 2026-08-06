@@ -13,23 +13,36 @@ function isSameDay(isoDate) {
   return isoDate.slice(0, 10) === new Date().toISOString().slice(0, 10);
 }
 
-// [level1..level5] weight multipliers per rank index (0=Intern..7=CEO).
-// Lower rank favors easy words heavily; the balance shifts to harder words as rank rises.
-const LEVEL_WEIGHT_BY_RANK = [
-  [6.0, 1.0, 0.4, 0.15, 0.08], // Intern
-  [6.0, 1.0, 0.4, 0.15, 0.08], // Junior Analyst
-  [1.8, 1.8, 1.0, 0.4, 0.2], // Analyst
-  [1.8, 1.8, 1.0, 0.4, 0.2], // Senior Analyst
-  [1.0, 1.3, 1.3, 0.9, 0.5], // Manager
-  [1.0, 1.3, 1.3, 0.9, 0.5], // Director
-  [0.4, 0.8, 1.3, 1.6, 1.6], // Executive
-  [0.4, 0.8, 1.3, 1.6, 1.6] // CEO
+// [level1..level5] TARGET SHARE of quiz picks per rank index (0=Intern..7=CEO)
+// — not a per-word weight. Level pools are wildly uneven in size (level 3 has
+// ~2.6x as many words as level 1), so a merely *equal* per-word weight
+// between two levels still lets the bigger pool dominate the actual pick
+// distribution — that's what let level 2/3 outnumber level 1 in practice even
+// at low rank, despite level 1's per-word weight already being higher.
+// `levelWeight` below divides each share by that level's real word count
+// (computed at runtime from `words`) to get the actual per-word weight, so
+// the resulting pick distribution matches this table regardless of how
+// lopsided the pools are or how many words get added/removed later.
+// Rows don't need to sum to 1 (only relative weight within a row matters),
+// but keeping them near 1 makes the intended shape easy to read at a glance.
+// Low rank favors easy words heavily (level 1 overwhelmingly dominant); the
+// balance shifts to harder words as rank rises.
+const LEVEL_SHARE_BY_RANK = [
+  [0.7, 0.18, 0.08, 0.03, 0.01], // Intern
+  [0.55, 0.25, 0.13, 0.05, 0.02], // Junior Analyst
+  [0.35, 0.3, 0.2, 0.1, 0.05], // Analyst
+  [0.22, 0.28, 0.27, 0.15, 0.08], // Senior Analyst
+  [0.12, 0.2, 0.3, 0.23, 0.15], // Manager
+  [0.07, 0.14, 0.27, 0.28, 0.24], // Director
+  [0.04, 0.09, 0.2, 0.32, 0.35], // Executive
+  [0.02, 0.05, 0.13, 0.3, 0.5] // CEO
 ];
 
-function levelWeight(level, rankIndex) {
-  const row = LEVEL_WEIGHT_BY_RANK[Math.min(rankIndex, LEVEL_WEIGHT_BY_RANK.length - 1)];
+function levelWeight(level, rankIndex, levelCounts) {
+  const row = LEVEL_SHARE_BY_RANK[Math.min(rankIndex, LEVEL_SHARE_BY_RANK.length - 1)];
   const levelIdx = Math.min(Math.max(level, 1), 5) - 1;
-  return row[levelIdx];
+  const count = levelCounts[levelIdx] || 1;
+  return row[levelIdx] / count;
 }
 
 /**
@@ -46,6 +59,12 @@ export function pickNext(words, progress, excludeKey) {
 
   const rank = computeRank(progress, words);
 
+  const levelCounts = [0, 0, 0, 0, 0];
+  for (const word of words) {
+    const idx = Math.min(Math.max(word.level, 1), 5) - 1;
+    levelCounts[idx]++;
+  }
+
   const weighted = words.map((word) => {
     const stat = getWordStat(progress, word.key);
     let weight = 1 + stat.wrong * 2 - Math.min(stat.streak * 0.5, 1.5);
@@ -56,7 +75,7 @@ export function pickNext(words, progress, excludeKey) {
     // just checks streak >= 10) — no separate "un-master" step needed.
     if (isMastered(stat)) weight = Math.max(weight, MASTERED_REVIEW_WEIGHT);
 
-    weight *= levelWeight(word.level, rank.index);
+    weight *= levelWeight(word.level, rank.index, levelCounts);
 
     // "모르겠다"로 표시한 단어는 우선적으로 다시 나오도록 가중치를 높인다.
     if (stat.dontKnow) weight *= 5;
