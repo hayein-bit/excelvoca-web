@@ -1,8 +1,9 @@
-﻿# ExcelVoca
+# ExcelVoca
 
 [![Pages Build](https://github.com/hayein-bit/excelvoca-web/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hayein-bit/excelvoca-web/actions)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://hayein-bit.github.io/excelvoca-web/)
 [![Stack](https://img.shields.io/badge/stack-vanilla%20JS%20%2B%20Electron-yellow)](#)
+[![English](https://img.shields.io/badge/lang-English-lightgrey?style=social&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTMgMTJhOSA5IDAgMSAwIDE4IDBhOSA5IDAgMCAwIC0xOCAwIiAvPjxwYXRoIGQ9Ik0zLjYgOWgxNi44IiAvPjxwYXRoIGQ9Ik0zLjYgMTVoMTYuOCIgLz48cGF0aCBkPSJNMTEuNSAzYTE3IDE3IDAgMCAwIDAgMTgiIC8+PHBhdGggZD0iTTEyLjUgM2ExNyAxNyAwIDAgMSAwIDE4IiAvPjwvc3ZnPg==)](#english)
 
 겉보기엔 엑셀, 실제로는 TEPS 어휘 퀴즈. `Tab` 한 번이면 화면 전체가 가짜 업무 대시보드(Boss Mode)로 바뀌고, 다시 `Tab`을 누르면 풀던 문제·콤보·통계 그대로 돌아옵니다. (Boss Mode는 데스크톱 앱 전용이며, 웹 버전에는 애초에 위장할 스프레드시트 화면이 없어 해당 기능이 없습니다.)
 
@@ -58,3 +59,66 @@ npm start
 ## 라이선스
 
 개인용 프로젝트입니다. 재사용/배포를 염두에 두고 만들지 않았습니다.
+
+---
+
+<a id="english"></a>
+
+## English
+
+[![한국어](https://img.shields.io/badge/lang-한국어-lightgrey?style=social&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiIC8+PHBhdGggZD0iTTMgMTJhOSA5IDAgMSAwIDE4IDBhOSA5IDAgMCAwIC0xOCAwIiAvPjxwYXRoIGQ9Ik0zLjYgOWgxNi44IiAvPjxwYXRoIGQ9Ik0zLjYgMTVoMTYuOCIgLz48cGF0aCBkPSJNMTEuNSAzYTE3IDE3IDAgMCAwIDAgMTgiIC8+PHBhdGggZD0iTTEyLjUgM2ExNyAxNyAwIDAgMSAwIDE4IiAvPjwvc3ZnPg==)](#excelvoca)
+
+Looks like Excel, is actually a TEPS vocabulary quiz. Press `Tab` once and the whole screen flips into a fake work dashboard (Boss Mode); press `Tab` again and you're back exactly where you left off — same question, combo, and stats. (Boss Mode is desktop-app only; the web version has no spreadsheet screen to disguise itself as, so it doesn't include this feature.)
+
+### Structure
+
+- **Desktop app** (`src/`): Plain Electron + vanilla ES6+ (no React/bundler/TypeScript). Standard Electron security setup with `contextIsolation`/`sandbox` enabled.
+- **Web version** (`web/`): A lightweight browser frontend that reuses the same game logic (`src/game`, `src/storage`, `src/data`). Useful for continuing study on a PC where you can't install a phone app or Electron.
+- **Word data** (`data/teps_words.csv`): A hand-curated TEPS vocabulary list. Besides meaning/example sentence/translated example, some entries also include well-known collocation hints and synonym hints.
+
+### Game modes
+
+Both the desktop app (ribbon menu) and the web version (mode switch button at the top) offer the same 4 modes. Correct/incorrect/streak and other learning records are shared across modes for the same word entry.
+
+- 🔤 **Classic**: See the word, pick the meaning from 4 choices (about 30% of the time it's reversed — meaning to word). The only mode that supports resuming a session.
+- 📖 **Example**: Read an English example sentence first (at your own pace), then pick the meaning from 4 choices when ready.
+- ⌨️ **Typing**: See the Korean meaning and type the English word yourself (active recall instead of multiple choice).
+- 🔗 **Matching**: Click through an English list and a Korean-meaning list to pair them up.
+
+### Rank and difficulty
+
+Answer a word correctly 10 times in a row and it's considered "mastered." Based on the number of mastered words (harder words count for more than easy ones), you're promoted through 8 ranks: Intern → Junior Analyst → Analyst → Senior Analyst → Manager → Director → Executive → CEO.
+
+Each word also has a difficulty level from 1–5. At lower ranks, easy words dominate; as your rank climbs, harder words show up more often.
+
+| Rank | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+| --- | --- | --- | --- | --- | --- |
+| Intern | 70% | 18% | 8% | 3% | 1% |
+| Junior Analyst | 55% | 25% | 13% | 5% | 2% |
+| Analyst | 35% | 30% | 20% | 10% | 5% |
+| Senior Analyst | 22% | 28% | 27% | 15% | 8% |
+| Manager | 12% | 20% | 30% | 23% | 15% |
+| Director | 7% | 14% | 27% | 28% | 24% |
+| Executive | 4% | 9% | 20% | 32% | 35% |
+| CEO | 2% | 5% | 13% | 30% | 50% |
+
+### Running it
+
+#### Desktop (Electron)
+
+```bash
+npm install
+npm start
+```
+
+#### Web version
+
+Serve `web/index.html` as a static site (e.g. GitHub Pages). On first visit you register a GitHub Personal Access Token once for progress sync; after that, a 4-digit PIN is enough to open it (see below). The in-app "Manage records" button lets you reset just today's stats or your entire learning history.
+
+### Progress sync
+
+So both frontends share the same learning record, `progress.json`/`session.json` are read and written via the GitHub Contents API from a **separate private repository**, not this one. This repository contains no personal learning data.
+
+### License
+
+Personal project. Not built with reuse or distribution in mind.
