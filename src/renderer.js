@@ -21,6 +21,7 @@ import {
   renderReadingPhase,
   showTranslationReveal,
   showCollocationHint,
+  showSynonymHint,
   markChoiceResult,
   highlightCorrectChoice,
   switchDontKnowToContinue,
@@ -263,9 +264,10 @@ async function main() {
     updateStatsPanel(state);
     persistAll();
 
-    const hasHint = state.question.collocation && state.question.collocationKo;
+    const hasHint = (state.question.collocation && state.question.collocationKo) || state.question.synonym;
     if (hasHint) {
       showCollocationHint(state.question.collocation, state.question.collocationKo);
+      showSynonymHint(state.question.synonym);
       pendingContinue = true;
       switchDontKnowToContinue(continueAfterDontKnow);
       return;
@@ -365,10 +367,13 @@ async function main() {
     // Example mode's translation (and any collocation hint) is meant to be
     // read, not glimpsed on a timer — wait for the user's own "continue"
     // (any key/click), same as "모르겠다".
-    const hasHint = state.question.collocation && state.question.collocationKo;
+    const hasHint = (state.question.collocation && state.question.collocationKo) || state.question.synonym;
     if (state.modeName === 'example' || hasHint) {
       if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
-      if (hasHint) showCollocationHint(state.question.collocation, state.question.collocationKo);
+      if (hasHint) {
+        showCollocationHint(state.question.collocation, state.question.collocationKo);
+        showSynonymHint(state.question.synonym);
+      }
       pendingContinue = true;
       switchDontKnowToContinue(continueAfterDontKnow);
       return;
@@ -400,6 +405,7 @@ async function main() {
     if (state.modeName === 'typing') markTypingResult(false);
     if (state.modeName === 'example') showTranslationReveal(state.question.exampleKo);
     showCollocationHint(state.question.collocation, state.question.collocationKo);
+    showSynonymHint(state.question.synonym);
     switchDontKnowToContinue(continueAfterDontKnow);
     updateStatsPanel(state);
     persistAll();
