@@ -149,6 +149,17 @@
   border-radius: 3px;
 }
 
+.quiz-synonym {
+  margin: 0 8px 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #4a7a4a;
+  background: #eef6ee;
+  border: 1px dashed #4a7a4a;
+  border-radius: 3px;
+}
+
 .quiz-typing-form {
   display: flex;
   gap: 6px;
