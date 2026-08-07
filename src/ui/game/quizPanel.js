@@ -287,6 +287,23 @@ export function showCollocationHint(collocation, collocationKo) {
 }
 
 /**
+ * Appends a "words that mean roughly the same thing" hint to the panel on
+ * answer reveal, in classic/example/typing mode alike — only when that word
+ * has one curated. `synonym` is "/"-separated like the `meaning` field.
+ */
+export function showSynonymHint(synonym) {
+  const panel = document.getElementById('quiz-panel');
+  if (!panel || !synonym) return;
+  let el = panel.querySelector('.quiz-synonym');
+  if (!el) {
+    el = document.createElement('div');
+    el.className = 'quiz-synonym';
+    panel.appendChild(el);
+  }
+  el.textContent = `🔗 동의어: ${synonym.split('/').join(', ')}`;
+}
+
+/**
  * Typing mode: no choices at all — a single text input the user types the
  * English word/phrase into. Auto-focused so play can continue without a
  * mouse click. Enter and the submit row both call `onSubmit(inputValue)`;
