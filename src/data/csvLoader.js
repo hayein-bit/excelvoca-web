@@ -64,7 +64,7 @@ function parseCsv(text) {
  * stays around purely for display/grouping.
  *
  * @param {string} text
- * @returns {Array<{key:string, word:string, meaning:string, pos:string, example:string, exampleKo:string, example2:string, example2Ko:string, collocation:string, collocationKo:string, level:number}>}
+ * @returns {Array<{key:string, word:string, meaning:string, pos:string, example:string, exampleKo:string, example2:string, example2Ko:string, collocation:string, collocationKo:string, synonym:string, level:number}>}
  */
 export function loadWordsFromCsv(text) {
   const rows = parseCsv(text);
@@ -82,6 +82,7 @@ export function loadWordsFromCsv(text) {
   const example2KoIdx = colIndex('example2_ko');
   const collocationIdx = colIndex('collocation');
   const collocationKoIdx = colIndex('collocation_ko');
+  const synonymIdx = colIndex('synonym');
   const levelIdx = colIndex('level');
 
   const words = [];
@@ -110,6 +111,11 @@ export function loadWordsFromCsv(text) {
       // only ones with an actually famous collocation, or it stops helping.
       collocation: (collocationIdx >= 0 ? r[collocationIdx] : '').trim(),
       collocationKo: (collocationKoIdx >= 0 ? r[collocationKoIdx] : '').trim(),
+      // Optional memory-hook hint: other English words with a genuinely close
+      // meaning (e.g. "subtlety/shade" for "nuance"), "/"-separated like the
+      // `meaning` field. Deliberately not filled for every word — same reasoning
+      // as `collocation` above.
+      synonym: (synonymIdx >= 0 ? r[synonymIdx] : '').trim(),
       level: levelIdx >= 0 ? parseInt(r[levelIdx], 10) || 1 : 1
     });
   }
