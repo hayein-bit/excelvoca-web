@@ -24,6 +24,7 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
       example: wordObj.example,
       collocation: wordObj.collocation,
       collocationKo: wordObj.collocationKo,
+      synonym: wordObj.synonym,
       level: wordObj.level,
       choices,
       correctIndex
@@ -43,6 +44,7 @@ export function buildQuestion(wordObj, { reverse = false } = {}) {
     example: wordObj.example,
     collocation: wordObj.collocation,
     collocationKo: wordObj.collocationKo,
+    synonym: wordObj.synonym,
     level: wordObj.level,
     choices,
     correctIndex
@@ -83,6 +85,7 @@ export function buildExampleQuestion(wordObj) {
     exampleKo: chosen.ko,
     collocation: wordObj.collocation,
     collocationKo: wordObj.collocationKo,
+    synonym: wordObj.synonym,
     level: wordObj.level,
     choices,
     correctIndex
@@ -107,6 +110,7 @@ export function buildTypingQuestion(wordObj) {
     reverse: true,
     collocation: wordObj.collocation,
     collocationKo: wordObj.collocationKo,
+    synonym: wordObj.synonym,
     level: wordObj.level,
     correctAnswer: wordObj.word
   };
