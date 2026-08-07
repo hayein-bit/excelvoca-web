@@ -188,6 +188,17 @@ body {
   border-radius: 4px;
 }
 
+.quiz-synonym {
+  margin: 0 10px 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #4a7a4a;
+  background: #eef6ee;
+  border: 1px dashed #4a7a4a;
+  border-radius: 4px;
+}
+
 .quiz-typing-form {
   display: flex;
   gap: 8px;
